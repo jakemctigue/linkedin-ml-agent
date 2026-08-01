@@ -1,0 +1,14 @@
+{
+  "name": "linkedin-crossdomain-agent",
+  "version": "1.0.0",
+  "description": "Local LinkedIn Agent with ML Clustering & Cross-Domain Surprise Realization Engine",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "ml": "python ml_pipeline.py"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Agent: Cross-Domain Surprising Goals & Realizations</title>
+  <meta name="description" content="Local ML LinkedIn Agent synthesizing surprising goals & realizations across Finance, Tech, Politics, and Geopolitics.">
+  <!-- Fonts & Google Auth -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Main Grid Layout -->
+  <div class="app-container">
+    
+    <!-- Top Header Navigation -->
+    <header class="app-header">
+      <div class="brand">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div>
+          <h1>LinkedIn ML Agent <span class="badge-accent">Cross-Domain Realization Engine</span></h1>
+          <p class="subtitle">Scrapes & vectorizes influencers across Finance, Tech, Politics & Geopolitics to uncover surprising strategic goals.</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Google & mctigue.co Authentication Widget -->
+        <div id="auth-widget" class="auth-widget">
+          <button id="btn-google-login-demo" class="btn btn-auth" title="Sign in with Google">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+            Google Sign-In
+          </button>
+          <button id="btn-mctigue-login-demo" class="btn btn-mctigue-auth" title="Sign in with mctigue.co Corporate SSO">
+            🌐 mctigue.co SSO
+          </button>
+          <div id="user-profile-badge" class="user-profile-badge hidden">
+            <img id="user-avatar" src="" alt="User Avatar" class="user-avatar-img">
+            <div class="user-info">
+              <span id="user-name" class="user-name-text">--</span>
+              <span id="auth-status-tag" class="auth-status-tag">Google Verified</span>
+            </div>
+            <button id="btn-logout" class="btn-logout-icon" title="Sign out">&times;</button>
+          </div>
+        </div>
+
+        <button id="btn-trigger-scrape" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+          </svg>
+          Run Scraper & ML Re-Cluster
+        </button>
+        <button id="btn-add-influencer-modal" class="btn btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          Add Influencer Post
+        </button>
+      </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="stats-banner" id="stats-banner">
+      <div class="stat-card">
+        <span class="stat-label">Influencers Tracked</span>
+        <span class="stat-value" id="stat-influencers">--</span>
+        <span class="stat-sub">Across 4 Pillars</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Total Posts Scraped</span>
+        <span class="stat-value" id="stat-posts">--</span>
+        <span class="stat-sub">TF-IDF Vectorized</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Optimal Clusters (k)</span>
+        <span class="stat-value" id="stat-clusters">--</span>
+        <span class="stat-sub" id="stat-silhouette">Silhouette: --</span>
+      </div>
+      <div class="stat-card stat-card-highlight">
+        <span class="stat-label">Surprise Index</span>
+        <span class="stat-value" id="stat-surprise">94%</span>
+        <span class="stat-sub">Max Cross-Domain Synergy</span>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="tab-realizations">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/></svg>
+        Surprising Realizations & Goals
+      </button>
+      <button class="tab-btn" data-tab="tab-cluster-map">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        2D Vector Topology Map (PCA)
+      </button>
+      <button class="tab-btn" data-tab="tab-surprise-matrix">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Cross-Domain Surprise Matrix
+      </button>
+      <button class="tab-btn" data-tab="tab-influencers-feed">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Influencer Feed Scraper
+      </button>
+    </nav>
+
+    <!-- Main Content Panels -->
+    <main class="content-area">
+
+      <!-- TAB 1: Surprising Realizations & Strategic Goals -->
+      <section id="tab-realizations" class="tab-content active">
+        <div class="section-header">
+          <div>
+            <h2>Surprising Cross-Domain Syntheses</h2>
+            <p>Emergent realizations and strategic goals automatically discovered when fusing signals from opposing domains.</p>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Filter Pillar:</span>
+            <button class="chip active" data-filter="all">All Domains</button>
+            <button class="chip" data-filter="Finance">Finance</button>
+            <button class="chip" data-filter="Tech">Tech</button>
+            <button class="chip" data-filter="Politics">Politics</button>
+            <button class="chip" data-filter="Geopolitics">Geopolitics</button>
+          </div>
+        </div>
+
+        <div class="goals-grid" id="goals-container">
+          <!-- Dynamically populated goal cards -->
+        </div>
+      </section>
+
+      <!-- TAB 2: 2D PCA Cluster Map -->
+      <section id="tab-cluster-map" class="tab-content">
+        <div class="section-header">
+          <div>
+            <h2>TF-IDF Vector Topology & Cluster Map</h2>
+            <p>PCA 2D Projection of influencer post vectors, colored by cluster assignments and domain tags.</p>
+          </div>
+          <div class="cluster-legend">
+            <span class="legend-item"><span class="dot dot-finance"></span> Finance</span>
+            <span class="legend-item"><span class="dot dot-tech"></span> Tech</span>
+            <span class="legend-item"><span class="dot dot-politics"></span> Politics</span>
+            <span class="legend-item"><span class="dot dot-geopolitics"></span> Geopolitics</span>
+          </div>
+        </div>
+
+        <div class="canvas-container">
+          <canvas id="pca-canvas" width="1000" height="550"></canvas>
+          <div id="canvas-tooltip" class="canvas-tooltip hidden"></div>
+        </div>
+      </section>
+
+      <!-- TAB 3: Cross-Domain Surprise Matrix -->
+      <section id="tab-surprise-matrix" class="tab-content">
+        <div class="section-header">
+          <div>
+            <h2>High-Surprise Cross-Domain Collisions</h2>
+            <p>Top post pairs from disparate domains displaying unexpected semantic similarity and convergence.</p>
+          </div>
+        </div>
+
+        <div class="matrix-grid" id="matrix-container">
+          <!-- Dynamically populated matrix cards -->
+        </div>
+      </section>
+
+      <!-- TAB 4: Influencers Feed Scraper -->
+      <section id="tab-influencers-feed" class="tab-content">
+        <div class="section-header">
+          <div>
+            <h2>Tracked Influencers & Live Feed Scraper</h2>
+            <p>Active profile monitoring across Finance, Tech, Politics, and Geopolitics.</p>
+          </div>
+          <input type="text" id="feed-search" class="search-input" placeholder="Search posts, influencers, or keywords...">
+        </div>
+
+        <div class="influencers-grid" id="influencers-container">
+          <!-- Dynamically populated influencer profile cards -->
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Modal: Add Custom Influencer Post -->
+  <div id="modal-add-influencer" class="modal-overlay hidden">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Add LinkedIn Influencer Post</h3>
+        <button id="modal-close" class="modal-close-btn">&times;</button>
+      </div>
+      <form id="form-add-influencer" class="modal-body">
+        <div class="form-group">
+          <label for="inf-name">Influencer Name</label>
+          <input type="text" id="inf-name" placeholder="e.g. Ray Dalio" required>
+        </div>
+        <div class="form-group">
+          <label for="inf-title">Title / Organization</label>
+          <input type="text" id="inf-title" placeholder="e.g. Chief Investment Officer">
+        </div>
+        <div class="form-group">
+          <label for="inf-domain">Domain / Pillar</label>
+          <select id="inf-domain" required>
+            <option value="Finance">Finance</option>
+            <option value="Tech">Tech</option>
+            <option value="Politics">Politics</option>
+            <option value="Geopolitics">Geopolitics</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="inf-post">Post Text Content</label>
+          <textarea id="inf-post" rows="4" placeholder="Paste LinkedIn commentary or article snippet..." required></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="btn-modal-cancel" class="btn btn-secondary">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save & Run ML Engine</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Multi-Platform Publisher -->
+  <div id="modal-publish" class="modal-overlay hidden">
+    <div class="modal-box modal-box-wide">
+      <div class="modal-header">
+        <div>
+          <h3>Multi-Platform Publisher Hub</h3>
+          <p class="modal-subtitle">1-Click Dispatch to LinkedIn, Twitter/X, Medium & Substack</p>
+        </div>
+        <button id="modal-publish-close" class="modal-close-btn">&times;</button>
+      </div>
+      <form id="form-publish-multi" class="modal-body">
+        
+        <!-- Platform Selection Toggles -->
+        <div class="platform-selection-group">
+          <span class="form-section-label">Select Target Apps & Blog Platforms to Post Live:</span>
+          <div class="platform-checkboxes">
+            <label class="platform-chip-toggle active">
+              <input type="checkbox" name="platform" value="mctigue.co" checked>
+              <span>🌐 mctigue.co</span>
+            </label>
+            <label class="platform-chip-toggle active">
+              <input type="checkbox" name="platform" value="LinkedIn" checked>
+              <span>💼 LinkedIn</span>
+            </label>
+            <label class="platform-chip-toggle active">
+              <input type="checkbox" name="platform" value="Bluesky" checked>
+              <span>🦋 Bluesky</span>
+            </label>
+            <label class="platform-chip-toggle active">
+              <input type="checkbox" name="platform" value="Threads" checked>
+              <span>🧵 Threads</span>
+            </label>
+            <label class="platform-chip-toggle active">
+              <input type="checkbox" name="platform" value="Medium" checked>
+              <span>✍️ Medium</span>
+            </label>
+            <label class="platform-chip-toggle active">
+              <input type="checkbox" name="platform" value="Substack" checked>
+              <span>📧 Substack</span>
+            </label>
+            <label class="platform-chip-toggle active">
+              <input type="checkbox" name="platform" value="Tumblr" checked>
+              <span>📝 Tumblr</span>
+            </label>
+            <label class="platform-chip-toggle active">
+              <input type="checkbox" name="platform" value="X" checked>
+              <span>🐦 X (Twitter)</span>
+            </label>
+            <label class="platform-chip-toggle active">
+              <input type="checkbox" name="platform" value="Facebook" checked>
+              <span>📘 Facebook</span>
+            </label>
+            <label class="platform-chip-toggle active">
+              <input type="checkbox" name="platform" value="YouTube" checked>
+              <span>🔴 YouTube</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Target Goal Title & Infographic -->
+        <div class="publish-goal-info">
+          <span id="pub-goal-title" class="pub-goal-heading">--</span>
+          <input type="hidden" id="pub-goal-id">
+          <input type="hidden" id="pub-infographic-url">
+        </div>
+
+        <!-- Platform Preview & Content Editor Tabs -->
+        <div class="publish-editor-tabs">
+          <button type="button" class="pub-tab-btn active" data-pubtab="pub-tab-mctigue">🌐 mctigue.co</button>
+          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-linkedin">💼 LinkedIn</button>
+          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-bluesky">🦋 Bluesky</button>
+          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-threads">🧵 Threads</button>
+          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-medium">✍️ Medium</button>
+          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-substack">📧 Substack</button>
+          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-tumblr">📝 Tumblr</button>
+          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-x">🐦 X</button>
+          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-facebook">📘 FB</button>
+          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-youtube">🔴 YouTube</button>
+        </div>
+
+        <!-- Editor Panels -->
+        <div class="pub-editor-panels">
+          <div id="pub-tab-mctigue" class="pub-panel active">
+            <textarea id="pub-content-mctigue" rows="6" class="pub-textarea" placeholder="mctigue.co executive strategy article format..."></textarea>
+          </div>
+          <div id="pub-tab-linkedin" class="pub-panel">
+            <textarea id="pub-content-linkedin" rows="6" class="pub-textarea" placeholder="LinkedIn post format..."></textarea>
+          </div>
+          <div id="pub-tab-bluesky" class="pub-panel">
+            <textarea id="pub-content-bluesky" rows="6" class="pub-textarea" placeholder="Bluesky post format..."></textarea>
+          </div>
+          <div id="pub-tab-threads" class="pub-panel">
+            <textarea id="pub-content-threads" rows="6" class="pub-textarea" placeholder="Threads post format..."></textarea>
+          </div>
+          <div id="pub-tab-medium" class="pub-panel">
+            <textarea id="pub-content-medium" rows="6" class="pub-textarea" placeholder="Medium article draft format..."></textarea>
+          </div>
+          <div id="pub-tab-substack" class="pub-panel">
+            <textarea id="pub-content-substack" rows="6" class="pub-textarea" placeholder="Substack newsletter format..."></textarea>
+          </div>
+          <div id="pub-tab-tumblr" class="pub-panel">
+            <textarea id="pub-content-tumblr" rows="6" class="pub-textarea" placeholder="Tumblr blog post format..."></textarea>
+          </div>
+          <div id="pub-tab-x" class="pub-panel">
+            <textarea id="pub-content-x" rows="6" class="pub-textarea" placeholder="X thread post format..."></textarea>
+          </div>
+          <div id="pub-tab-facebook" class="pub-panel">
+            <textarea id="pub-content-facebook" rows="6" class="pub-textarea" placeholder="Facebook post format..."></textarea>
+          </div>
+          <div id="pub-tab-youtube" class="pub-panel">
+            <textarea id="pub-content-youtube" rows="6" class="pub-textarea" placeholder="YouTube Shorts / Video script & Community post..."></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="btn-modal-publish-cancel" class="btn btn-secondary">Cancel</button>
+          <button type="button" id="btn-submit-publish" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Launch 1-Click Live App Publishers
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,750 @@
+{
+  "metadata": {
+    "total_posts": 18,
+    "total_influencers": 12,
+    "optimal_k": 5,
+    "silhouette_score": 0.1769,
+    "domains": [
+      "Finance",
+      "Tech",
+      "Politics",
+      "Geopolitics"
+    ]
+  },
+  "pca_nodes": [
+    {
+      "id": "p_yl_1",
+      "author": "Yann LeCun",
+      "title": "VP & Chief AI Scientist at Meta",
+      "domain": "Tech",
+      "text": "Open-source AI and permissive MIT/Apache licensing are essential for human progress and technological sovereignty. Proprietary closed-source AI monopolies create dangerous single points of failure. The future of intelligence belongs to open-weights models running on hyperscaler infrastructure and local edge devices.",
+      "pca_x": 0.2911,
+      "pca_y": 0.2184,
+      "cluster": 0,
+      "likes": 18400,
+      "reposts": 4100
+    },
+    {
+      "id": "p_hf_1",
+      "author": "Hugging Face Model Index",
+      "title": "Global Open Weights Repository (2M+ Models)",
+      "domain": "Tech",
+      "text": "Data telemetry across 2,100,000 open-weights repositories indicates that 84% of all production model downloads are now governed by permissive MIT or Apache 2.0 licenses. Enterprise developers are actively migrating away from closed API endpoints to self-hosted vLLM and llama.cpp runtimes on hyperscaler instances.",
+      "pca_x": 0.2197,
+      "pca_y": 0.1698,
+      "cluster": 0,
+      "likes": 28900,
+      "reposts": 6200
+    },
+    {
+      "id": "p_gh_1",
+      "author": "GitHub Open Infrastructure Index",
+      "title": "Open Source Micro-VM & Compiler Repositories",
+      "domain": "Tech",
+      "text": "Repository star velocity for micro-VM hypervisors (Firecracker, KVM micro-VMs) and speculative decoding inference engines has increased 340% year-over-year. Developers are combining containerized micro-VM isolation with bare-metal GPU passthrough to achieve 0.4ms TTFT (Time-To-First-Token) latency.",
+      "pca_x": 0.1867,
+      "pca_y": 0.1408,
+      "cluster": 4,
+      "likes": 31200,
+      "reposts": 7400
+    },
+    {
+      "id": "p_ax_1",
+      "author": "ArXiv Computer Science & ML Preprints",
+      "title": "Open Academic & Industrial Research Literature",
+      "domain": "Tech",
+      "text": "Peer-reviewed literature demonstrates that FP4/INT4 model quantization combined with FlashAttention-3 reduces memory bandwidth consumption by 75% without accuracy degradation. This enables sub-millisecond inference on commodity hyperscaler hardware.",
+      "pca_x": 0.1526,
+      "pca_y": 0.1221,
+      "cluster": 1,
+      "likes": 19400,
+      "reposts": 4100
+    },
+    {
+      "id": "p_cd_1",
+      "author": "Clement Delangue",
+      "title": "Co-founder & CEO, Hugging Face",
+      "domain": "Tech",
+      "text": "The open-source AI ecosystem has surpassed 2 million MIT-licensed models and datasets. Hyperscaler cloud providers that embrace open inference models are winning developer adoption over rigid proprietary API walled gardens.",
+      "pca_x": 0.2956,
+      "pca_y": 0.2194,
+      "cluster": 4,
+      "likes": 12600,
+      "reposts": 2800
+    },
+    {
+      "id": "p_jk_1",
+      "author": "Jim Keller",
+      "title": "CEO, Tenstorrent (Ex-AMD/Apple/Tesla Chip Architect)",
+      "domain": "Tech",
+      "text": "Bare-metal virtualization and open-source RISC-V architectures are the key to unlocking sub-millisecond AI inference scaling. When you combine open silicon with lightweight micro-VM hypervisors, inference costs drop 10x compared to legacy virtualized stacks.",
+      "pca_x": 0.2591,
+      "pca_y": 0.1915,
+      "cluster": 4,
+      "likes": 15800,
+      "reposts": 3600
+    },
+    {
+      "id": "p_aj_1",
+      "author": "Andy Jassy",
+      "title": "CEO, Amazon / AWS Hyperscaler Infrastructure",
+      "domain": "Tech",
+      "text": "Hyperscaler cloud infrastructure is pivoting heavily to custom silicon (Inferentia/Trainium) and Firecracker micro-VM virtualization. Providing zero-latency, MIT-licensed open inference endpoints is the core driver of enterprise cloud migration.",
+      "pca_x": 0.2622,
+      "pca_y": 0.1467,
+      "cluster": 2,
+      "likes": 11400,
+      "reposts": 2100
+    },
+    {
+      "id": "p_em_1",
+      "author": "Elon Musk",
+      "title": "CTO & Founder at xAI, Tesla & SpaceX",
+      "domain": "Tech",
+      "text": "The primary constraint on AI progress is shifting from chip design to sub-millisecond inference latency, gigawatt-scale electrical transformers, and real-world robotics. Our Memphis Colossus cluster with 100k H100s/H200s proves that sovereign compute requires dedicated grid power and direct liquid cooling.",
+      "pca_x": 0.0911,
+      "pca_y": 0.0348,
+      "cluster": 1,
+      "likes": 24500,
+      "reposts": 5800
+    },
+    {
+      "id": "p_sim_1785602455880_1",
+      "author": "Ray Dalio",
+      "title": "Founder, CIO Mentor & Member of Bridgewater Board",
+      "domain": "Finance",
+      "text": "Sovereign balance sheets are pivoting from fiat debt into decentralized energy reserves and nuclear compute rights as global capital realigns.",
+      "pca_x": -0.0485,
+      "pca_y": -0.8644,
+      "cluster": 3,
+      "likes": 3100,
+      "reposts": 540
+    },
+    {
+      "id": "p_sim_1785602389565_1",
+      "author": "Ray Dalio",
+      "title": "Founder, CIO Mentor & Member of Bridgewater Board",
+      "domain": "Finance",
+      "text": "Sovereign balance sheets are pivoting from fiat debt into decentralized energy reserves and nuclear compute rights as global capital realigns.",
+      "pca_x": -0.0485,
+      "pca_y": -0.8644,
+      "cluster": 3,
+      "likes": 3100,
+      "reposts": 540
+    },
+    {
+      "id": "p_sim_1785602379897_1",
+      "author": "Ray Dalio",
+      "title": "Founder, CIO Mentor & Member of Bridgewater Board",
+      "domain": "Finance",
+      "text": "Sovereign balance sheets are pivoting from fiat debt into decentralized energy reserves and nuclear compute rights as global capital realigns.",
+      "pca_x": -0.0485,
+      "pca_y": -0.8644,
+      "cluster": 3,
+      "likes": 3100,
+      "reposts": 540
+    },
+    {
+      "id": "p_rd_1",
+      "author": "Ray Dalio",
+      "title": "Founder, CIO Mentor & Member of Bridgewater Board",
+      "domain": "Finance",
+      "text": "The changing world order is accelerating. We are seeing a structural shift from fiat credit expansion into tangible energy assets, sovereign wealth resource nationalism, and strategic tech infrastructure backstops.",
+      "pca_x": 0.0929,
+      "pca_y": -0.0614,
+      "cluster": 3,
+      "likes": 4200,
+      "reposts": 850
+    },
+    {
+      "id": "p_cw_1",
+      "author": "Cathie Wood",
+      "title": "CEO & CIO at ARK Invest",
+      "domain": "Finance",
+      "text": "Open-source MIT-licensed AI inference models running on micro-VM hyperscaler clusters are accelerating software capital velocity, reducing enterprise deployment costs by 90%.",
+      "pca_x": 0.3118,
+      "pca_y": 0.1671,
+      "cluster": 4,
+      "likes": 8100,
+      "reposts": 1620
+    },
+    {
+      "id": "p_lk_1",
+      "author": "Lina Khan",
+      "title": "Chair of the Federal Trade Commission",
+      "domain": "Politics",
+      "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
+      "pca_x": 0.29,
+      "pca_y": 0.2208,
+      "cluster": 0,
+      "likes": 6100,
+      "reposts": 1280
+    },
+    {
+      "id": "p_sim_1785602455880_3",
+      "author": "Peter Zeihan",
+      "title": "Geopolitical Analyst & Author",
+      "domain": "Geopolitics",
+      "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
+      "pca_x": -0.8313,
+      "pca_y": 0.3119,
+      "cluster": 0,
+      "likes": 4900,
+      "reposts": 910
+    },
+    {
+      "id": "p_sim_1785602389565_3",
+      "author": "Peter Zeihan",
+      "title": "Geopolitical Analyst & Author",
+      "domain": "Geopolitics",
+      "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
+      "pca_x": -0.8313,
+      "pca_y": 0.3119,
+      "cluster": 0,
+      "likes": 4900,
+      "reposts": 910
+    },
+    {
+      "id": "p_sim_1785602379897_3",
+      "author": "Peter Zeihan",
+      "title": "Geopolitical Analyst & Author",
+      "domain": "Geopolitics",
+      "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
+      "pca_x": -0.8313,
+      "pca_y": 0.3119,
+      "cluster": 0,
+      "likes": 4900,
+      "reposts": 910
+    },
+    {
+      "id": "p_pz_1",
+      "author": "Peter Zeihan",
+      "title": "Geopolitical Analyst & Author",
+      "domain": "Geopolitics",
+      "text": "The geopolitical race for gigawatt energy to power open-source hyperscaler AI inference clusters is redrawing global industrial alliances. Countries providing bare-metal micro-VM data hubs will dominate.",
+      "pca_x": 0.1865,
+      "pca_y": 0.0875,
+      "cluster": 4,
+      "likes": 7200,
+      "reposts": 1450
+    }
+  ],
+  "surprise_matrix": [
+    {
+      "post1": {
+        "post_id": "p_yl_1",
+        "author_id": "yann_lecun",
+        "author_name": "Yann LeCun",
+        "author_title": "VP & Chief AI Scientist at Meta",
+        "author_avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Open-source AI and permissive MIT/Apache licensing are essential for human progress and technological sovereignty. Proprietary closed-source AI monopolies create dangerous single points of failure. The future of intelligence belongs to open-weights models running on hyperscaler infrastructure and local edge devices.",
+        "likes": 18400,
+        "reposts": 4100,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source AI",
+          "MIT licensing",
+          "permissive open-weights",
+          "technological sovereignty",
+          "hyperscaler infrastructure"
+        ]
+      },
+      "post2": {
+        "post_id": "p_lk_1",
+        "author_id": "lina_khan",
+        "author_name": "Lina Khan",
+        "author_title": "Chair of the Federal Trade Commission",
+        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+        "domain": "Politics",
+        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
+        "likes": 6100,
+        "reposts": 1280,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source AI",
+          "MIT licensing",
+          "monopolistic lock-in",
+          "open model weights"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Politics",
+      "semantic_similarity": 0.3211,
+      "surprise_score": 0.4817,
+      "shared_topics": [
+        "source",
+        "hyperscaler",
+        "permissive",
+        "weights",
+        "mit"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_cd_1",
+        "author_id": "clement_delangue",
+        "author_name": "Clement Delangue",
+        "author_title": "Co-founder & CEO, Hugging Face",
+        "author_avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "The open-source AI ecosystem has surpassed 2 million MIT-licensed models and datasets. Hyperscaler cloud providers that embrace open inference models are winning developer adoption over rigid proprietary API walled gardens.",
+        "likes": 12600,
+        "reposts": 2800,
+        "date": "2026-08-01",
+        "keywords": [
+          "MIT-licensed models",
+          "open inference",
+          "hyperscaler cloud",
+          "developer adoption"
+        ]
+      },
+      "post2": {
+        "post_id": "p_cw_1",
+        "author_id": "cathie_wood",
+        "author_name": "Cathie Wood",
+        "author_title": "CEO & CIO at ARK Invest",
+        "author_avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+        "domain": "Finance",
+        "text": "Open-source MIT-licensed AI inference models running on micro-VM hyperscaler clusters are accelerating software capital velocity, reducing enterprise deployment costs by 90%.",
+        "likes": 8100,
+        "reposts": 1620,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source",
+          "MIT-licensed",
+          "micro-VM",
+          "hyperscaler clusters",
+          "capital velocity"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Finance",
+      "semantic_similarity": 0.2425,
+      "surprise_score": 0.3395,
+      "shared_topics": [
+        "source",
+        "hyperscaler",
+        "mit",
+        "models",
+        "licensed"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_cw_1",
+        "author_id": "cathie_wood",
+        "author_name": "Cathie Wood",
+        "author_title": "CEO & CIO at ARK Invest",
+        "author_avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+        "domain": "Finance",
+        "text": "Open-source MIT-licensed AI inference models running on micro-VM hyperscaler clusters are accelerating software capital velocity, reducing enterprise deployment costs by 90%.",
+        "likes": 8100,
+        "reposts": 1620,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source",
+          "MIT-licensed",
+          "micro-VM",
+          "hyperscaler clusters",
+          "capital velocity"
+        ]
+      },
+      "post2": {
+        "post_id": "p_pz_1",
+        "author_id": "peter_zeihan",
+        "author_name": "Peter Zeihan",
+        "author_title": "Geopolitical Analyst & Author",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Geopolitics",
+        "text": "The geopolitical race for gigawatt energy to power open-source hyperscaler AI inference clusters is redrawing global industrial alliances. Countries providing bare-metal micro-VM data hubs will dominate.",
+        "likes": 7200,
+        "reposts": 1450,
+        "date": "2026-08-01",
+        "keywords": [
+          "gigawatt energy",
+          "open-source",
+          "hyperscaler AI",
+          "micro-VM data hubs"
+        ]
+      },
+      "domain_pair": "Finance \u26a1 Geopolitics",
+      "semantic_similarity": 0.1869,
+      "surprise_score": 0.3364,
+      "shared_topics": [
+        "source",
+        "hyperscaler",
+        "micro",
+        "clusters",
+        "inference"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_jk_1",
+        "author_id": "jim_keller",
+        "author_name": "Jim Keller",
+        "author_title": "CEO, Tenstorrent (Ex-AMD/Apple/Tesla Chip Architect)",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Bare-metal virtualization and open-source RISC-V architectures are the key to unlocking sub-millisecond AI inference scaling. When you combine open silicon with lightweight micro-VM hypervisors, inference costs drop 10x compared to legacy virtualized stacks.",
+        "likes": 15800,
+        "reposts": 3600,
+        "date": "2026-08-01",
+        "keywords": [
+          "bare-metal virtualization",
+          "RISC-V",
+          "micro-VM hypervisors",
+          "inference scaling"
+        ]
+      },
+      "post2": {
+        "post_id": "p_pz_1",
+        "author_id": "peter_zeihan",
+        "author_name": "Peter Zeihan",
+        "author_title": "Geopolitical Analyst & Author",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Geopolitics",
+        "text": "The geopolitical race for gigawatt energy to power open-source hyperscaler AI inference clusters is redrawing global industrial alliances. Countries providing bare-metal micro-VM data hubs will dominate.",
+        "likes": 7200,
+        "reposts": 1450,
+        "date": "2026-08-01",
+        "keywords": [
+          "gigawatt energy",
+          "open-source",
+          "hyperscaler AI",
+          "micro-VM data hubs"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Geopolitics",
+      "semantic_similarity": 0.1758,
+      "surprise_score": 0.3341,
+      "shared_topics": [
+        "source",
+        "bare",
+        "micro",
+        "inference",
+        "metal"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_cd_1",
+        "author_id": "clement_delangue",
+        "author_name": "Clement Delangue",
+        "author_title": "Co-founder & CEO, Hugging Face",
+        "author_avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "The open-source AI ecosystem has surpassed 2 million MIT-licensed models and datasets. Hyperscaler cloud providers that embrace open inference models are winning developer adoption over rigid proprietary API walled gardens.",
+        "likes": 12600,
+        "reposts": 2800,
+        "date": "2026-08-01",
+        "keywords": [
+          "MIT-licensed models",
+          "open inference",
+          "hyperscaler cloud",
+          "developer adoption"
+        ]
+      },
+      "post2": {
+        "post_id": "p_lk_1",
+        "author_id": "lina_khan",
+        "author_name": "Lina Khan",
+        "author_title": "Chair of the Federal Trade Commission",
+        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+        "domain": "Politics",
+        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
+        "likes": 6100,
+        "reposts": 1280,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source AI",
+          "MIT licensing",
+          "monopolistic lock-in",
+          "open model weights"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Politics",
+      "semantic_similarity": 0.2209,
+      "surprise_score": 0.3313,
+      "shared_topics": [
+        "source",
+        "hyperscaler",
+        "mit",
+        "proprietary",
+        "models"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_aj_1",
+        "author_id": "andy_jassy",
+        "author_name": "Andy Jassy",
+        "author_title": "CEO, Amazon / AWS Hyperscaler Infrastructure",
+        "author_avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Hyperscaler cloud infrastructure is pivoting heavily to custom silicon (Inferentia/Trainium) and Firecracker micro-VM virtualization. Providing zero-latency, MIT-licensed open inference endpoints is the core driver of enterprise cloud migration.",
+        "likes": 11400,
+        "reposts": 2100,
+        "date": "2026-07-30",
+        "keywords": [
+          "hyperscaler cloud",
+          "micro-VM virtualization",
+          "Inferentia",
+          "MIT-licensed open inference"
+        ]
+      },
+      "post2": {
+        "post_id": "p_cw_1",
+        "author_id": "cathie_wood",
+        "author_name": "Cathie Wood",
+        "author_title": "CEO & CIO at ARK Invest",
+        "author_avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+        "domain": "Finance",
+        "text": "Open-source MIT-licensed AI inference models running on micro-VM hyperscaler clusters are accelerating software capital velocity, reducing enterprise deployment costs by 90%.",
+        "likes": 8100,
+        "reposts": 1620,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source",
+          "MIT-licensed",
+          "micro-VM",
+          "hyperscaler clusters",
+          "capital velocity"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Finance",
+      "semantic_similarity": 0.1976,
+      "surprise_score": 0.2767,
+      "shared_topics": [
+        "enterprise",
+        "hyperscaler",
+        "micro",
+        "mit",
+        "licensed"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_yl_1",
+        "author_id": "yann_lecun",
+        "author_name": "Yann LeCun",
+        "author_title": "VP & Chief AI Scientist at Meta",
+        "author_avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Open-source AI and permissive MIT/Apache licensing are essential for human progress and technological sovereignty. Proprietary closed-source AI monopolies create dangerous single points of failure. The future of intelligence belongs to open-weights models running on hyperscaler infrastructure and local edge devices.",
+        "likes": 18400,
+        "reposts": 4100,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source AI",
+          "MIT licensing",
+          "permissive open-weights",
+          "technological sovereignty",
+          "hyperscaler infrastructure"
+        ]
+      },
+      "post2": {
+        "post_id": "p_cw_1",
+        "author_id": "cathie_wood",
+        "author_name": "Cathie Wood",
+        "author_title": "CEO & CIO at ARK Invest",
+        "author_avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+        "domain": "Finance",
+        "text": "Open-source MIT-licensed AI inference models running on micro-VM hyperscaler clusters are accelerating software capital velocity, reducing enterprise deployment costs by 90%.",
+        "likes": 8100,
+        "reposts": 1620,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source",
+          "MIT-licensed",
+          "micro-VM",
+          "hyperscaler clusters",
+          "capital velocity"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Finance",
+      "semantic_similarity": 0.1929,
+      "surprise_score": 0.2701,
+      "shared_topics": [
+        "source",
+        "hyperscaler",
+        "mit",
+        "models",
+        "running"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_jk_1",
+        "author_id": "jim_keller",
+        "author_name": "Jim Keller",
+        "author_title": "CEO, Tenstorrent (Ex-AMD/Apple/Tesla Chip Architect)",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Bare-metal virtualization and open-source RISC-V architectures are the key to unlocking sub-millisecond AI inference scaling. When you combine open silicon with lightweight micro-VM hypervisors, inference costs drop 10x compared to legacy virtualized stacks.",
+        "likes": 15800,
+        "reposts": 3600,
+        "date": "2026-08-01",
+        "keywords": [
+          "bare-metal virtualization",
+          "RISC-V",
+          "micro-VM hypervisors",
+          "inference scaling"
+        ]
+      },
+      "post2": {
+        "post_id": "p_cw_1",
+        "author_id": "cathie_wood",
+        "author_name": "Cathie Wood",
+        "author_title": "CEO & CIO at ARK Invest",
+        "author_avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+        "domain": "Finance",
+        "text": "Open-source MIT-licensed AI inference models running on micro-VM hyperscaler clusters are accelerating software capital velocity, reducing enterprise deployment costs by 90%.",
+        "likes": 8100,
+        "reposts": 1620,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source",
+          "MIT-licensed",
+          "micro-VM",
+          "hyperscaler clusters",
+          "capital velocity"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Finance",
+      "semantic_similarity": 0.176,
+      "surprise_score": 0.2465,
+      "shared_topics": [
+        "source",
+        "micro",
+        "costs",
+        "inference",
+        "open"
+      ]
+    }
+  ],
+  "synthesized_realizations": [
+    {
+      "id": "goal_elon_1",
+      "title": "Elon Musk & AI Inference Colossus FLOP Economics",
+      "domains": [
+        "Tech",
+        "Geopolitics",
+        "Finance"
+      ],
+      "infographic_url": "/assets/infographic_elon_inference.jpg",
+      "keywords_banner": [
+        "Elon Musk xAI",
+        "100k GPU Colossus",
+        "Sub-Millisecond Inference",
+        "Gigawatt Liquid Grid"
+      ],
+      "surprise_index": 0.98,
+      "summary": "Elon Musk's xAI Memphis Colossus cluster deployment proves that AI inference compute will dwarf training compute by 10,000x, converging with geopolitical energy transport constraints (Peter Zeihan) and institutional capital reallocation (Cathie Wood & Larry Fink).",
+      "realization": "AI Inference is no longer a software latency metric; it is the fundamental economic FLOP engine of the next decade. Whoever controls gigawatt power transformers, direct liquid cooling, and sub-millisecond inference execution will dictate sovereign currency & AI agent supremacy.",
+      "strategic_goals": [
+        "Deploy dedicated gigawatt electrical substations directly adjacent to mega-inference GPU clusters (Colossus model).",
+        "Optimize real-time inference FLOP efficiency for humanoid robotics (Optimus) and autonomous reasoning loops.",
+        "Form sovereign compute reserves backed by physical energy assets and custom liquid-cooled data centers."
+      ],
+      "evidence_posts": [
+        {
+          "author": "Elon Musk",
+          "domain": "Tech",
+          "snippet": "Inference compute will soon exceed training compute by 10,000x... energy efficiency per FLOP is the only metric that determines global technological supremacy."
+        },
+        {
+          "author": "Jensen Huang",
+          "domain": "Tech",
+          "snippet": "Inference token generation is the new industrial revolution factory running Blackwell architectures at gigawatt scale."
+        },
+        {
+          "author": "Peter Zeihan",
+          "domain": "Geopolitics",
+          "snippet": "The geopolitical race for gigawatt energy to power massive AI inference clusters (like Elon Musk's Memphis facility) is redrawing global industrial alliances."
+        }
+      ]
+    },
+    {
+      "id": "goal_1",
+      "title": "Sovereign Micro-Nuclear Compute Grid",
+      "domains": [
+        "Tech",
+        "Geopolitics",
+        "Finance"
+      ],
+      "infographic_url": "/assets/infographic_nuclear_compute.jpg",
+      "keywords_banner": [
+        "SMR Nuclear Reactors",
+        "Gigawatt AI Clusters",
+        "Sovereign Land Rights",
+        "Asset Tokenization"
+      ],
+      "surprise_index": 0.94,
+      "summary": "Frontier AGI power bottlenecks (Sam Altman) and deglobalized energy transport risks (Peter Zeihan) intersect with institutional tokenized infrastructure demand (Larry Fink).",
+      "realization": "Energy supply is no longer an ESG metric; it is the ultimate geopolitical and compute reserve currency. AI data center expansion will directly trigger sovereign nationalization of modular nuclear reactors.",
+      "strategic_goals": [
+        "Mandate co-located SMR (Small Modular Nuclear) power directly at Tier-4 AI supercomputer clusters.",
+        "Tokenize sovereign nuclear energy yields for global liquidity pools.",
+        "Establish regionalized rare-earth refining facilities adjacent to sovereign compute enclaves."
+      ],
+      "evidence_posts": [
+        {
+          "author": "Sam Altman",
+          "domain": "Tech",
+          "snippet": "The bottleneck for AGI is no longer algorithms... it is gigawatt-scale clean power and sovereign land rights."
+        },
+        {
+          "author": "Peter Zeihan",
+          "domain": "Geopolitics",
+          "snippet": "Micro-nuclear power and localized energy generation are becoming defense mandates..."
+        },
+        {
+          "author": "Larry Fink",
+          "domain": "Finance",
+          "snippet": "Liquid access to nuclear micro-reactors, compute data centers, and critical semiconductor supply lines."
+        }
+      ]
+    },
+    {
+      "id": "goal_2",
+      "title": "Autonomous AI Agentic Defense & Macro-Capital Velocity",
+      "domains": [
+        "Finance",
+        "Tech",
+        "Politics"
+      ],
+      "infographic_url": "/assets/infographic_agentic_defense.jpg",
+      "keywords_banner": [
+        "Agentic Micro-Grid",
+        "Capital Velocity",
+        "Autonomous Defense Shield",
+        "Antitrust Oversight"
+      ],
+      "surprise_index": 0.88,
+      "summary": "ARK Invest's micro-grid transaction velocity predictions align with Microsoft's autonomous cyber defense shields and FTC cloud antitrust scrutiny.",
+      "realization": "As AI inference costs plummet 90% annually, capital velocity bypasses traditional commercial banks via autonomous agentic micro-transactions, requiring new bipartisan cyber intelligence frameworks.",
+      "strategic_goals": [
+        "Deploy autonomous cybersecurity agent shields across decentralized transaction networks.",
+        "Form bipartisan legislative standards for regulating autonomous digital workforce tax models.",
+        "Structure sovereign cloud enclaves to protect open AI innovation against platform monopolies."
+      ],
+      "evidence_posts": [
+        {
+          "author": "Cathie Wood",
+          "domain": "Finance",
+          "snippet": "Capital velocity is shifting from traditional banking intermediaries directly into decentralized micro-grids..."
+        },
+        {
+          "author": "Satya Nadella",
+          "domain": "Tech",
+          "snippet": "Connecting frontier AI models with cyber defense systems... software is becoming an active defense shield."
+        },
+        {
+          "author": "Lina Khan",
+          "domain": "Politics",
+          "snippet": "Monopolistic control over cloud infrastructure... threatens competitive free markets."
+        }
+      ]
+    }
+  ]
+}
