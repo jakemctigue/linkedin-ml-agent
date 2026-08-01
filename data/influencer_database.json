@@ -206,6 +206,42 @@
       "followers": "2.8M",
       "posts": [
         {
+          "id": "p_sim_1785603109537_1",
+          "text": "Sovereign balance sheets are pivoting from fiat debt into decentralized energy reserves and nuclear compute rights as global capital realigns.",
+          "likes": 3100,
+          "reposts": 540,
+          "date": "2026-08-01",
+          "keywords": [
+            "sovereign balance sheets",
+            "fiat debt",
+            "nuclear compute"
+          ]
+        },
+        {
+          "id": "p_sim_1785603107901_1",
+          "text": "Sovereign balance sheets are pivoting from fiat debt into decentralized energy reserves and nuclear compute rights as global capital realigns.",
+          "likes": 3100,
+          "reposts": 540,
+          "date": "2026-08-01",
+          "keywords": [
+            "sovereign balance sheets",
+            "fiat debt",
+            "nuclear compute"
+          ]
+        },
+        {
+          "id": "p_sim_1785603105727_1",
+          "text": "Sovereign balance sheets are pivoting from fiat debt into decentralized energy reserves and nuclear compute rights as global capital realigns.",
+          "likes": 3100,
+          "reposts": 540,
+          "date": "2026-08-01",
+          "keywords": [
+            "sovereign balance sheets",
+            "fiat debt",
+            "nuclear compute"
+          ]
+        },
+        {
           "id": "p_sim_1785602455880_1",
           "text": "Sovereign balance sheets are pivoting from fiat debt into decentralized energy reserves and nuclear compute rights as global capital realigns.",
           "likes": 3100,
@@ -315,6 +351,42 @@
       "followers": "890K",
       "posts": [
         {
+          "id": "p_sim_1785603109537_3",
+          "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
+          "likes": 4900,
+          "reposts": 910,
+          "date": "2026-08-01",
+          "keywords": [
+            "national security",
+            "localized power",
+            "defense supercomputers"
+          ]
+        },
+        {
+          "id": "p_sim_1785603107901_3",
+          "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
+          "likes": 4900,
+          "reposts": 910,
+          "date": "2026-08-01",
+          "keywords": [
+            "national security",
+            "localized power",
+            "defense supercomputers"
+          ]
+        },
+        {
+          "id": "p_sim_1785603105727_3",
+          "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
+          "likes": 4900,
+          "reposts": 910,
+          "date": "2026-08-01",
+          "keywords": [
+            "national security",
+            "localized power",
+            "defense supercomputers"
+          ]
+        },
+        {
           "id": "p_sim_1785602455880_3",
           "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
           "likes": 4900,
@@ -361,6 +433,54 @@
             "open-source",
             "hyperscaler AI",
             "micro-VM data hubs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tri_dao",
+      "name": "Tri Dao",
+      "title": "Creator of FlashAttention & Assistant Professor at Princeton",
+      "domain": "Tech",
+      "platform_source": "ArXiv & GitHub Repositories",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "followers": "320K",
+      "posts": [
+        {
+          "id": "p_td_1",
+          "text": "FlashAttention-3 leverages hardware asynchronous copy and FP8 tensor cores to double inference throughput on Hopper/Blackwell GPUs. Open kernel implementations are driving sub-millisecond LLM latency.",
+          "likes": 14200,
+          "reposts": 3100,
+          "date": "2026-08-01",
+          "keywords": [
+            "FlashAttention-3",
+            "inference throughput",
+            "Hopper GPU",
+            "LLM latency"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tim_dettmers",
+      "name": "Tim Dettmers",
+      "title": "Creator of QLoRA & Quantization Pioneer",
+      "domain": "Tech",
+      "platform_source": "Hugging Face & GitHub",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "followers": "280K",
+      "posts": [
+        {
+          "id": "p_tde_1",
+          "text": "4-bit NormalFloat (NF4) quantization enables running 70B open-weights models on a single consumer GPU without accuracy loss. Permissive MIT-licensed quantization engines are democratizing enterprise AI.",
+          "likes": 16800,
+          "reposts": 4500,
+          "date": "2026-08-01",
+          "keywords": [
+            "NF4 quantization",
+            "open-weights",
+            "consumer GPU",
+            "MIT-licensed"
           ]
         }
       ]

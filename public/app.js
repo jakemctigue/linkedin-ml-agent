@@ -542,11 +542,122 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    if (btnLogout) {
-      btnLogout.addEventListener('click', () => {
-        appState.currentUser = null;
-        updateAuthUI(null);
-        showToast('Signed out successfully.');
+    // AI Analysis Chatboard Listener
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+    const chatMessages = document.getElementById('chat-messages');
+
+    async function handleChatMessage(msgText) {
+      if (!msgText || !msgText.trim()) return;
+
+      // Append User Message
+      appendMessage('user', msgText);
+      if (chatInput) chatInput.value = '';
+
+      // Append Loading Bot Indicator
+      const loadingId = 'bot-loading-' + Date.now();
+      appendMessage('bot', '<em>Analyzing cross-landscape vectors...</em>', loadingId);
+
+      try {
+        const res = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: msgText })
+        });
+        const data = await res.json();
+        
+        // Remove loading message
+        const loadingEl = document.getElementById(loadingId);
+        if (loadingEl) loadingEl.remove();
+
+        if (res.ok && data.reply) {
+          appendMessage('bot', data.reply, null, data.followUpQuestions);
+        } else {
+          appendMessage('bot', '⚠️ Analysis engine error: ' + (data.error || 'Failed to analyze query'));
+        }
+      } catch (err) {
+        console.error('Chat error:', err);
+        appendMessage('bot', '⚠️ Network error communicating with ML vector engine.');
+      }
+    }
+
+    function appendMessage(sender, htmlContent, customId, followUps = []) {
+      if (!chatMessages) return;
+
+      const msgDiv = document.createElement('div');
+      msgDiv.className = `chat-message ${sender}-message`;
+      if (customId) msgDiv.id = customId;
+
+      const avatar = sender === 'user' ? '👤' : '🤖';
+      
+      let followUpHtml = '';
+      if (followUps && followUps.length > 0) {
+        followUpHtml = `<div class="chat-prompt-pills">` +
+          followUps.map(q => `<button type="button" class="chat-pill" data-prompt="${q}">${q}</button>`).join('') +
+          `</div>`;
+      }
+
+      msgDiv.innerHTML = `
+        <div class="message-avatar">${avatar}</div>
+        <div class="message-body">
+          <p>${htmlContent.replace(/\n/g, '<br>')}</p>
+          ${followUpHtml}
+        </div>
+      `;
+
+      chatMessages.appendChild(msgDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      // Attach click listeners to new pills
+      msgDiv.querySelectorAll('.chat-pill').forEach(pill => {
+        pill.addEventListener('click', (e) => {
+          const prompt = e.currentTarget.getAttribute('data-prompt');
+          handleChatMessage(prompt);
+        });
+      });
+    }
+
+    if (chatForm) {
+      chatForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const text = chatInput ? chatInput.value : '';
+        handleChatMessage(text);
+      });
+    }
+
+    // Attach click listener for initial chat pills
+    document.querySelectorAll('.chat-pill').forEach(pill => {
+      pill.addEventListener('click', (e) => {
+        const prompt = e.currentTarget.getAttribute('data-prompt');
+        handleChatMessage(prompt);
+      });
+    });
+
+    // Follower/Followee Network Discovery Listener
+    const btnFollowNetwork = document.getElementById('btn-follow-network');
+    if (btnFollowNetwork) {
+      btnFollowNetwork.addEventListener('click', async () => {
+        btnFollowNetwork.disabled = true;
+        btnFollowNetwork.innerHTML = `⚡ Following 2nd-Degree Network...`;
+
+        try {
+          const res = await fetch('/api/network/follow-all', { method: 'POST' });
+          const data = await res.json();
+          if (res.ok) {
+            showToast(`🕸️ ${data.message}`);
+            // Reload analysis and influencers
+            await fetchAnalysisData();
+            await fetchInfluencersData();
+          } else {
+            showToast(data.error || 'Network expansion failed.');
+          }
+        } catch (err) {
+          console.error('Network follow error:', err);
+          showToast('Network error expanding graph');
+        } finally {
+          btnFollowNetwork.disabled = false;
+          btnFollowNetwork.innerHTML = `⚡ Auto-Follow 2nd-Degree Network`;
+        }
       });
     }
 

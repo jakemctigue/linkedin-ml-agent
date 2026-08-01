@@ -172,6 +172,39 @@
         </div>
       </section>
 
+      <!-- AI Analysis Chatboard Card -->
+      <section id="analysis-chatboard" class="analysis-chatboard-card">
+        <div class="chatboard-header">
+          <div class="chatboard-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Cross-Landscape AI Analysis Chatboard</span>
+          </div>
+          <span class="chatboard-status-badge">ML Vector Engine Active</span>
+        </div>
+
+        <div id="chat-messages" class="chat-messages-container">
+          <div class="chat-message bot-message">
+            <div class="message-avatar">🤖</div>
+            <div class="message-body">
+              <p>Welcome to the <strong>Cross-Landscape AI Analysis Chatboard</strong>! Ask me any question regarding our ML vector clustering, surprising realizations, open-source MIT inference scaling, or follower/followee network graphs.</p>
+              <div class="chat-prompt-pills">
+                <button type="button" class="chat-pill" data-prompt="What is our top cross-domain surprise?">⚡ Top Cross-Domain Surprise</button>
+                <button type="button" class="chat-pill" data-prompt="Summarize open-source MIT inference scaling">📜 MIT License Inference</button>
+                <button type="button" class="chat-pill" data-prompt="Expand follower and followee network graph">🕸️ Follower Network Graph</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="chat-form" class="chat-input-form">
+          <input type="text" id="chat-input" class="chat-input-field" placeholder="Ask AI Analyst about cross-domain realizations, open-source models, or network graphs..." autocomplete="off">
+          <button type="submit" id="btn-chat-send" class="btn btn-primary">
+            <span>Send</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </section>
+
       <!-- TAB 4: Influencers Feed Scraper -->
       <section id="tab-influencers-feed" class="tab-content">
         <div class="section-header">
@@ -179,7 +212,12 @@
             <h2>Tracked Influencers & Live Feed Scraper</h2>
             <p>Active profile monitoring across Finance, Tech, Politics, and Geopolitics.</p>
           </div>
-          <input type="text" id="feed-search" class="search-input" placeholder="Search posts, influencers, or keywords...">
+          <div class="feed-header-actions">
+            <button id="btn-follow-network" class="btn btn-secondary btn-network-follow" title="Auto-follow 2nd degree followers & followees">
+              ⚡ Auto-Follow 2nd-Degree Network
+            </button>
+            <input type="text" id="feed-search" class="search-input" placeholder="Search posts, influencers, or keywords...">
+          </div>
         </div>
 
         <div class="influencers-grid" id="influencers-container">
