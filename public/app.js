@@ -633,30 +633,31 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Follower/Followee Network Discovery Listener
-    const btnFollowNetwork = document.getElementById('btn-follow-network');
-    if (btnFollowNetwork) {
-      btnFollowNetwork.addEventListener('click', async () => {
-        btnFollowNetwork.disabled = true;
-        btnFollowNetwork.innerHTML = `⚡ Following 2nd-Degree Network...`;
+    // Autonomous Daily Auto-Poster Trigger Listener
+    const btnTriggerDailyPost = document.getElementById('btn-trigger-daily-post');
+    if (btnTriggerDailyPost) {
+      btnTriggerDailyPost.addEventListener('click', async () => {
+        btnTriggerDailyPost.disabled = true;
+        btnTriggerDailyPost.innerHTML = `⚡ Executing 24h Daily Dispatch...`;
 
         try {
-          const res = await fetch('/api/network/follow-all', { method: 'POST' });
+          const res = await fetch('/api/scheduler/trigger-daily-post', { method: 'POST' });
           const data = await res.json();
           if (res.ok) {
-            showToast(`🕸️ ${data.message}`);
-            // Reload analysis and influencers
+            showToast(`🚀 ${data.message}`);
             await fetchAnalysisData();
-            await fetchInfluencersData();
           } else {
-            showToast(data.error || 'Network expansion failed.');
+            showToast(data.error || 'Failed to trigger daily auto-post.');
           }
         } catch (err) {
-          console.error('Network follow error:', err);
-          showToast('Network error expanding graph');
+          console.error('Daily trigger error:', err);
+          showToast('Network error triggering daily auto-poster.');
         } finally {
-          btnFollowNetwork.disabled = false;
-          btnFollowNetwork.innerHTML = `⚡ Auto-Follow 2nd-Degree Network`;
+          btnTriggerDailyPost.disabled = false;
+          btnTriggerDailyPost.innerHTML = `
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            ⚡ Trigger Daily Auto-Publish Run
+          `;
         }
       });
     }
