@@ -10,6 +10,20 @@
       "followers": "190M+",
       "posts": [
         {
+          "id": "p_em_fresh_1785623693892",
+          "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
+          "likes": 28474,
+          "reposts": 3689,
+          "date": "2026-08-01",
+          "keywords": [
+            "Memphis Colossus 2.0",
+            "H200 GPUs",
+            "Grok inference",
+            "ExaFLOPs",
+            "humanoid robotics"
+          ]
+        },
+        {
           "id": "p_em_fresh",
           "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
           "likes": 29569,
@@ -48,6 +62,19 @@
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
       "followers": "850K",
       "posts": [
+        {
+          "id": "p_dh_fresh_1785623693892",
+          "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
+          "likes": 19523,
+          "reposts": 2497,
+          "date": "2026-08-01",
+          "keywords": [
+            "AlphaFold 3.1",
+            "open inference",
+            "micro-VM hypervisor",
+            "molecular docking"
+          ]
+        },
         {
           "id": "p_dh_fresh",
           "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
@@ -137,6 +164,20 @@
       "followers": "1.2M",
       "posts": [
         {
+          "id": "p_yl_fresh_1785623693892",
+          "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
+          "likes": 20236,
+          "reposts": 3825,
+          "date": "2026-08-01",
+          "keywords": [
+            "Llama-4",
+            "MIT license",
+            "micro-VM",
+            "sub-0.3ms latency",
+            "open source speed"
+          ]
+        },
+        {
           "id": "p_yl_fresh",
           "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
           "likes": 28127,
@@ -174,6 +215,18 @@
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
       "followers": "3.1M",
       "posts": [
+        {
+          "id": "p_sim_1785623393017_2",
+          "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
+          "likes": 7200,
+          "reposts": 1400,
+          "date": "2026-08-01",
+          "keywords": [
+            "micro-fusion",
+            "autonomous AI",
+            "continuous inference"
+          ]
+        },
         {
           "id": "p_sim_1785623210742_2",
           "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
@@ -330,6 +383,18 @@
       "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
       "followers": "890K",
       "posts": [
+        {
+          "id": "p_sim_1785623393017_3",
+          "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
+          "likes": 4900,
+          "reposts": 910,
+          "date": "2026-08-01",
+          "keywords": [
+            "national security",
+            "localized power",
+            "defense supercomputers"
+          ]
+        },
         {
           "id": "p_sim_1785623210742_3",
           "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",

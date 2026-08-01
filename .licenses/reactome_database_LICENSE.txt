@@ -1,0 +1,6 @@
+Reactome Database License Notification
+Timestamp: 2026-08-01T18:31:40Z
+Terms & Conditions: https://reactome.org/license
+Citation Guidelines: https://reactome.org/cite
+
+Reactome is an open-source, open-data, peer-reviewed pathway database. All data and software provided by Reactome are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
