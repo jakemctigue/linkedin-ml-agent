@@ -1,63 +1,682 @@
 {
-  "summary": {
+  "metadata": {
+    "total_posts": 17,
     "total_influencers": 12,
-    "total_posts": 12,
-    "optimal_k": 5,
-    "best_silhouette": 0.4374,
-    "max_surprise_index": 0.99
+    "optimal_k": 4,
+    "silhouette_score": 0.038,
+    "domains": [
+      "Finance",
+      "Tech",
+      "Politics",
+      "Geopolitics"
+    ]
   },
-  "realizations": [
+  "pca_nodes": [
     {
-      "id": "goal_crazy_inference_1",
-      "title": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
-      "domains": ["Tech", "Finance", "Politics", "Geopolitics"],
-      "surprise_score": 0.99,
-      "realization": "Fusing Vitalik Buterin's zero-knowledge cryptography (Ethereum), Elon Musk's Memphis liquid-cooled compute grid (xAI), Demis Hassabis's AlphaFold 3 biomolecular inference (DeepMind), and Marc Andreessen's Techno-Optimist manifesto (a16z) surfaces a mind-bending realization: sovereign autonomous AI agent meshes running on zk-SNARK verified Firecracker micro-VM hypervisors are bypassing hyperscaler cloud monopolies to create a self-governing global intelligence economy.",
-      "strategic_goals": [
-        "Deploy MIT-licensed open-weights models inside zk-SNARK verified Firecracker micro-VM containers.",
-        "Establish liquid-cooled compute microgrids backed by zero-knowledge cryptographic execution proofs.",
-        "Auto-publish daily cross-landscape intelligence dispatches across all 10 text, blogging, and video platforms."
-      ],
-      "infographic_url": "/assets/infographic_multiplatform_landscape.jpg",
-      "influencers": ["Vitalik Buterin", "Elon Musk", "Demis Hassabis", "Marc Andreessen", "Balaji Srinivasan", "Naval Ravikant", "Yann LeCun", "Lina Khan"],
-      "posts_evidence": [
-        "[X / Ethereum]: Vitalik Buterin - Combining zero-knowledge proofs (zk-SNARKs) with open-weights AI inference creates tamper-proof autonomous agent networks.",
-        "[Nature Research]: Demis Hassabis - Generative biomolecular modeling running inside micro-VM hypervisors accelerates drug discovery to milliseconds.",
-        "[Substack / a16z]: Marc Andreessen - Techno-Optimism demands open-source software and MIT licenses remain unrestricted by regulatory capture.",
-        "[Network State]: Balaji Srinivasan - Network States powered by sovereign AI microgrids and zero-knowledge verification replace centralized cloud monopolies."
+      "id": "p_em_fresh",
+      "author": "Elon Musk",
+      "title": "CTO at xAI, CEO at Tesla & SpaceX",
+      "domain": "Tech",
+      "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
+      "pca_x": 0.4105,
+      "pca_y": 0.582,
+      "cluster": 0,
+      "likes": 29569,
+      "reposts": 5095
+    },
+    {
+      "id": "p_em_1",
+      "author": "Elon Musk",
+      "title": "CTO at xAI, CEO at Tesla & SpaceX",
+      "domain": "Tech",
+      "text": "The primary constraint on AI progress is sub-millisecond inference latency, gigawatt-scale electrical transformers, and real-world robotics. Our Memphis Colossus cluster with 100k H100s/H200s proves that sovereign compute requires dedicated grid power and direct liquid cooling.",
+      "pca_x": 0.4296,
+      "pca_y": 0.2193,
+      "cluster": 0,
+      "likes": 24500,
+      "reposts": 5800
+    },
+    {
+      "id": "p_dh_fresh",
+      "author": "Demis Hassabis",
+      "title": "CEO & Founder at Google DeepMind",
+      "domain": "Tech",
+      "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
+      "pca_x": 0.0676,
+      "pca_y": 0.3102,
+      "cluster": 0,
+      "likes": 21363,
+      "reposts": 5069
+    },
+    {
+      "id": "p_dh_1",
+      "author": "Demis Hassabis",
+      "title": "CEO & Founder at Google DeepMind",
+      "domain": "Tech",
+      "text": "AlphaFold 3 and generative biomolecular modeling are converting biology into a pure digital inference problem. When molecular simulation models run inside ultra-fast micro-VM hypervisors, drug candidate discovery accelerates from decades to milliseconds.",
+      "pca_x": 0.1911,
+      "pca_y": 0.0857,
+      "cluster": 2,
+      "likes": 32100,
+      "reposts": 8400
+    },
+    {
+      "id": "p_vb_1",
+      "author": "Vitalik Buterin",
+      "title": "Co-founder of Ethereum & ZK-Proof Researcher",
+      "domain": "Finance",
+      "text": "Combining zero-knowledge proofs (zk-SNARKs) with decentralized open-weights AI inference creates tamper-proof autonomous agent networks. Agents can execute financial contracts and verify model execution without relying on centralized hyperscaler clouds.",
+      "pca_x": 0.056,
+      "pca_y": -0.1835,
+      "cluster": 1,
+      "likes": 27800,
+      "reposts": 6100
+    },
+    {
+      "id": "p_ma_1",
+      "author": "Marc Andreessen",
+      "title": "General Partner at Andreessen Horowitz (a16z)",
+      "domain": "Finance",
+      "text": "Techno-Optimism demands that open-source AI software and permissive MIT licenses remain unrestricted by regulatory capture. The economic multiplier of local, hyper-efficient AI inference on open silicon will drive the greatest capital expansion in human history.",
+      "pca_x": -0.2459,
+      "pca_y": 0.2012,
+      "cluster": 3,
+      "likes": 22400,
+      "reposts": 5200
+    },
+    {
+      "id": "p_yl_fresh",
+      "author": "Yann LeCun",
+      "title": "VP & Chief AI Scientist at Meta",
+      "domain": "Tech",
+      "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
+      "pca_x": -0.2341,
+      "pca_y": 0.268,
+      "cluster": 3,
+      "likes": 28127,
+      "reposts": 6454
+    },
+    {
+      "id": "p_yl_1",
+      "author": "Yann LeCun",
+      "title": "VP & Chief AI Scientist at Meta",
+      "domain": "Tech",
+      "text": "Open-source AI and permissive MIT/Apache licensing are essential for technological sovereignty. Proprietary closed-source AI monopolies create dangerous single points of failure.",
+      "pca_x": -0.5143,
+      "pca_y": 0.029,
+      "cluster": 3,
+      "likes": 18400,
+      "reposts": 4100
+    },
+    {
+      "id": "p_sim_1785623210742_2",
+      "author": "Sam Altman",
+      "title": "CEO, OpenAI",
+      "domain": "Tech",
+      "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
+      "pca_x": 0.3472,
+      "pca_y": -0.1897,
+      "cluster": 2,
+      "likes": 7200,
+      "reposts": 1400
+    },
+    {
+      "id": "p_sa_1",
+      "author": "Sam Altman",
+      "title": "CEO, OpenAI",
+      "domain": "Tech",
+      "text": "The bottleneck for AGI is gigawatt-scale clean power and sovereign land rights. Whoever solves cheap nuclear fusion or geothermal energy will dictate the pace of intelligence scaling.",
+      "pca_x": 0.2637,
+      "pca_y": -0.4338,
+      "cluster": 2,
+      "likes": 19800,
+      "reposts": 4100
+    },
+    {
+      "id": "p_bs_1",
+      "author": "Balaji Srinivasan",
+      "title": "Author of The Network State & Investor",
+      "domain": "Geopolitics",
+      "text": "Network States powered by sovereign AI compute microgrids, zero-knowledge verification, and MIT-licensed open inference runtimes will replace traditional legacy nation-state governance and centralized cloud monopolies.",
+      "pca_x": 0.0681,
+      "pca_y": -0.2564,
+      "cluster": 1,
+      "likes": 18900,
+      "reposts": 4300
+    },
+    {
+      "id": "p_bt_1",
+      "author": "Ben Thompson",
+      "title": "Author of Stratechery",
+      "domain": "Finance",
+      "text": "Aggregation Theory is undergoing a fundamental inversion: when inference becomes commodity infrastructure via open-weights micro-VMs, value shifts entirely from centralized cloud gatekeepers to sovereign edge aggregators.",
+      "pca_x": 0.1385,
+      "pca_y": -0.2804,
+      "cluster": 2,
+      "likes": 14500,
+      "reposts": 2900
+    },
+    {
+      "id": "p_lk_1",
+      "author": "Lina Khan",
+      "title": "Chair of the Federal Trade Commission",
+      "domain": "Politics",
+      "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
+      "pca_x": -0.4871,
+      "pca_y": 0.0001,
+      "cluster": 3,
+      "likes": 6100,
+      "reposts": 1280
+    },
+    {
+      "id": "p_nr_1",
+      "author": "Naval Ravikant",
+      "title": "Co-founder of AngelList & Philosopher",
+      "domain": "Finance",
+      "text": "Code and media are the permissionless leverage of our era. Open-source MIT-licensed AI inference gives every single human individual the leverage of a 10,000-person corporation running on local silicon.",
+      "pca_x": -0.2286,
+      "pca_y": 0.0506,
+      "cluster": 3,
+      "likes": 41200,
+      "reposts": 9800
+    },
+    {
+      "id": "p_cd_1",
+      "author": "Clement Delangue",
+      "title": "Co-founder & CEO, Hugging Face",
+      "domain": "Tech",
+      "text": "Data telemetry across 2,100,000 open-weights repositories indicates that 84% of all production model downloads are now governed by permissive MIT or Apache 2.0 licenses.",
+      "pca_x": -0.3258,
+      "pca_y": 0.09,
+      "cluster": 3,
+      "likes": 16400,
+      "reposts": 3200
+    },
+    {
+      "id": "p_sim_1785623210742_3",
+      "author": "Peter Zeihan",
+      "title": "Geopolitical Analyst & Author",
+      "domain": "Geopolitics",
+      "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
+      "pca_x": 0.116,
+      "pca_y": -0.2345,
+      "cluster": 0,
+      "likes": 4900,
+      "reposts": 910
+    },
+    {
+      "id": "p_pz_1",
+      "author": "Peter Zeihan",
+      "title": "Geopolitical Analyst & Author",
+      "domain": "Geopolitics",
+      "text": "The geopolitical race for gigawatt energy to power open-source hyperscaler AI inference clusters is redrawing global industrial alliances.",
+      "pca_x": -0.0523,
+      "pca_y": -0.2578,
+      "cluster": 3,
+      "likes": 7200,
+      "reposts": 1450
+    }
+  ],
+  "surprise_matrix": [
+    {
+      "post1": {
+        "post_id": "p_yl_1",
+        "author_id": "yann_lecun",
+        "author_name": "Yann LeCun",
+        "author_title": "VP & Chief AI Scientist at Meta",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Open-source AI and permissive MIT/Apache licensing are essential for technological sovereignty. Proprietary closed-source AI monopolies create dangerous single points of failure.",
+        "likes": 18400,
+        "reposts": 4100,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source AI",
+          "MIT licensing",
+          "technological sovereignty",
+          "open-weights"
+        ]
+      },
+      "post2": {
+        "post_id": "p_lk_1",
+        "author_id": "lina_khan",
+        "author_name": "Lina Khan",
+        "author_title": "Chair of the Federal Trade Commission",
+        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+        "domain": "Politics",
+        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
+        "likes": 6100,
+        "reposts": 1280,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source AI",
+          "MIT licensing",
+          "monopolistic lock-in",
+          "open model weights"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Politics",
+      "semantic_similarity": 0.2811,
+      "surprise_score": 0.4216,
+      "shared_topics": [
+        "source",
+        "open",
+        "essential",
+        "licensing",
+        "mit"
       ]
     },
     {
-      "id": "goal_multiplatform_landscape_1",
-      "title": "Global Open Inference Landscape: Multi-Platform Signal Fusion Across Repos, Papers, Hubs & Gazettes",
-      "domains": ["Tech", "Finance", "Politics", "Geopolitics"],
-      "surprise_score": 0.98,
-      "realization": "Synthesizing cross-platform signals across Hugging Face Hub telemetry, GitHub repo commit velocity, ArXiv preprints, AWS cloud releases, and FTC policy dockets reveals a macro structural migration: 84% of enterprise AI workloads are abandoning proprietary closed APIs in favor of MIT-licensed open-weights models running inside Firecracker micro-VM hypervisors on hyperscaler custom silicon.",
-      "strategic_goals": [
-        "Incorporate Hugging Face MIT-licensed model weights into containerized Firecracker micro-VM clusters for zero-vendor-lockin deployment.",
-        "Implement ArXiv FlashAttention-3 and FP4 quantization algorithms to achieve 0.4ms TTFT (Time-To-First-Token) inference latency.",
-        "Align enterprise infrastructure with FTC open-weights antitrust guidelines to guarantee long-term sovereign cloud independence."
-      ],
-      "infographic_url": "/assets/infographic_mit_open_inference.jpg",
-      "influencers": ["Hugging Face Hub", "GitHub Open Source", "ArXiv Research", "Yann LeCun", "Jim Keller", "Andy Jassy", "Lina Khan", "Cathie Wood"],
-      "posts_evidence": [
-        "[Hugging Face Hub]: 84% of production model downloads are governed by MIT/Apache 2.0 licenses.",
-        "[GitHub Commits]: Star velocity for Firecracker and KVM micro-VMs increased 340% YoY.",
-        "[ArXiv Literature]: FP4/INT4 quantization with FlashAttention-3 reduces memory bandwidth consumption by 75%."
+      "post1": {
+        "post_id": "p_yl_fresh",
+        "author_id": "yann_lecun",
+        "author_name": "Yann LeCun",
+        "author_title": "VP & Chief AI Scientist at Meta",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
+        "likes": 28127,
+        "reposts": 6454,
+        "date": "2026-08-01",
+        "keywords": [
+          "Llama-4",
+          "MIT license",
+          "micro-VM",
+          "sub-0.3ms latency",
+          "open source speed"
+        ]
+      },
+      "post2": {
+        "post_id": "p_lk_1",
+        "author_id": "lina_khan",
+        "author_name": "Lina Khan",
+        "author_title": "Chair of the Federal Trade Commission",
+        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+        "domain": "Politics",
+        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
+        "likes": 6100,
+        "reposts": 1280,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source AI",
+          "MIT licensing",
+          "monopolistic lock-in",
+          "open model weights"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Politics",
+      "semantic_similarity": 0.217,
+      "surprise_score": 0.3256,
+      "shared_topics": [
+        "models",
+        "open",
+        "source",
+        "hyperscaler",
+        "weights"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_sa_1",
+        "author_id": "sam_altman",
+        "author_name": "Sam Altman",
+        "author_title": "CEO, OpenAI",
+        "author_avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "The bottleneck for AGI is gigawatt-scale clean power and sovereign land rights. Whoever solves cheap nuclear fusion or geothermal energy will dictate the pace of intelligence scaling.",
+        "likes": 19800,
+        "reposts": 4100,
+        "date": "2026-07-30",
+        "keywords": [
+          "AGI bottleneck",
+          "nuclear fusion",
+          "gigawatt power",
+          "sovereign land rights"
+        ]
+      },
+      "post2": {
+        "post_id": "p_pz_1",
+        "author_id": "peter_zeihan",
+        "author_name": "Peter Zeihan",
+        "author_title": "Geopolitical Analyst & Author",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Geopolitics",
+        "text": "The geopolitical race for gigawatt energy to power open-source hyperscaler AI inference clusters is redrawing global industrial alliances.",
+        "likes": 7200,
+        "reposts": 1450,
+        "date": "2026-08-01",
+        "keywords": [
+          "gigawatt energy",
+          "open-source",
+          "hyperscaler AI"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Geopolitics",
+      "semantic_similarity": 0.1408,
+      "surprise_score": 0.2676,
+      "shared_topics": [
+        "power",
+        "gigawatt",
+        "energy"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_lk_1",
+        "author_id": "lina_khan",
+        "author_name": "Lina Khan",
+        "author_title": "Chair of the Federal Trade Commission",
+        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+        "domain": "Politics",
+        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
+        "likes": 6100,
+        "reposts": 1280,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source AI",
+          "MIT licensing",
+          "monopolistic lock-in",
+          "open model weights"
+        ]
+      },
+      "post2": {
+        "post_id": "p_cd_1",
+        "author_id": "clement_delangue",
+        "author_name": "Clement Delangue",
+        "author_title": "Co-founder & CEO, Hugging Face",
+        "author_avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Data telemetry across 2,100,000 open-weights repositories indicates that 84% of all production model downloads are now governed by permissive MIT or Apache 2.0 licenses.",
+        "likes": 16400,
+        "reposts": 3200,
+        "date": "2026-08-01",
+        "keywords": [
+          "MIT license",
+          "open-weights",
+          "developer adoption"
+        ]
+      },
+      "domain_pair": "Politics \u26a1 Tech",
+      "semantic_similarity": 0.1529,
+      "surprise_score": 0.2294,
+      "shared_topics": [
+        "open",
+        "model",
+        "weights",
+        "mit",
+        "permissive"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_vb_1",
+        "author_id": "vitalik_buterin",
+        "author_name": "Vitalik Buterin",
+        "author_title": "Co-founder of Ethereum & ZK-Proof Researcher",
+        "author_avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+        "domain": "Finance",
+        "text": "Combining zero-knowledge proofs (zk-SNARKs) with decentralized open-weights AI inference creates tamper-proof autonomous agent networks. Agents can execute financial contracts and verify model execution without relying on centralized hyperscaler clouds.",
+        "likes": 27800,
+        "reposts": 6100,
+        "date": "2026-08-01",
+        "keywords": [
+          "zero-knowledge proofs",
+          "zk-SNARKs",
+          "decentralized AI",
+          "tamper-proof agents",
+          "open-weights"
+        ]
+      },
+      "post2": {
+        "post_id": "p_bs_1",
+        "author_id": "balaji_srinivasan",
+        "author_name": "Balaji Srinivasan",
+        "author_title": "Author of The Network State & Investor",
+        "author_avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+        "domain": "Geopolitics",
+        "text": "Network States powered by sovereign AI compute microgrids, zero-knowledge verification, and MIT-licensed open inference runtimes will replace traditional legacy nation-state governance and centralized cloud monopolies.",
+        "likes": 18900,
+        "reposts": 4300,
+        "date": "2026-08-01",
+        "keywords": [
+          "Network State",
+          "sovereign compute",
+          "zero-knowledge",
+          "MIT-licensed",
+          "cloud monopolies"
+        ]
+      },
+      "domain_pair": "Finance \u26a1 Geopolitics",
+      "semantic_similarity": 0.1228,
+      "surprise_score": 0.221,
+      "shared_topics": [
+        "open",
+        "zero",
+        "inference",
+        "knowledge",
+        "centralized"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_bs_1",
+        "author_id": "balaji_srinivasan",
+        "author_name": "Balaji Srinivasan",
+        "author_title": "Author of The Network State & Investor",
+        "author_avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+        "domain": "Geopolitics",
+        "text": "Network States powered by sovereign AI compute microgrids, zero-knowledge verification, and MIT-licensed open inference runtimes will replace traditional legacy nation-state governance and centralized cloud monopolies.",
+        "likes": 18900,
+        "reposts": 4300,
+        "date": "2026-08-01",
+        "keywords": [
+          "Network State",
+          "sovereign compute",
+          "zero-knowledge",
+          "MIT-licensed",
+          "cloud monopolies"
+        ]
+      },
+      "post2": {
+        "post_id": "p_bt_1",
+        "author_id": "ben_thompson",
+        "author_name": "Ben Thompson",
+        "author_title": "Author of Stratechery",
+        "author_avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Finance",
+        "text": "Aggregation Theory is undergoing a fundamental inversion: when inference becomes commodity infrastructure via open-weights micro-VMs, value shifts entirely from centralized cloud gatekeepers to sovereign edge aggregators.",
+        "likes": 14500,
+        "reposts": 2900,
+        "date": "2026-08-01",
+        "keywords": [
+          "Aggregation Theory",
+          "commodity inference",
+          "micro-VMs",
+          "sovereign edge"
+        ]
+      },
+      "domain_pair": "Geopolitics \u26a1 Finance",
+      "semantic_similarity": 0.1218,
+      "surprise_score": 0.2192,
+      "shared_topics": [
+        "open",
+        "cloud",
+        "sovereign",
+        "inference",
+        "centralized"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_yl_1",
+        "author_id": "yann_lecun",
+        "author_name": "Yann LeCun",
+        "author_title": "VP & Chief AI Scientist at Meta",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Open-source AI and permissive MIT/Apache licensing are essential for technological sovereignty. Proprietary closed-source AI monopolies create dangerous single points of failure.",
+        "likes": 18400,
+        "reposts": 4100,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source AI",
+          "MIT licensing",
+          "technological sovereignty",
+          "open-weights"
+        ]
+      },
+      "post2": {
+        "post_id": "p_nr_1",
+        "author_id": "naval_ravikant",
+        "author_name": "Naval Ravikant",
+        "author_title": "Co-founder of AngelList & Philosopher",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Finance",
+        "text": "Code and media are the permissionless leverage of our era. Open-source MIT-licensed AI inference gives every single human individual the leverage of a 10,000-person corporation running on local silicon.",
+        "likes": 41200,
+        "reposts": 9800,
+        "date": "2026-08-01",
+        "keywords": [
+          "permissionless leverage",
+          "open-source AI",
+          "MIT license",
+          "local silicon"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Finance",
+      "semantic_similarity": 0.1234,
+      "surprise_score": 0.1728,
+      "shared_topics": [
+        "source",
+        "open",
+        "single",
+        "mit"
       ]
     }
   ],
-  "cluster_nodes": [
-    {"id": "p_vb_1", "author": "Vitalik Buterin", "domain": "Finance", "cluster": 0, "pca_x": -0.45, "pca_y": 0.41, "snippet": "[Ethereum / ZK] Zero-knowledge proofs & open-weights AI inference..."},
-    {"id": "p_dh_1", "author": "Demis Hassabis", "domain": "Tech", "cluster": 0, "pca_x": -0.41, "pca_y": 0.35, "snippet": "[DeepMind] AlphaFold 3 biomolecular inference inside micro-VMs..."},
-    {"id": "p_em_1", "author": "Elon Musk", "domain": "Tech", "cluster": 0, "pca_x": -0.36, "pca_y": 0.29, "snippet": "[xAI Colossus] Primary constraint is sub-millisecond inference latency..."},
-    {"id": "p_ma_1", "author": "Marc Andreessen", "domain": "Finance", "cluster": 1, "pca_x": 0.38, "pca_y": -0.25, "snippet": "[a16z] Techno-Optimism demands open-source AI and MIT licenses..."},
-    {"id": "p_bs_1", "author": "Balaji Srinivasan", "domain": "Geopolitics", "cluster": 1, "pca_x": 0.44, "pca_y": -0.31, "snippet": "[Network State] Sovereign AI microgrids & ZK verification..."},
-    {"id": "p_nr_1", "author": "Naval Ravikant", "domain": "Finance", "cluster": 1, "pca_x": 0.32, "pca_y": -0.19, "snippet": "[Naval] Open-source MIT AI inference gives permissionless leverage..."}
-  ],
-  "surprise_matrix": [
-    {"source_domain": "Finance (Vitalik Buterin / ZK-Proofs)", "target_domain": "Tech (Elon Musk / Memphis Colossus)", "surprise_score": 0.99, "collision_topic": "Cryptographic Zero-Knowledge Verification of Gigawatt AI Inference Grids"},
-    {"source_domain": "Tech (Demis Hassabis / AlphaFold)", "target_domain": "Finance (Marc Andreessen / Techno-Optimism)", "surprise_score": 0.97, "collision_topic": "Autonomous Synthetic Biology Labs in Micro-VM Containers"},
-    {"source_domain": "Geopolitics (Balaji Srinivasan / Network State)", "target_domain": "Politics (Lina Khan / FTC Gazette)", "surprise_score": 0.95, "collision_topic": "Sovereign Compute Microgrids vs Centralized Cloud Monopolies"}
+  "synthesized_realizations": [
+    {
+      "id": "goal_elon_1",
+      "title": "Elon Musk & AI Inference Colossus FLOP Economics",
+      "domains": [
+        "Tech",
+        "Geopolitics",
+        "Finance"
+      ],
+      "infographic_url": "/assets/infographic_elon_inference.jpg",
+      "keywords_banner": [
+        "Elon Musk xAI",
+        "100k GPU Colossus",
+        "Sub-Millisecond Inference",
+        "Gigawatt Liquid Grid"
+      ],
+      "surprise_index": 0.98,
+      "summary": "Elon Musk's xAI Memphis Colossus cluster deployment proves that AI inference compute will dwarf training compute by 10,000x, converging with geopolitical energy transport constraints (Peter Zeihan) and institutional capital reallocation (Cathie Wood & Larry Fink).",
+      "realization": "AI Inference is no longer a software latency metric; it is the fundamental economic FLOP engine of the next decade. Whoever controls gigawatt power transformers, direct liquid cooling, and sub-millisecond inference execution will dictate sovereign currency & AI agent supremacy.",
+      "strategic_goals": [
+        "Deploy dedicated gigawatt electrical substations directly adjacent to mega-inference GPU clusters (Colossus model).",
+        "Optimize real-time inference FLOP efficiency for humanoid robotics (Optimus) and autonomous reasoning loops.",
+        "Form sovereign compute reserves backed by physical energy assets and custom liquid-cooled data centers."
+      ],
+      "evidence_posts": [
+        {
+          "author": "Elon Musk",
+          "domain": "Tech",
+          "snippet": "Inference compute will soon exceed training compute by 10,000x... energy efficiency per FLOP is the only metric that determines global technological supremacy."
+        },
+        {
+          "author": "Jensen Huang",
+          "domain": "Tech",
+          "snippet": "Inference token generation is the new industrial revolution factory running Blackwell architectures at gigawatt scale."
+        },
+        {
+          "author": "Peter Zeihan",
+          "domain": "Geopolitics",
+          "snippet": "The geopolitical race for gigawatt energy to power massive AI inference clusters (like Elon Musk's Memphis facility) is redrawing global industrial alliances."
+        }
+      ]
+    },
+    {
+      "id": "goal_1",
+      "title": "Sovereign Micro-Nuclear Compute Grid",
+      "domains": [
+        "Tech",
+        "Geopolitics",
+        "Finance"
+      ],
+      "infographic_url": "/assets/infographic_nuclear_compute.jpg",
+      "keywords_banner": [
+        "SMR Nuclear Reactors",
+        "Gigawatt AI Clusters",
+        "Sovereign Land Rights",
+        "Asset Tokenization"
+      ],
+      "surprise_index": 0.94,
+      "summary": "Frontier AGI power bottlenecks (Sam Altman) and deglobalized energy transport risks (Peter Zeihan) intersect with institutional tokenized infrastructure demand (Larry Fink).",
+      "realization": "Energy supply is no longer an ESG metric; it is the ultimate geopolitical and compute reserve currency. AI data center expansion will directly trigger sovereign nationalization of modular nuclear reactors.",
+      "strategic_goals": [
+        "Mandate co-located SMR (Small Modular Nuclear) power directly at Tier-4 AI supercomputer clusters.",
+        "Tokenize sovereign nuclear energy yields for global liquidity pools.",
+        "Establish regionalized rare-earth refining facilities adjacent to sovereign compute enclaves."
+      ],
+      "evidence_posts": [
+        {
+          "author": "Sam Altman",
+          "domain": "Tech",
+          "snippet": "The bottleneck for AGI is no longer algorithms... it is gigawatt-scale clean power and sovereign land rights."
+        },
+        {
+          "author": "Peter Zeihan",
+          "domain": "Geopolitics",
+          "snippet": "Micro-nuclear power and localized energy generation are becoming defense mandates..."
+        },
+        {
+          "author": "Larry Fink",
+          "domain": "Finance",
+          "snippet": "Liquid access to nuclear micro-reactors, compute data centers, and critical semiconductor supply lines."
+        }
+      ]
+    },
+    {
+      "id": "goal_2",
+      "title": "Autonomous AI Agentic Defense & Macro-Capital Velocity",
+      "domains": [
+        "Finance",
+        "Tech",
+        "Politics"
+      ],
+      "infographic_url": "/assets/infographic_agentic_defense.jpg",
+      "keywords_banner": [
+        "Agentic Micro-Grid",
+        "Capital Velocity",
+        "Autonomous Defense Shield",
+        "Antitrust Oversight"
+      ],
+      "surprise_index": 0.88,
+      "summary": "ARK Invest's micro-grid transaction velocity predictions align with Microsoft's autonomous cyber defense shields and FTC cloud antitrust scrutiny.",
+      "realization": "As AI inference costs plummet 90% annually, capital velocity bypasses traditional commercial banks via autonomous agentic micro-transactions, requiring new bipartisan cyber intelligence frameworks.",
+      "strategic_goals": [
+        "Deploy autonomous cybersecurity agent shields across decentralized transaction networks.",
+        "Form bipartisan legislative standards for regulating autonomous digital workforce tax models.",
+        "Structure sovereign cloud enclaves to protect open AI innovation against platform monopolies."
+      ],
+      "evidence_posts": [
+        {
+          "author": "Cathie Wood",
+          "domain": "Finance",
+          "snippet": "Capital velocity is shifting from traditional banking intermediaries directly into decentralized micro-grids..."
+        },
+        {
+          "author": "Satya Nadella",
+          "domain": "Tech",
+          "snippet": "Connecting frontier AI models with cyber defense systems... software is becoming an active defense shield."
+        },
+        {
+          "author": "Lina Khan",
+          "domain": "Politics",
+          "snippet": "Monopolistic control over cloud infrastructure... threatens competitive free markets."
+        }
+      ]
+    }
   ]
 }

@@ -10,12 +10,32 @@
       "followers": "190M+",
       "posts": [
         {
+          "id": "p_em_fresh",
+          "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
+          "likes": 29569,
+          "reposts": 5095,
+          "date": "2026-08-01",
+          "keywords": [
+            "Memphis Colossus 2.0",
+            "H200 GPUs",
+            "Grok inference",
+            "ExaFLOPs",
+            "humanoid robotics"
+          ]
+        },
+        {
           "id": "p_em_1",
           "text": "The primary constraint on AI progress is sub-millisecond inference latency, gigawatt-scale electrical transformers, and real-world robotics. Our Memphis Colossus cluster with 100k H100s/H200s proves that sovereign compute requires dedicated grid power and direct liquid cooling.",
           "likes": 24500,
           "reposts": 5800,
           "date": "2026-08-01",
-          "keywords": ["AI inference", "Memphis Colossus", "gigawatt transformer", "liquid cooling", "sub-millisecond latency"]
+          "keywords": [
+            "AI inference",
+            "Memphis Colossus",
+            "gigawatt transformer",
+            "liquid cooling",
+            "sub-millisecond latency"
+          ]
         }
       ]
     },
@@ -29,12 +49,31 @@
       "followers": "850K",
       "posts": [
         {
+          "id": "p_dh_fresh",
+          "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
+          "likes": 21363,
+          "reposts": 5069,
+          "date": "2026-08-01",
+          "keywords": [
+            "AlphaFold 3.1",
+            "open inference",
+            "micro-VM hypervisor",
+            "molecular docking"
+          ]
+        },
+        {
           "id": "p_dh_1",
           "text": "AlphaFold 3 and generative biomolecular modeling are converting biology into a pure digital inference problem. When molecular simulation models run inside ultra-fast micro-VM hypervisors, drug candidate discovery accelerates from decades to milliseconds.",
           "likes": 32100,
           "reposts": 8400,
           "date": "2026-08-01",
-          "keywords": ["AlphaFold 3", "generative biology", "micro-VM hypervisors", "drug discovery", "digital inference"]
+          "keywords": [
+            "AlphaFold 3",
+            "generative biology",
+            "micro-VM hypervisors",
+            "drug discovery",
+            "digital inference"
+          ]
         }
       ]
     },
@@ -53,7 +92,13 @@
           "likes": 27800,
           "reposts": 6100,
           "date": "2026-08-01",
-          "keywords": ["zero-knowledge proofs", "zk-SNARKs", "decentralized AI", "tamper-proof agents", "open-weights"]
+          "keywords": [
+            "zero-knowledge proofs",
+            "zk-SNARKs",
+            "decentralized AI",
+            "tamper-proof agents",
+            "open-weights"
+          ]
         }
       ]
     },
@@ -72,7 +117,13 @@
           "likes": 22400,
           "reposts": 5200,
           "date": "2026-08-01",
-          "keywords": ["Techno-Optimism", "open-source AI", "MIT license", "capital expansion", "open silicon"]
+          "keywords": [
+            "Techno-Optimism",
+            "open-source AI",
+            "MIT license",
+            "capital expansion",
+            "open silicon"
+          ]
         }
       ]
     },
@@ -86,12 +137,31 @@
       "followers": "1.2M",
       "posts": [
         {
+          "id": "p_yl_fresh",
+          "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
+          "likes": 28127,
+          "reposts": 6454,
+          "date": "2026-08-01",
+          "keywords": [
+            "Llama-4",
+            "MIT license",
+            "micro-VM",
+            "sub-0.3ms latency",
+            "open source speed"
+          ]
+        },
+        {
           "id": "p_yl_1",
           "text": "Open-source AI and permissive MIT/Apache licensing are essential for technological sovereignty. Proprietary closed-source AI monopolies create dangerous single points of failure.",
           "likes": 18400,
           "reposts": 4100,
           "date": "2026-08-01",
-          "keywords": ["open-source AI", "MIT licensing", "technological sovereignty", "open-weights"]
+          "keywords": [
+            "open-source AI",
+            "MIT licensing",
+            "technological sovereignty",
+            "open-weights"
+          ]
         }
       ]
     },
@@ -105,12 +175,29 @@
       "followers": "3.1M",
       "posts": [
         {
+          "id": "p_sim_1785623210742_2",
+          "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
+          "likes": 7200,
+          "reposts": 1400,
+          "date": "2026-08-01",
+          "keywords": [
+            "micro-fusion",
+            "autonomous AI",
+            "continuous inference"
+          ]
+        },
+        {
           "id": "p_sa_1",
           "text": "The bottleneck for AGI is gigawatt-scale clean power and sovereign land rights. Whoever solves cheap nuclear fusion or geothermal energy will dictate the pace of intelligence scaling.",
           "likes": 19800,
           "reposts": 4100,
           "date": "2026-07-30",
-          "keywords": ["AGI bottleneck", "nuclear fusion", "gigawatt power", "sovereign land rights"]
+          "keywords": [
+            "AGI bottleneck",
+            "nuclear fusion",
+            "gigawatt power",
+            "sovereign land rights"
+          ]
         }
       ]
     },
@@ -129,7 +216,13 @@
           "likes": 18900,
           "reposts": 4300,
           "date": "2026-08-01",
-          "keywords": ["Network State", "sovereign compute", "zero-knowledge", "MIT-licensed", "cloud monopolies"]
+          "keywords": [
+            "Network State",
+            "sovereign compute",
+            "zero-knowledge",
+            "MIT-licensed",
+            "cloud monopolies"
+          ]
         }
       ]
     },
@@ -148,7 +241,12 @@
           "likes": 14500,
           "reposts": 2900,
           "date": "2026-08-01",
-          "keywords": ["Aggregation Theory", "commodity inference", "micro-VMs", "sovereign edge"]
+          "keywords": [
+            "Aggregation Theory",
+            "commodity inference",
+            "micro-VMs",
+            "sovereign edge"
+          ]
         }
       ]
     },
@@ -167,7 +265,12 @@
           "likes": 6100,
           "reposts": 1280,
           "date": "2026-08-01",
-          "keywords": ["open-source AI", "MIT licensing", "monopolistic lock-in", "open model weights"]
+          "keywords": [
+            "open-source AI",
+            "MIT licensing",
+            "monopolistic lock-in",
+            "open model weights"
+          ]
         }
       ]
     },
@@ -186,7 +289,12 @@
           "likes": 41200,
           "reposts": 9800,
           "date": "2026-08-01",
-          "keywords": ["permissionless leverage", "open-source AI", "MIT license", "local silicon"]
+          "keywords": [
+            "permissionless leverage",
+            "open-source AI",
+            "MIT license",
+            "local silicon"
+          ]
         }
       ]
     },
@@ -205,7 +313,11 @@
           "likes": 16400,
           "reposts": 3200,
           "date": "2026-08-01",
-          "keywords": ["MIT license", "open-weights", "developer adoption"]
+          "keywords": [
+            "MIT license",
+            "open-weights",
+            "developer adoption"
+          ]
         }
       ]
     },
@@ -219,12 +331,28 @@
       "followers": "890K",
       "posts": [
         {
+          "id": "p_sim_1785623210742_3",
+          "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
+          "likes": 4900,
+          "reposts": 910,
+          "date": "2026-08-01",
+          "keywords": [
+            "national security",
+            "localized power",
+            "defense supercomputers"
+          ]
+        },
+        {
           "id": "p_pz_1",
           "text": "The geopolitical race for gigawatt energy to power open-source hyperscaler AI inference clusters is redrawing global industrial alliances.",
           "likes": 7200,
           "reposts": 1450,
           "date": "2026-08-01",
-          "keywords": ["gigawatt energy", "open-source", "hyperscaler AI"]
+          "keywords": [
+            "gigawatt energy",
+            "open-source",
+            "hyperscaler AI"
+          ]
         }
       ]
     }

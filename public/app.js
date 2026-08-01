@@ -633,8 +633,36 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Autonomous Daily Auto-Poster Trigger Listener
-    const btnTriggerDailyPost = document.getElementById('btn-trigger-daily-post');
+    // Multi-Platform Scraper & ML Re-Analysis Trigger Listener
+    const btnTriggerScrapeAnalysis = document.getElementById('btn-trigger-scrape-analysis');
+    if (btnTriggerScrapeAnalysis) {
+      btnTriggerScrapeAnalysis.addEventListener('click', async () => {
+        btnTriggerScrapeAnalysis.disabled = true;
+        btnTriggerScrapeAnalysis.innerHTML = `⚡ Scraping & Re-Analyzing ML...`;
+
+        try {
+          const res = await fetch('/api/scrape-and-analyze', { method: 'POST' });
+          const data = await res.json();
+          if (res.ok) {
+            showToast(`🚀 ${data.message}`);
+            // Re-render UI
+            await fetchAnalysisData();
+            await fetchInfluencersData();
+          } else {
+            showToast(data.error || 'Scrape and re-analysis failed.');
+          }
+        } catch (err) {
+          console.error('Scrape trigger error:', err);
+          showToast('Network error triggering scrape & re-analysis.');
+        } finally {
+          btnTriggerScrapeAnalysis.disabled = false;
+          btnTriggerScrapeAnalysis.innerHTML = `
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6"/><path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            ⚡ Trigger Fresh Scrape & ML Re-Analysis
+          `;
+        }
+      });
+    }
     if (btnTriggerDailyPost) {
       btnTriggerDailyPost.addEventListener('click', async () => {
         btnTriggerDailyPost.disabled = true;
