@@ -10,6 +10,34 @@
       "followers": "190M+",
       "posts": [
         {
+          "id": "p_em_fresh_1785632716920",
+          "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
+          "likes": 19374,
+          "reposts": 6027,
+          "date": "2026-08-02",
+          "keywords": [
+            "Memphis Colossus 2.0",
+            "H200 GPUs",
+            "Grok inference",
+            "ExaFLOPs",
+            "humanoid robotics"
+          ]
+        },
+        {
+          "id": "p_em_fresh_1785632702532",
+          "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
+          "likes": 29714,
+          "reposts": 5874,
+          "date": "2026-08-02",
+          "keywords": [
+            "Memphis Colossus 2.0",
+            "H200 GPUs",
+            "Grok inference",
+            "ExaFLOPs",
+            "humanoid robotics"
+          ]
+        },
+        {
           "id": "p_em_fresh_1785632611440",
           "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
           "likes": 17080,
@@ -90,6 +118,47 @@
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
       "followers": "850K",
       "posts": [
+        {
+          "id": "p_dh_med_1785632751494",
+          "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
+          "likes": 31200,
+          "reposts": 9400,
+          "date": "2026-08-02",
+          "keywords": [
+            "AlphaFold 3",
+            "DeepMind",
+            "Medium",
+            "LinkedIn",
+            "Firecracker micro-VM",
+            "biomolecular inference"
+          ]
+        },
+        {
+          "id": "p_dh_fresh_1785632716920",
+          "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
+          "likes": 29075,
+          "reposts": 4394,
+          "date": "2026-08-02",
+          "keywords": [
+            "AlphaFold 3.1",
+            "open inference",
+            "micro-VM hypervisor",
+            "molecular docking"
+          ]
+        },
+        {
+          "id": "p_dh_fresh_1785632702532",
+          "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
+          "likes": 12859,
+          "reposts": 3915,
+          "date": "2026-08-02",
+          "keywords": [
+            "AlphaFold 3.1",
+            "open inference",
+            "micro-VM hypervisor",
+            "molecular docking"
+          ]
+        },
         {
           "id": "p_dh_fresh_1785632611440",
           "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
@@ -218,6 +287,49 @@
       "followers": "1.2M",
       "posts": [
         {
+          "id": "p_yl_med_1785632751494",
+          "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
+          "likes": 24500,
+          "reposts": 6800,
+          "date": "2026-08-02",
+          "keywords": [
+            "Llama-4",
+            "Medium",
+            "LinkedIn",
+            "open weights",
+            "micro-VM",
+            "MIT license"
+          ]
+        },
+        {
+          "id": "p_yl_fresh_1785632716920",
+          "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
+          "likes": 15953,
+          "reposts": 6664,
+          "date": "2026-08-02",
+          "keywords": [
+            "Llama-4",
+            "MIT license",
+            "micro-VM",
+            "sub-0.3ms latency",
+            "open source speed"
+          ]
+        },
+        {
+          "id": "p_yl_fresh_1785632702532",
+          "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
+          "likes": 13887,
+          "reposts": 4143,
+          "date": "2026-08-02",
+          "keywords": [
+            "Llama-4",
+            "MIT license",
+            "micro-VM",
+            "sub-0.3ms latency",
+            "open source speed"
+          ]
+        },
+        {
           "id": "p_yl_fresh_1785632611440",
           "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
           "likes": 29632,
@@ -345,6 +457,20 @@
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
       "followers": "980K",
       "posts": [
+        {
+          "id": "p_bs_sub_1785632751494",
+          "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
+          "likes": 18900,
+          "reposts": 5100,
+          "date": "2026-08-02",
+          "keywords": [
+            "Network State",
+            "Substack",
+            "LinkedIn",
+            "ZK-proofs",
+            "sovereign nodes"
+          ]
+        },
         {
           "id": "p_bs_1",
           "text": "Network States powered by sovereign AI compute microgrids, zero-knowledge verification, and MIT-licensed open inference runtimes will replace traditional legacy nation-state governance and centralized cloud monopolies.",

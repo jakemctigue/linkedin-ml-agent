@@ -5,6 +5,7 @@ const fs = require('fs');
 const { exec } = require('child_process');
 const events = require('events');
 const { initDatabase, getAllInfluencers, insertPostRecord, insertDispatchRecord, db } = require('./database');
+const { runComprehensiveScrape } = require('./scraper');
 
 // Increase EventEmitter max listeners to prevent browser extension stream warnings
 events.defaultMaxListeners = 50;
@@ -657,75 +658,11 @@ setInterval(() => {
 }, TWENTY_FOUR_HOURS_MS);
 
 // Trigger Full Multi-Platform Scrape & ML Re-Analysis Endpoint
-app.post('/api/scrape-and-analyze', (req, res) => {
+app.post('/api/scrape-and-analyze', async (req, res) => {
   try {
-    console.log('[Scraper & Analysis Engine] Initiating full multi-platform scrape across 7 platform ecosystems...');
+    console.log('[Scraper & Analysis Engine] Initiating comprehensive multi-platform scrape (LinkedIn, Medium, Bluesky, Threads, Substack, Hugging Face, ArXiv)...');
 
-    const dbPath = path.join(__dirname, 'data', 'influencer_database.json');
-    let dbData = { influencers: [] };
-    if (fs.existsSync(dbPath)) {
-      dbData = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
-    }
-
-    const timestamp = new Date().toISOString().split('T')[0];
-
-    // Fresh multi-platform post signals to append
-    const freshSignals = [
-      {
-        id: `p_yl_fresh_${Date.now()}`,
-        influencerId: "yann_lecun",
-        text: "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-        keywords: ["Llama-4", "MIT license", "micro-VM", "sub-0.3ms latency", "open source speed"]
-      },
-      {
-        id: `p_em_fresh_${Date.now()}`,
-        influencerId: "elon_musk",
-        text: "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-        keywords: ["Memphis Colossus 2.0", "H200 GPUs", "Grok inference", "ExaFLOPs", "humanoid robotics"]
-      },
-      {
-        id: `p_dh_fresh_${Date.now()}`,
-        influencerId: "demis_hassabis",
-        text: "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-        keywords: ["AlphaFold 3.1", "open inference", "micro-VM hypervisor", "molecular docking"]
-      },
-      {
-        id: `p_hf_fresh_${Date.now()}`,
-        influencerId: "hugging_face_hub",
-        text: "Fresh Scrape: Hugging Face repository index crosses 2,400,000 MIT/Apache open-weights models. Production telemetry shows 89% of enterprise deployments use self-hosted vLLM micro-VM runtimes.",
-        keywords: ["Hugging Face", "2.4M models", "MIT license", "vLLM micro-VM", "enterprise telemetry"]
-      }
-    ];
-
-    let newPostsCount = 0;
-    freshSignals.forEach(signal => {
-      const inf = dbData.influencers.find(i => i.id === signal.influencerId);
-      if (inf) {
-        inf.posts.unshift({
-          id: signal.id,
-          text: signal.text,
-          likes: Math.floor(Math.random() * 20000) + 10000,
-          reposts: Math.floor(Math.random() * 5000) + 2000,
-          date: timestamp,
-          keywords: signal.keywords
-        });
-        
-        // Insert record directly into SQLite Database Engine!
-        insertPostRecord(inf.id, {
-          id: signal.id,
-          text: signal.text,
-          likes: 15400,
-          reposts: 3800,
-          date: timestamp,
-          keywords: signal.keywords,
-          platform_source: inf.platform_source || 'Multi-Platform'
-        });
-
-        newPostsCount++;
-      }
-    });
-
-    fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2));
+    const newPostsCount = await runComprehensiveScrape();
 
     // Re-execute Python ML Pipeline
     exec('python ml_pipeline.py', (execErr, stdout, stderr) => {
@@ -740,9 +677,9 @@ app.post('/api/scrape-and-analyze', (req, res) => {
         freshAnalysis = JSON.parse(fs.readFileSync(analysisPath, 'utf8'));
       }
 
-      console.log(`[Scraper & Analysis Engine] ✅ Multi-platform scrape, SQLite sync & ML re-analysis complete! (${newPostsCount} fresh signals added).`);
+      console.log(`[Scraper & Analysis Engine] ✅ Comprehensive scrape, SQLite sync & ML re-analysis complete! (${newPostsCount} fresh signals added).`);
       res.json({
-        message: `Fresh multi-platform scrape complete! Added ${newPostsCount} fresh signals across 7 platform ecosystems into SQLite database and re-calculated ML vector topology.`,
+        message: `Comprehensive Web Scrape Complete! Added ${newPostsCount} fresh signals across Medium, LinkedIn, and partner ecosystems into SQLite database and re-calculated ML vector topology.`,
         newSignalsAdded: newPostsCount,
         analysis: freshAnalysis
       });
