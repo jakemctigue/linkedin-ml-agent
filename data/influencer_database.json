@@ -119,6 +119,21 @@
       "followers": "850K",
       "posts": [
         {
+          "id": "p_dh_med_1785693202695",
+          "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
+          "likes": 31200,
+          "reposts": 9400,
+          "date": "2026-08-02",
+          "keywords": [
+            "AlphaFold 3",
+            "DeepMind",
+            "Medium",
+            "LinkedIn",
+            "Firecracker micro-VM",
+            "biomolecular inference"
+          ]
+        },
+        {
           "id": "p_dh_med_1785632751494",
           "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
           "likes": 31200,
@@ -286,6 +301,21 @@
       "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
       "followers": "1.2M",
       "posts": [
+        {
+          "id": "p_yl_med_1785693202695",
+          "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
+          "likes": 24500,
+          "reposts": 6800,
+          "date": "2026-08-02",
+          "keywords": [
+            "Llama-4",
+            "Medium",
+            "LinkedIn",
+            "open weights",
+            "micro-VM",
+            "MIT license"
+          ]
+        },
         {
           "id": "p_yl_med_1785632751494",
           "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
@@ -457,6 +487,20 @@
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
       "followers": "980K",
       "posts": [
+        {
+          "id": "p_bs_sub_1785693202695",
+          "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
+          "likes": 18900,
+          "reposts": 5100,
+          "date": "2026-08-02",
+          "keywords": [
+            "Network State",
+            "Substack",
+            "LinkedIn",
+            "ZK-proofs",
+            "sovereign nodes"
+          ]
+        },
         {
           "id": "p_bs_sub_1785632751494",
           "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
