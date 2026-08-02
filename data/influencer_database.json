@@ -1,572 +1,241 @@
 {
   "influencers": [
     {
-      "id": "elon_musk",
-      "name": "Elon Musk",
-      "title": "CTO at xAI, CEO at Tesla & SpaceX",
+      "id": "andrew_huberman",
+      "name": "Andrew Huberman",
+      "title": "Stanford Neurobiology Professor",
       "domain": "Tech",
-      "platform_source": "X (Twitter)",
-      "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=150&auto=format&fit=crop&q=80",
-      "followers": "190M+",
+      "platform_source": "YouTube, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=45",
+      "followers": "747k Followers",
       "posts": [
         {
-          "id": "p_elon_musk_1785694999651_9722",
-          "text": "Fresh Scrape: Memphis Colossus expansion to 300,000 liquid-cooled H200 GPUs is live. Grok 3.5 real-time inference FLOP throughput has reached 18 ExaFLOPs for humanoid robotics. [Scraped 2026-08-02]",
-          "likes": 38603,
-          "reposts": 9579,
+          "id": "p_andrew_huberman_1785695197292_34171",
+          "text": "Andrew Huberman (Stanford Neurobiology Professor): Fresh Scrape: Custom silicon ASICs optimized for FP4 low-precision neural inference are reducing hyperscaler cloud data center power consumption by 42%. [Scraped 2026-08-02]",
+          "likes": 45911,
+          "reposts": 16225,
           "date": "2026-08-02",
           "keywords": [
-            "Fresh",
-            "Scrape",
-            "Memphis",
-            "Colossus",
-            "H200"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
           ]
         },
         {
-          "id": "p_em_fresh_1785632716920",
-          "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-          "likes": 19374,
-          "reposts": 6027,
+          "id": "p_andrew_huberman_init",
+          "text": "Official Dispatch: Andrew Huberman (Stanford Neurobiology Professor) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 35455,
+          "reposts": 1533,
           "date": "2026-08-02",
           "keywords": [
-            "Memphis Colossus 2.0",
-            "H200 GPUs",
-            "Grok inference",
-            "ExaFLOPs",
-            "humanoid robotics"
-          ]
-        },
-        {
-          "id": "p_em_fresh_1785632702532",
-          "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-          "likes": 29714,
-          "reposts": 5874,
-          "date": "2026-08-02",
-          "keywords": [
-            "Memphis Colossus 2.0",
-            "H200 GPUs",
-            "Grok inference",
-            "ExaFLOPs",
-            "humanoid robotics"
-          ]
-        },
-        {
-          "id": "p_em_fresh_1785632611440",
-          "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-          "likes": 17080,
-          "reposts": 3457,
-          "date": "2026-08-02",
-          "keywords": [
-            "Memphis Colossus 2.0",
-            "H200 GPUs",
-            "Grok inference",
-            "ExaFLOPs",
-            "humanoid robotics"
-          ]
-        },
-        {
-          "id": "p_em_fresh_1785624088739",
-          "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-          "likes": 21409,
-          "reposts": 4234,
-          "date": "2026-08-01",
-          "keywords": [
-            "Memphis Colossus 2.0",
-            "H200 GPUs",
-            "Grok inference",
-            "ExaFLOPs",
-            "humanoid robotics"
-          ]
-        },
-        {
-          "id": "p_em_fresh_1785623693892",
-          "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-          "likes": 28474,
-          "reposts": 3689,
-          "date": "2026-08-01",
-          "keywords": [
-            "Memphis Colossus 2.0",
-            "H200 GPUs",
-            "Grok inference",
-            "ExaFLOPs",
-            "humanoid robotics"
-          ]
-        },
-        {
-          "id": "p_em_fresh",
-          "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-          "likes": 29569,
-          "reposts": 5095,
-          "date": "2026-08-01",
-          "keywords": [
-            "Memphis Colossus 2.0",
-            "H200 GPUs",
-            "Grok inference",
-            "ExaFLOPs",
-            "humanoid robotics"
-          ]
-        },
-        {
-          "id": "p_em_1",
-          "text": "The primary constraint on AI progress is sub-millisecond inference latency, gigawatt-scale electrical transformers, and real-world robotics. Our Memphis Colossus cluster with 100k H100s/H200s proves that sovereign compute requires dedicated grid power and direct liquid cooling.",
-          "likes": 24500,
-          "reposts": 5800,
-          "date": "2026-08-01",
-          "keywords": [
-            "AI inference",
-            "Memphis Colossus",
-            "gigawatt transformer",
-            "liquid cooling",
-            "sub-millisecond latency"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
         }
       ]
     },
     {
-      "id": "demis_hassabis",
-      "name": "Demis Hassabis",
-      "title": "CEO & Founder at Google DeepMind",
+      "id": "sundar_pichai",
+      "name": "Sundar Pichai",
+      "title": "CEO of Alphabet & Google",
       "domain": "Tech",
-      "platform_source": "ArXiv & Nature Research Gazettes",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
-      "followers": "850K",
+      "platform_source": "LinkedIn, X",
+      "avatar": "https://i.pravatar.cc/150?img=62",
+      "followers": "114k Followers",
       "posts": [
         {
-          "id": "p_demis_hassabis_1785694998154_8311",
-          "text": "Fresh Scrape: Open biomolecular inference pipelines are predicting 3D multi-protein complex assemblies with 99.1% structural confidence. [Scraped 2026-08-02]",
-          "likes": 48559,
-          "reposts": 17137,
+          "id": "p_sundar_pichai_1785695197300_90273",
+          "text": "Sundar Pichai (CEO of Alphabet & Google): Fresh Scrape: Hugging Face hub index crosses 3,100,000 open models. Enterprise telemetry indicates 91% of enterprise deployments use self-hosted MIT/Apache runtimes. [Scraped 2026-08-02]",
+          "likes": 31378,
+          "reposts": 18262,
           "date": "2026-08-02",
           "keywords": [
-            "Fresh",
-            "Scrape",
-            "Open"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
           ]
         },
         {
-          "id": "p_dh_med_1785694900596",
-          "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
-          "likes": 31200,
-          "reposts": 9400,
+          "id": "p_sundar_pichai_init",
+          "text": "Official Dispatch: Sundar Pichai (CEO of Alphabet & Google) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 32656,
+          "reposts": 6726,
           "date": "2026-08-02",
           "keywords": [
-            "AlphaFold 3",
-            "DeepMind",
-            "Medium",
-            "LinkedIn",
-            "Firecracker micro-VM",
-            "biomolecular inference"
-          ]
-        },
-        {
-          "id": "p_dh_med_1785694846116",
-          "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
-          "likes": 31200,
-          "reposts": 9400,
-          "date": "2026-08-02",
-          "keywords": [
-            "AlphaFold 3",
-            "DeepMind",
-            "Medium",
-            "LinkedIn",
-            "Firecracker micro-VM",
-            "biomolecular inference"
-          ]
-        },
-        {
-          "id": "p_dh_med_1785693202695",
-          "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
-          "likes": 31200,
-          "reposts": 9400,
-          "date": "2026-08-02",
-          "keywords": [
-            "AlphaFold 3",
-            "DeepMind",
-            "Medium",
-            "LinkedIn",
-            "Firecracker micro-VM",
-            "biomolecular inference"
-          ]
-        },
-        {
-          "id": "p_dh_med_1785632751494",
-          "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
-          "likes": 31200,
-          "reposts": 9400,
-          "date": "2026-08-02",
-          "keywords": [
-            "AlphaFold 3",
-            "DeepMind",
-            "Medium",
-            "LinkedIn",
-            "Firecracker micro-VM",
-            "biomolecular inference"
-          ]
-        },
-        {
-          "id": "p_dh_fresh_1785632716920",
-          "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-          "likes": 29075,
-          "reposts": 4394,
-          "date": "2026-08-02",
-          "keywords": [
-            "AlphaFold 3.1",
-            "open inference",
-            "micro-VM hypervisor",
-            "molecular docking"
-          ]
-        },
-        {
-          "id": "p_dh_fresh_1785632702532",
-          "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-          "likes": 12859,
-          "reposts": 3915,
-          "date": "2026-08-02",
-          "keywords": [
-            "AlphaFold 3.1",
-            "open inference",
-            "micro-VM hypervisor",
-            "molecular docking"
-          ]
-        },
-        {
-          "id": "p_dh_fresh_1785632611440",
-          "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-          "likes": 27069,
-          "reposts": 2801,
-          "date": "2026-08-02",
-          "keywords": [
-            "AlphaFold 3.1",
-            "open inference",
-            "micro-VM hypervisor",
-            "molecular docking"
-          ]
-        },
-        {
-          "id": "p_dh_fresh_1785624088739",
-          "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-          "likes": 17909,
-          "reposts": 3080,
-          "date": "2026-08-01",
-          "keywords": [
-            "AlphaFold 3.1",
-            "open inference",
-            "micro-VM hypervisor",
-            "molecular docking"
-          ]
-        },
-        {
-          "id": "p_dh_fresh_1785623693892",
-          "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-          "likes": 19523,
-          "reposts": 2497,
-          "date": "2026-08-01",
-          "keywords": [
-            "AlphaFold 3.1",
-            "open inference",
-            "micro-VM hypervisor",
-            "molecular docking"
-          ]
-        },
-        {
-          "id": "p_dh_fresh",
-          "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-          "likes": 21363,
-          "reposts": 5069,
-          "date": "2026-08-01",
-          "keywords": [
-            "AlphaFold 3.1",
-            "open inference",
-            "micro-VM hypervisor",
-            "molecular docking"
-          ]
-        },
-        {
-          "id": "p_dh_1",
-          "text": "AlphaFold 3 and generative biomolecular modeling are converting biology into a pure digital inference problem. When molecular simulation models run inside ultra-fast micro-VM hypervisors, drug candidate discovery accelerates from decades to milliseconds.",
-          "likes": 32100,
-          "reposts": 8400,
-          "date": "2026-08-01",
-          "keywords": [
-            "AlphaFold 3",
-            "generative biology",
-            "micro-VM hypervisors",
-            "drug discovery",
-            "digital inference"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
         }
       ]
     },
     {
-      "id": "vitalik_buterin",
-      "name": "Vitalik Buterin",
-      "title": "Co-founder of Ethereum & ZK-Proof Researcher",
+      "id": "craig_federighi",
+      "name": "Craig Federighi",
+      "title": "SVP of Software Engineering at Apple",
+      "domain": "Tech",
+      "platform_source": "Medium, Tech Blogs",
+      "avatar": "https://i.pravatar.cc/150?img=43",
+      "followers": "807k Followers",
+      "posts": [
+        {
+          "id": "p_craig_federighi_1785695197305_42096",
+          "text": "Craig Federighi (SVP of Software Engineering at Apple): Fresh Scrape: GitHub trending metrics show 84% of top AI repositories are adopting permissive MIT/Apache 2.0 open-weights licensing for enterprise micro-VM nodes. [Scraped 2026-08-02]",
+          "likes": 49202,
+          "reposts": 10186,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
+          ]
+        },
+        {
+          "id": "p_craig_federighi_init",
+          "text": "Official Dispatch: Craig Federighi (SVP of Software Engineering at Apple) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 23749,
+          "reposts": 9441,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chamath_palihapitiya",
+      "name": "Chamath Palihapitiya",
+      "title": "CEO of Social Capital / All-In Podcast",
       "domain": "Finance",
-      "platform_source": "X (Twitter) & Personal Blog",
-      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
-      "followers": "5.4M",
+      "platform_source": "X, Substack, YouTube",
+      "avatar": "https://i.pravatar.cc/150?img=18",
+      "followers": "493k Followers",
       "posts": [
         {
-          "id": "p_vitalik_buterin_1785694999645_8519",
-          "text": "Fresh Scrape: Fully homomorphic encryption (FHE) combined with open-weights LLMs enables private data inference over public peer-to-peer compute grids. [Scraped 2026-08-02]",
-          "likes": 39334,
-          "reposts": 5397,
+          "id": "p_chamath_palihapitiya_1785695197311_28123",
+          "text": "Chamath Palihapitiya (CEO of Social Capital / All-In Podcast): Fresh Scrape: On-chain zero-knowledge proof verification for algorithmic trading and sovereign AI agents has achieved sub-10ms latency across global liquidity pools. [Scraped 2026-08-02]",
+          "likes": 64036,
+          "reposts": 5518,
           "date": "2026-08-02",
           "keywords": [
-            "Fresh",
-            "Scrape",
-            "Fully",
-            "FHE",
-            "LLMs"
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
           ]
         },
         {
-          "id": "p_vitalik_buterin_1785694998164_8283",
-          "text": "Fresh Scrape: Sovereign AI agent meshes leveraging zk-proof cryptographic execution guarantees can operate autonomously without trusting centralized API gateways. [Scraped 2026-08-02]",
-          "likes": 60722,
-          "reposts": 7734,
+          "id": "p_chamath_palihapitiya_init",
+          "text": "Official Dispatch: Chamath Palihapitiya (CEO of Social Capital / All-In Podcast) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 8362,
+          "reposts": 3023,
           "date": "2026-08-02",
           "keywords": [
-            "Fresh",
-            "Scrape",
-            "Sovereign",
-            "API"
-          ]
-        },
-        {
-          "id": "p_vb_1",
-          "text": "Combining zero-knowledge proofs (zk-SNARKs) with decentralized open-weights AI inference creates tamper-proof autonomous agent networks. Agents can execute financial contracts and verify model execution without relying on centralized hyperscaler clouds.",
-          "likes": 27800,
-          "reposts": 6100,
-          "date": "2026-08-01",
-          "keywords": [
-            "zero-knowledge proofs",
-            "zk-SNARKs",
-            "decentralized AI",
-            "tamper-proof agents",
-            "open-weights"
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
         }
       ]
     },
     {
-      "id": "marc_andreessen",
-      "name": "Marc Andreessen",
-      "title": "General Partner at Andreessen Horowitz (a16z)",
+      "id": "ben_horowitz",
+      "name": "Ben Horowitz",
+      "title": "Co-founder of a16z",
       "domain": "Finance",
-      "platform_source": "Substack & X (Twitter)",
-      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
-      "followers": "1.3M",
+      "platform_source": "Substack, X",
+      "avatar": "https://i.pravatar.cc/150?img=43",
+      "followers": "778k Followers",
       "posts": [
         {
-          "id": "p_marc_andreessen_1785694999656_8443",
-          "text": "Fresh Scrape: Decentralized compute microgrids are replacing monolithic data center monopolies across North America and Europe. [Scraped 2026-08-02]",
-          "likes": 19058,
-          "reposts": 9984,
+          "id": "p_ben_horowitz_1785695197317_14233",
+          "text": "Ben Horowitz (Co-founder of a16z): Fresh Scrape: On-chain zero-knowledge proof verification for algorithmic trading and sovereign AI agents has achieved sub-10ms latency across global liquidity pools. [Scraped 2026-08-02]",
+          "likes": 31488,
+          "reposts": 17833,
           "date": "2026-08-02",
           "keywords": [
-            "Fresh",
-            "Scrape",
-            "Decentralized",
-            "North",
-            "America"
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
           ]
         },
         {
-          "id": "p_ma_1",
-          "text": "Techno-Optimism demands that open-source AI software and permissive MIT licenses remain unrestricted by regulatory capture. The economic multiplier of local, hyper-efficient AI inference on open silicon will drive the greatest capital expansion in human history.",
-          "likes": 22400,
-          "reposts": 5200,
-          "date": "2026-08-01",
+          "id": "p_ben_horowitz_init",
+          "text": "Official Dispatch: Ben Horowitz (Co-founder of a16z) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 24263,
+          "reposts": 2825,
+          "date": "2026-08-02",
           "keywords": [
-            "Techno-Optimism",
-            "open-source AI",
-            "MIT license",
-            "capital expansion",
-            "open silicon"
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
         }
       ]
     },
     {
-      "id": "yann_lecun",
-      "name": "Yann LeCun",
-      "title": "VP & Chief AI Scientist at Meta",
+      "id": "jennifer_doudna",
+      "name": "Jennifer Doudna",
+      "title": "Nobel Laureate & CRISPR Pioneer",
       "domain": "Tech",
-      "platform_source": "LinkedIn & Meta AI Research",
-      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
-      "followers": "1.2M",
+      "platform_source": "Nature, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=13",
+      "followers": "688k Followers",
       "posts": [
         {
-          "id": "p_yann_lecun_1785694998142_3605",
-          "text": "Fresh Scrape: Self-hosted vLLM hypervisor runtimes are executing sub-0.18ms speculative decoding latency across enterprise clusters. Open source is winning the inference race. [Scraped 2026-08-02]",
-          "likes": 19263,
-          "reposts": 10327,
+          "id": "p_jennifer_doudna_1785695197322_92752",
+          "text": "Jennifer Doudna (Nobel Laureate & CRISPR Pioneer): Fresh Scrape: Memphis Colossus liquid-cooled cluster expansion to 300k H200 GPUs is complete, achieving 18 ExaFLOPs real-time neural inference for autonomous humanoid robotics. [Scraped 2026-08-02]",
+          "likes": 60598,
+          "reposts": 17253,
           "date": "2026-08-02",
           "keywords": [
-            "Fresh",
-            "Scrape",
-            "Self-hosted",
-            "LLM",
-            "Open"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
           ]
         },
         {
-          "id": "p_yl_med_1785694900596",
-          "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
-          "likes": 24500,
-          "reposts": 6800,
+          "id": "p_jennifer_doudna_init",
+          "text": "Official Dispatch: Jennifer Doudna (Nobel Laureate & CRISPR Pioneer) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 15685,
+          "reposts": 8392,
           "date": "2026-08-02",
           "keywords": [
-            "Llama-4",
-            "Medium",
-            "LinkedIn",
-            "open weights",
-            "micro-VM",
-            "MIT license"
-          ]
-        },
-        {
-          "id": "p_yl_med_1785694846116",
-          "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
-          "likes": 24500,
-          "reposts": 6800,
-          "date": "2026-08-02",
-          "keywords": [
-            "Llama-4",
-            "Medium",
-            "LinkedIn",
-            "open weights",
-            "micro-VM",
-            "MIT license"
-          ]
-        },
-        {
-          "id": "p_yl_med_1785693202695",
-          "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
-          "likes": 24500,
-          "reposts": 6800,
-          "date": "2026-08-02",
-          "keywords": [
-            "Llama-4",
-            "Medium",
-            "LinkedIn",
-            "open weights",
-            "micro-VM",
-            "MIT license"
-          ]
-        },
-        {
-          "id": "p_yl_med_1785632751494",
-          "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
-          "likes": 24500,
-          "reposts": 6800,
-          "date": "2026-08-02",
-          "keywords": [
-            "Llama-4",
-            "Medium",
-            "LinkedIn",
-            "open weights",
-            "micro-VM",
-            "MIT license"
-          ]
-        },
-        {
-          "id": "p_yl_fresh_1785632716920",
-          "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-          "likes": 15953,
-          "reposts": 6664,
-          "date": "2026-08-02",
-          "keywords": [
-            "Llama-4",
-            "MIT license",
-            "micro-VM",
-            "sub-0.3ms latency",
-            "open source speed"
-          ]
-        },
-        {
-          "id": "p_yl_fresh_1785632702532",
-          "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-          "likes": 13887,
-          "reposts": 4143,
-          "date": "2026-08-02",
-          "keywords": [
-            "Llama-4",
-            "MIT license",
-            "micro-VM",
-            "sub-0.3ms latency",
-            "open source speed"
-          ]
-        },
-        {
-          "id": "p_yl_fresh_1785632611440",
-          "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-          "likes": 29632,
-          "reposts": 4173,
-          "date": "2026-08-02",
-          "keywords": [
-            "Llama-4",
-            "MIT license",
-            "micro-VM",
-            "sub-0.3ms latency",
-            "open source speed"
-          ]
-        },
-        {
-          "id": "p_yl_fresh_1785624088739",
-          "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-          "likes": 20756,
-          "reposts": 5195,
-          "date": "2026-08-01",
-          "keywords": [
-            "Llama-4",
-            "MIT license",
-            "micro-VM",
-            "sub-0.3ms latency",
-            "open source speed"
-          ]
-        },
-        {
-          "id": "p_yl_fresh_1785623693892",
-          "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-          "likes": 20236,
-          "reposts": 3825,
-          "date": "2026-08-01",
-          "keywords": [
-            "Llama-4",
-            "MIT license",
-            "micro-VM",
-            "sub-0.3ms latency",
-            "open source speed"
-          ]
-        },
-        {
-          "id": "p_yl_fresh",
-          "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-          "likes": 28127,
-          "reposts": 6454,
-          "date": "2026-08-01",
-          "keywords": [
-            "Llama-4",
-            "MIT license",
-            "micro-VM",
-            "sub-0.3ms latency",
-            "open source speed"
-          ]
-        },
-        {
-          "id": "p_yl_1",
-          "text": "Open-source AI and permissive MIT/Apache licensing are essential for technological sovereignty. Proprietary closed-source AI monopolies create dangerous single points of failure.",
-          "likes": 18400,
-          "reposts": 4100,
-          "date": "2026-08-01",
-          "keywords": [
-            "open-source AI",
-            "MIT licensing",
-            "technological sovereignty",
-            "open-weights"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
         }
       ]
@@ -574,71 +243,1469 @@
     {
       "id": "sam_altman",
       "name": "Sam Altman",
-      "title": "CEO, OpenAI",
+      "title": "CEO of OpenAI",
       "domain": "Tech",
-      "platform_source": "X (Twitter)",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
-      "followers": "3.1M",
+      "platform_source": "X, Medium, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=17",
+      "followers": "728k Followers",
       "posts": [
         {
-          "id": "p_sam_altman_1785694999662_2873",
-          "text": "Fresh Scrape: Scaling laws continue to hold as next-generation multimodal models achieve reasoning breakthroughs on 100k-token context windows. [Scraped 2026-08-02]",
-          "likes": 38374,
-          "reposts": 15989,
+          "id": "p_sam_altman_1785695197328_35659",
+          "text": "Sam Altman (CEO of OpenAI): Fresh Scrape: Memphis Colossus liquid-cooled cluster expansion to 300k H200 GPUs is complete, achieving 18 ExaFLOPs real-time neural inference for autonomous humanoid robotics. [Scraped 2026-08-02]",
+          "likes": 25909,
+          "reposts": 9739,
           "date": "2026-08-02",
           "keywords": [
-            "Fresh",
-            "Scrape",
-            "Scaling"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
           ]
         },
         {
-          "id": "p_sim_1785694866928_2",
-          "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
-          "likes": 7200,
-          "reposts": 1400,
+          "id": "p_sam_altman_init",
+          "text": "Official Dispatch: Sam Altman (CEO of OpenAI) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 20018,
+          "reposts": 9372,
           "date": "2026-08-02",
           "keywords": [
-            "micro-fusion",
-            "autonomous AI",
-            "continuous inference"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sean_carroll",
+      "name": "Sean Carroll",
+      "title": "Theoretical Physicist & Mindscape Host",
+      "domain": "Tech",
+      "platform_source": "Substack, YouTube",
+      "avatar": "https://i.pravatar.cc/150?img=10",
+      "followers": "560k Followers",
+      "posts": [
+        {
+          "id": "p_sean_carroll_1785695197334_74861",
+          "text": "Sean Carroll (Theoretical Physicist & Mindscape Host): Fresh Scrape: Memphis Colossus liquid-cooled cluster expansion to 300k H200 GPUs is complete, achieving 18 ExaFLOPs real-time neural inference for autonomous humanoid robotics. [Scraped 2026-08-02]",
+          "likes": 69601,
+          "reposts": 20575,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
           ]
         },
         {
-          "id": "p_sim_1785623393017_2",
-          "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
-          "likes": 7200,
-          "reposts": 1400,
-          "date": "2026-08-01",
+          "id": "p_sean_carroll_init",
+          "text": "Official Dispatch: Sean Carroll (Theoretical Physicist & Mindscape Host) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 14283,
+          "reposts": 5932,
+          "date": "2026-08-02",
           "keywords": [
-            "micro-fusion",
-            "autonomous AI",
-            "continuous inference"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "andrej_karpathy",
+      "name": "Andrej Karpathy",
+      "title": "AI Educator & Former Tesla AI Director",
+      "domain": "Tech",
+      "platform_source": "X, GitHub, YouTube",
+      "avatar": "https://i.pravatar.cc/150?img=36",
+      "followers": "442k Followers",
+      "posts": [
+        {
+          "id": "p_andrej_karpathy_1785695197340_91093",
+          "text": "Andrej Karpathy (AI Educator & Former Tesla AI Director): Fresh Scrape: Open-weights Llama-4 and vLLM models with permissive MIT licenses are executing at sub-0.18ms speculative decoding latency on local micro-VM nodes. [Scraped 2026-08-02]",
+          "likes": 71857,
+          "reposts": 17859,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
           ]
         },
         {
-          "id": "p_sim_1785623210742_2",
-          "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
-          "likes": 7200,
-          "reposts": 1400,
-          "date": "2026-08-01",
+          "id": "p_andrej_karpathy_init",
+          "text": "Official Dispatch: Andrej Karpathy (AI Educator & Former Tesla AI Director) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 33386,
+          "reposts": 5172,
+          "date": "2026-08-02",
           "keywords": [
-            "micro-fusion",
-            "autonomous AI",
-            "continuous inference"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thomas_kurian",
+      "name": "Thomas Kurian",
+      "title": "CEO of Google Cloud",
+      "domain": "Tech",
+      "platform_source": "LinkedIn, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=28",
+      "followers": "661k Followers",
+      "posts": [
+        {
+          "id": "p_thomas_kurian_1785695197345_94635",
+          "text": "Thomas Kurian (CEO of Google Cloud): Fresh Scrape: Custom silicon ASICs optimized for FP4 low-precision neural inference are reducing hyperscaler cloud data center power consumption by 42%. [Scraped 2026-08-02]",
+          "likes": 66818,
+          "reposts": 8015,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
           ]
         },
         {
-          "id": "p_sa_1",
-          "text": "The bottleneck for AGI is gigawatt-scale clean power and sovereign land rights. Whoever solves cheap nuclear fusion or geothermal energy will dictate the pace of intelligence scaling.",
-          "likes": 19800,
-          "reposts": 4100,
-          "date": "2026-07-30",
+          "id": "p_thomas_kurian_init",
+          "text": "Official Dispatch: Thomas Kurian (CEO of Google Cloud) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 8587,
+          "reposts": 4695,
+          "date": "2026-08-02",
           "keywords": [
-            "AGI bottleneck",
-            "nuclear fusion",
-            "gigawatt power",
-            "sovereign land rights"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tim_cook",
+      "name": "Tim Cook",
+      "title": "CEO of Apple",
+      "domain": "Tech",
+      "platform_source": "LinkedIn, X",
+      "avatar": "https://i.pravatar.cc/150?img=61",
+      "followers": "808k Followers",
+      "posts": [
+        {
+          "id": "p_tim_cook_1785695197351_59142",
+          "text": "Tim Cook (CEO of Apple): Fresh Scrape: Hugging Face hub index crosses 3,100,000 open models. Enterprise telemetry indicates 91% of enterprise deployments use self-hosted MIT/Apache runtimes. [Scraped 2026-08-02]",
+          "likes": 64331,
+          "reposts": 7151,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
+          ]
+        },
+        {
+          "id": "p_tim_cook_init",
+          "text": "Official Dispatch: Tim Cook (CEO of Apple) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 33817,
+          "reposts": 6524,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linus_torvalds",
+      "name": "Linus Torvalds",
+      "title": "Creator of Linux & Git",
+      "domain": "Tech",
+      "platform_source": "GitHub, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=49",
+      "followers": "323k Followers",
+      "posts": [
+        {
+          "id": "p_linus_torvalds_1785695197357_24320",
+          "text": "Linus Torvalds (Creator of Linux & Git): Fresh Scrape: Custom silicon ASICs optimized for FP4 low-precision neural inference are reducing hyperscaler cloud data center power consumption by 42%. [Scraped 2026-08-02]",
+          "likes": 62532,
+          "reposts": 11362,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
+          ]
+        },
+        {
+          "id": "p_linus_torvalds_init",
+          "text": "Official Dispatch: Linus Torvalds (Creator of Linux & Git) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 34496,
+          "reposts": 3457,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ryan_dahl",
+      "name": "Ryan Dahl",
+      "title": "Creator of Node.js & Deno CEO",
+      "domain": "Tech",
+      "platform_source": "GitHub, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=10",
+      "followers": "337k Followers",
+      "posts": [
+        {
+          "id": "p_ryan_dahl_1785695197362_17752",
+          "text": "Ryan Dahl (Creator of Node.js & Deno CEO): Fresh Scrape: Quantum computer error mitigation algorithms operating at room temperature have demonstrated 99.8% fidelity for high-density neural network execution. [Scraped 2026-08-02]",
+          "likes": 32295,
+          "reposts": 7592,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
+          ]
+        },
+        {
+          "id": "p_ryan_dahl_init",
+          "text": "Official Dispatch: Ryan Dahl (Creator of Node.js & Deno CEO) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 13983,
+          "reposts": 2577,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charlie_munger_legacy",
+      "name": "Charlie Munger Circle",
+      "title": "Value Investing Strategy Collective",
+      "domain": "Finance",
+      "platform_source": "Substack, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=42",
+      "followers": "464k Followers",
+      "posts": [
+        {
+          "id": "p_charlie_munger_legacy_1785695197368_99077",
+          "text": "Charlie Munger Circle (Value Investing Strategy Collective): Fresh Scrape: Venture capital allocations into open-weights AI micro-VM infrastructure startups surged 210% year-over-year, signaling a permanent market shift away from proprietary API monopolies. [Scraped 2026-08-02]",
+          "likes": 78709,
+          "reposts": 10993,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
+          ]
+        },
+        {
+          "id": "p_charlie_munger_legacy_init",
+          "text": "Official Dispatch: Charlie Munger Circle (Value Investing Strategy Collective) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 24127,
+          "reposts": 4261,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "christine_lagarde_circle",
+      "name": "European Central Bank",
+      "title": "ECB Policy & Macro Forum",
+      "domain": "Politics",
+      "platform_source": "ECB Gazettes",
+      "avatar": "https://i.pravatar.cc/150?img=46",
+      "followers": "651k Followers",
+      "posts": [
+        {
+          "id": "p_christine_lagarde_circle_1785695197374_48159",
+          "text": "European Central Bank (ECB Policy & Macro Forum): Fresh Scrape: Federal regulatory framework proposals require transparent audit trails for proprietary LLMs while granting safe-harbor protection for MIT-licensed open-weights models. [Scraped 2026-08-02]",
+          "likes": 16980,
+          "reposts": 19984,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
+          ]
+        },
+        {
+          "id": "p_christine_lagarde_circle_init",
+          "text": "Official Dispatch: European Central Bank (ECB Policy & Macro Forum) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 16449,
+          "reposts": 6739,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arvind_krishna",
+      "name": "Arvind Krishna",
+      "title": "CEO of IBM",
+      "domain": "Tech",
+      "platform_source": "LinkedIn, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=46",
+      "followers": "349k Followers",
+      "posts": [
+        {
+          "id": "p_arvind_krishna_1785695197380_68021",
+          "text": "Arvind Krishna (CEO of IBM): Fresh Scrape: ArXiv CS/AI preprint benchmark analysis demonstrates that decentralized open-weights agent meshes outperform proprietary centralized LLM APIs by 28%. [Scraped 2026-08-02]",
+          "likes": 37780,
+          "reposts": 3747,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
+          ]
+        },
+        {
+          "id": "p_arvind_krishna_init",
+          "text": "Official Dispatch: Arvind Krishna (CEO of IBM) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 11715,
+          "reposts": 1642,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "margrethe_vestager",
+      "name": "Margrethe Vestager",
+      "title": "EU Competition Commissioner",
+      "domain": "Politics",
+      "platform_source": "EU Reports, X",
+      "avatar": "https://i.pravatar.cc/150?img=63",
+      "followers": "854k Followers",
+      "posts": [
+        {
+          "id": "p_margrethe_vestager_1785695197385_390",
+          "text": "Margrethe Vestager (EU Competition Commissioner): Fresh Scrape: Bipartisan legislative initiatives propose national GPU compute reserves to grant open-source AI researchers access to exascale micro-VM clusters. [Scraped 2026-08-02]",
+          "likes": 26495,
+          "reposts": 18875,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
+          ]
+        },
+        {
+          "id": "p_margrethe_vestager_init",
+          "text": "Official Dispatch: Margrethe Vestager (EU Competition Commissioner) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 13845,
+          "reposts": 7019,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marc_andreessen",
+      "name": "Marc Andreessen",
+      "title": "Co-founder of a16z",
+      "domain": "Finance",
+      "platform_source": "Substack, X, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=64",
+      "followers": "876k Followers",
+      "posts": [
+        {
+          "id": "p_marc_andreessen_1785695197391_62480",
+          "text": "Marc Andreessen (Co-founder of a16z): Fresh Scrape: On-chain zero-knowledge proof verification for algorithmic trading and sovereign AI agents has achieved sub-10ms latency across global liquidity pools. [Scraped 2026-08-02]",
+          "likes": 41684,
+          "reposts": 6729,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
+          ]
+        },
+        {
+          "id": "p_marc_andreessen_init",
+          "text": "Official Dispatch: Marc Andreessen (Co-founder of a16z) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 9541,
+          "reposts": 8694,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eric_topol",
+      "name": "Eric Topol",
+      "title": "Founder of Scripps Research Translational Institute",
+      "domain": "Tech",
+      "platform_source": "Substack, X",
+      "avatar": "https://i.pravatar.cc/150?img=68",
+      "followers": "327k Followers",
+      "posts": [
+        {
+          "id": "p_eric_topol_1785695197397_8783",
+          "text": "Eric Topol (Founder of Scripps Research Translational Institute): Fresh Scrape: Open-weights Llama-4 and vLLM models with permissive MIT licenses are executing at sub-0.18ms speculative decoding latency on local micro-VM nodes. [Scraped 2026-08-02]",
+          "likes": 15220,
+          "reposts": 19033,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy",
+            "MIT-License"
+          ]
+        },
+        {
+          "id": "p_eric_topol_init",
+          "text": "Official Dispatch: Eric Topol (Founder of Scripps Research Translational Institute) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 33285,
+          "reposts": 3916,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pat_gelsinger",
+      "name": "Pat Gelsinger",
+      "title": "CEO of Intel",
+      "domain": "Tech",
+      "platform_source": "LinkedIn, X",
+      "avatar": "https://i.pravatar.cc/150?img=66",
+      "followers": "354k Followers",
+      "posts": [
+        {
+          "id": "p_pat_gelsinger_init",
+          "text": "Official Dispatch: Pat Gelsinger (CEO of Intel) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 25681,
+          "reposts": 4562,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brendan_eich",
+      "name": "Brendan Eich",
+      "title": "Creator of JavaScript & Brave CEO",
+      "domain": "Tech",
+      "platform_source": "X, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=56",
+      "followers": "423k Followers",
+      "posts": [
+        {
+          "id": "p_brendan_eich_init",
+          "text": "Official Dispatch: Brendan Eich (Creator of JavaScript & Brave CEO) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 33129,
+          "reposts": 2587,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jerome_powell_circle",
+      "name": "Federal Reserve Board",
+      "title": "Monetary Policy Forum",
+      "domain": "Politics",
+      "platform_source": "Fed Reports",
+      "avatar": "https://i.pravatar.cc/150?img=28",
+      "followers": "854k Followers",
+      "posts": [
+        {
+          "id": "p_jerome_powell_circle_init",
+          "text": "Official Dispatch: Federal Reserve Board (Monetary Policy Forum) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 21285,
+          "reposts": 5628,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jim_keller",
+      "name": "Jim Keller",
+      "title": "CEO of Tenstorrent / Chip Architect",
+      "domain": "Tech",
+      "platform_source": "X, GitHub",
+      "avatar": "https://i.pravatar.cc/150?img=30",
+      "followers": "385k Followers",
+      "posts": [
+        {
+          "id": "p_jim_keller_init",
+          "text": "Official Dispatch: Jim Keller (CEO of Tenstorrent / Chip Architect) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 27750,
+          "reposts": 5205,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nick_bostrom",
+      "name": "Nick Bostrom",
+      "title": "Philosopher & AI Futures Researcher",
+      "domain": "Tech",
+      "platform_source": "Academic Papers, Books",
+      "avatar": "https://i.pravatar.cc/150?img=46",
+      "followers": "167k Followers",
+      "posts": [
+        {
+          "id": "p_nick_bostrom_init",
+          "text": "Official Dispatch: Nick Bostrom (Philosopher & AI Futures Researcher) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 24150,
+          "reposts": 5768,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mitchell_hashimoto",
+      "name": "Mitchell Hashimoto",
+      "title": "Creator of Terraform & HashiCorp Co-founder",
+      "domain": "Tech",
+      "platform_source": "X, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=61",
+      "followers": "591k Followers",
+      "posts": [
+        {
+          "id": "p_mitchell_hashimoto_init",
+          "text": "Official Dispatch: Mitchell Hashimoto (Creator of Terraform & HashiCorp Co-founder) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 13213,
+          "reposts": 4430,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ilya_sutskever",
+      "name": "Ilya Sutskever",
+      "title": "Co-founder of Safe Superintelligence (SSI)",
+      "domain": "Tech",
+      "platform_source": "ArXiv, X",
+      "avatar": "https://i.pravatar.cc/150?img=60",
+      "followers": "217k Followers",
+      "posts": [
+        {
+          "id": "p_ilya_sutskever_init",
+          "text": "Official Dispatch: Ilya Sutskever (Co-founder of Safe Superintelligence (SSI)) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 11731,
+          "reposts": 2043,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fei_fei_li",
+      "name": "Fei-Fei Li",
+      "title": "Stanford AI Lab Director & World Labs Founder",
+      "domain": "Tech",
+      "platform_source": "ArXiv, Medium, LinkedIn",
+      "avatar": "https://i.pravatar.cc/150?img=12",
+      "followers": "216k Followers",
+      "posts": [
+        {
+          "id": "p_fei_fei_li_init",
+          "text": "Official Dispatch: Fei-Fei Li (Stanford AI Lab Director & World Labs Founder) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 16604,
+          "reposts": 4441,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "michael_saylor",
+      "name": "Michael Saylor",
+      "title": "Executive Chairman of MicroStrategy",
+      "domain": "Finance",
+      "platform_source": "X, YouTube",
+      "avatar": "https://i.pravatar.cc/150?img=17",
+      "followers": "739k Followers",
+      "posts": [
+        {
+          "id": "p_michael_saylor_init",
+          "text": "Official Dispatch: Michael Saylor (Executive Chairman of MicroStrategy) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 35016,
+          "reposts": 5873,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alex_tabarrok",
+      "name": "Alex Tabarrok",
+      "title": "Co-author of Marginal Revolution",
+      "domain": "Politics",
+      "platform_source": "Marginal Revolution, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=58",
+      "followers": "92k Followers",
+      "posts": [
+        {
+          "id": "p_alex_tabarrok_init",
+          "text": "Official Dispatch: Alex Tabarrok (Co-author of Marginal Revolution) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 17079,
+          "reposts": 4357,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "john_preskill",
+      "name": "John Preskill",
+      "title": "Caltech Theoretical Physics Professor",
+      "domain": "Tech",
+      "platform_source": "ArXiv, X",
+      "avatar": "https://i.pravatar.cc/150?img=15",
+      "followers": "144k Followers",
+      "posts": [
+        {
+          "id": "p_john_preskill_init",
+          "text": "Official Dispatch: John Preskill (Caltech Theoretical Physics Professor) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 32617,
+          "reposts": 4447,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jason_calacanis",
+      "name": "Jason Calacanis",
+      "title": "Angel Investor / All-In Podcast",
+      "domain": "Finance",
+      "platform_source": "X, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=39",
+      "followers": "762k Followers",
+      "posts": [
+        {
+          "id": "p_jason_calacanis_init",
+          "text": "Official Dispatch: Jason Calacanis (Angel Investor / All-In Podcast) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 26842,
+          "reposts": 3968,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reactome_pathway_db",
+      "name": "Reactome Biological Pathways",
+      "title": "Open Biological Pathway Knowledgebase",
+      "domain": "Tech",
+      "platform_source": "Reactome",
+      "avatar": "https://i.pravatar.cc/150?img=66",
+      "followers": "611k Followers",
+      "posts": [
+        {
+          "id": "p_reactome_pathway_db_init",
+          "text": "Official Dispatch: Reactome Biological Pathways (Open Biological Pathway Knowledgebase) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 33106,
+          "reposts": 5120,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clement_delangue",
+      "name": "Clement Delangue",
+      "title": "Co-founder & CEO of Hugging Face",
+      "domain": "Tech",
+      "platform_source": "Hugging Face, LinkedIn, X",
+      "avatar": "https://i.pravatar.cc/150?img=56",
+      "followers": "897k Followers",
+      "posts": [
+        {
+          "id": "p_clement_delangue_init",
+          "text": "Official Dispatch: Clement Delangue (Co-founder & CEO of Hugging Face) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 20146,
+          "reposts": 7625,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "max_tegmark",
+      "name": "Max Tegmark",
+      "title": "MIT Physics Professor & Future of Life Institute",
+      "domain": "Tech",
+      "platform_source": "ArXiv, X",
+      "avatar": "https://i.pravatar.cc/150?img=59",
+      "followers": "701k Followers",
+      "posts": [
+        {
+          "id": "p_max_tegmark_init",
+          "text": "Official Dispatch: Max Tegmark (MIT Physics Professor & Future of Life Institute) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 29014,
+          "reposts": 5781,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lina_khan",
+      "name": "Lina Khan",
+      "title": "Chair of the Federal Trade Commission (FTC)",
+      "domain": "Politics",
+      "platform_source": "FTC Gazettes, X",
+      "avatar": "https://i.pravatar.cc/150?img=56",
+      "followers": "197k Followers",
+      "posts": [
+        {
+          "id": "p_lina_khan_init",
+          "text": "Official Dispatch: Lina Khan (Chair of the Federal Trade Commission (FTC)) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 15280,
+          "reposts": 2667,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "andrew_ng",
+      "name": "Andrew Ng",
+      "title": "Founder of DeepLearning.AI & Coursera",
+      "domain": "Tech",
+      "platform_source": "LinkedIn, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=7",
+      "followers": "730k Followers",
+      "posts": [
+        {
+          "id": "p_andrew_ng_init",
+          "text": "Official Dispatch: Andrew Ng (Founder of DeepLearning.AI & Coursera) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 22489,
+          "reposts": 7896,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jensen_huang",
+      "name": "Jensen Huang",
+      "title": "CEO of NVIDIA",
+      "domain": "Tech",
+      "platform_source": "LinkedIn, Tech Blogs",
+      "avatar": "https://i.pravatar.cc/150?img=28",
+      "followers": "88k Followers",
+      "posts": [
+        {
+          "id": "p_jensen_huang_init",
+          "text": "Official Dispatch: Jensen Huang (CEO of NVIDIA) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 13654,
+          "reposts": 2001,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seth_lloyd",
+      "name": "Seth Lloyd",
+      "title": "MIT Quantum Mechanical Engineering Professor",
+      "domain": "Tech",
+      "platform_source": "ArXiv, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=45",
+      "followers": "827k Followers",
+      "posts": [
+        {
+          "id": "p_seth_lloyd_init",
+          "text": "Official Dispatch: Seth Lloyd (MIT Quantum Mechanical Engineering Professor) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 8259,
+          "reposts": 1689,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "satya_nadella",
+      "name": "Satya Nadella",
+      "title": "CEO of Microsoft",
+      "domain": "Tech",
+      "platform_source": "LinkedIn, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=42",
+      "followers": "701k Followers",
+      "posts": [
+        {
+          "id": "p_satya_nadella_init",
+          "text": "Official Dispatch: Satya Nadella (CEO of Microsoft) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 9307,
+          "reposts": 4947,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jamie_dimon",
+      "name": "Jamie Dimon",
+      "title": "CEO of JPMorgan Chase",
+      "domain": "Finance",
+      "platform_source": "Finance Media, Speeches",
+      "avatar": "https://i.pravatar.cc/150?img=3",
+      "followers": "392k Followers",
+      "posts": [
+        {
+          "id": "p_jamie_dimon_init",
+          "text": "Official Dispatch: Jamie Dimon (CEO of JPMorgan Chase) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 37822,
+          "reposts": 7311,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cathie_wood",
+      "name": "Cathie Wood",
+      "title": "CEO of ARK Invest",
+      "domain": "Finance",
+      "platform_source": "X, Medium, YouTube",
+      "avatar": "https://i.pravatar.cc/150?img=4",
+      "followers": "359k Followers",
+      "posts": [
+        {
+          "id": "p_cathie_wood_init",
+          "text": "Official Dispatch: Cathie Wood (CEO of ARK Invest) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 25659,
+          "reposts": 6310,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "andy_jassy",
+      "name": "Andy Jassy",
+      "title": "CEO of Amazon",
+      "domain": "Tech",
+      "platform_source": "LinkedIn, X",
+      "avatar": "https://i.pravatar.cc/150?img=51",
+      "followers": "354k Followers",
+      "posts": [
+        {
+          "id": "p_andy_jassy_init",
+          "text": "Official Dispatch: Andy Jassy (CEO of Amazon) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 35971,
+          "reposts": 6526,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brian_armstrong",
+      "name": "Brian Armstrong",
+      "title": "CEO of Coinbase",
+      "domain": "Finance",
+      "platform_source": "X, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=58",
+      "followers": "747k Followers",
+      "posts": [
+        {
+          "id": "p_brian_armstrong_init",
+          "text": "Official Dispatch: Brian Armstrong (CEO of Coinbase) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 36165,
+          "reposts": 4407,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matt_garman",
+      "name": "Matt Garman",
+      "title": "CEO of AWS",
+      "domain": "Tech",
+      "platform_source": "LinkedIn, Tech Blogs",
+      "avatar": "https://i.pravatar.cc/150?img=6",
+      "followers": "511k Followers",
+      "posts": [
+        {
+          "id": "p_matt_garman_init",
+          "text": "Official Dispatch: Matt Garman (CEO of AWS) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 29497,
+          "reposts": 4387,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kelsey_hightower",
+      "name": "Kelsey Hightower",
+      "title": "Open Source Advocate & Cloud Pioneer",
+      "domain": "Tech",
+      "platform_source": "X, Bluesky",
+      "avatar": "https://i.pravatar.cc/150?img=25",
+      "followers": "116k Followers",
+      "posts": [
+        {
+          "id": "p_kelsey_hightower_init",
+          "text": "Official Dispatch: Kelsey Hightower (Open Source Advocate & Cloud Pioneer) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 10173,
+          "reposts": 2728,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arxiv_cs_ai",
+      "name": "ArXiv CS/AI Papers",
+      "title": "Global Open Computer Science Literature Index",
+      "domain": "Tech",
+      "platform_source": "ArXiv",
+      "avatar": "https://i.pravatar.cc/150?img=53",
+      "followers": "715k Followers",
+      "posts": [
+        {
+          "id": "p_arxiv_cs_ai_init",
+          "text": "Official Dispatch: ArXiv CS/AI Papers (Global Open Computer Science Literature Index) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 30210,
+          "reposts": 2958,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noah_smith",
+      "name": "Noah Smith",
+      "title": "Economic Analyst & Author of Noahpinion",
+      "domain": "Politics",
+      "platform_source": "Substack, X",
+      "avatar": "https://i.pravatar.cc/150?img=49",
+      "followers": "402k Followers",
+      "posts": [
+        {
+          "id": "p_noah_smith_init",
+          "text": "Official Dispatch: Noah Smith (Economic Analyst & Author of Noahpinion) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 16512,
+          "reposts": 2096,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emad_mostaque",
+      "name": "Emad Mostaque",
+      "title": "Founder of Decentralized AI Collective",
+      "domain": "Tech",
+      "platform_source": "X, Bluesky",
+      "avatar": "https://i.pravatar.cc/150?img=2",
+      "followers": "837k Followers",
+      "posts": [
+        {
+          "id": "p_emad_mostaque_init",
+          "text": "Official Dispatch: Emad Mostaque (Founder of Decentralized AI Collective) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 33722,
+          "reposts": 8628,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical_trials_gov",
+      "name": "ClinicalTrials.gov Protocol Registry",
+      "title": "Global Clinical Trial Registry Index",
+      "domain": "Tech",
+      "platform_source": "ClinicalTrials",
+      "avatar": "https://i.pravatar.cc/150?img=4",
+      "followers": "80k Followers",
+      "posts": [
+        {
+          "id": "p_clinical_trials_gov_init",
+          "text": "Official Dispatch: ClinicalTrials.gov Protocol Registry (Global Clinical Trial Registry Index) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 17423,
+          "reposts": 7261,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yann_lecun",
+      "name": "Yann LeCun",
+      "title": "VP & Chief AI Scientist at Meta / NYU Professor",
+      "domain": "Tech",
+      "platform_source": "LinkedIn, X, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=11",
+      "followers": "646k Followers",
+      "posts": [
+        {
+          "id": "p_yann_lecun_init",
+          "text": "Official Dispatch: Yann LeCun (VP & Chief AI Scientist at Meta / NYU Professor) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 25504,
+          "reposts": 2803,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bill_ackman",
+      "name": "Bill Ackman",
+      "title": "CEO of Pershing Square Capital",
+      "domain": "Finance",
+      "platform_source": "X, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=30",
+      "followers": "617k Followers",
+      "posts": [
+        {
+          "id": "p_bill_ackman_init",
+          "text": "Official Dispatch: Bill Ackman (CEO of Pershing Square Capital) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 25785,
+          "reposts": 3434,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "david_friedberg",
+      "name": "David Friedberg",
+      "title": "CEO of The Production Board",
+      "domain": "Finance",
+      "platform_source": "X, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=24",
+      "followers": "716k Followers",
+      "posts": [
+        {
+          "id": "p_david_friedberg_init",
+          "text": "Official Dispatch: David Friedberg (CEO of The Production Board) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 29268,
+          "reposts": 3737,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mustafa_suleyman",
+      "name": "Mustafa Suleyman",
+      "title": "CEO of Microsoft AI",
+      "domain": "Tech",
+      "platform_source": "Medium, X",
+      "avatar": "https://i.pravatar.cc/150?img=32",
+      "followers": "815k Followers",
+      "posts": [
+        {
+          "id": "p_mustafa_suleyman_init",
+          "text": "Official Dispatch: Mustafa Suleyman (CEO of Microsoft AI) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 15638,
+          "reposts": 4162,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parker_conrad",
+      "name": "Parker Conrad",
+      "title": "CEO of Rippling",
+      "domain": "Tech",
+      "platform_source": "X, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=9",
+      "followers": "491k Followers",
+      "posts": [
+        {
+          "id": "p_parker_conrad_init",
+          "text": "Official Dispatch: Parker Conrad (CEO of Rippling) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 11545,
+          "reposts": 9286,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vitalik_buterin",
+      "name": "Vitalik Buterin",
+      "title": "Co-founder of Ethereum",
+      "domain": "Finance",
+      "platform_source": "Substack, Bluesky, X",
+      "avatar": "https://i.pravatar.cc/150?img=24",
+      "followers": "894k Followers",
+      "posts": [
+        {
+          "id": "p_vitalik_buterin_init",
+          "text": "Official Dispatch: Vitalik Buterin (Co-founder of Ethereum) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 11646,
+          "reposts": 7166,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solomon_hykes",
+      "name": "Solomon Hykes",
+      "title": "Creator of Docker & Dagger CEO",
+      "domain": "Tech",
+      "platform_source": "GitHub, X",
+      "avatar": "https://i.pravatar.cc/150?img=25",
+      "followers": "177k Followers",
+      "posts": [
+        {
+          "id": "p_solomon_hykes_init",
+          "text": "Official Dispatch: Solomon Hykes (Creator of Docker & Dagger CEO) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 15007,
+          "reposts": 3306,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ian_bremmer",
+      "name": "Ian Bremmer",
+      "title": "President of Eurasia Group",
+      "domain": "Geopolitics",
+      "platform_source": "Substack, LinkedIn, X",
+      "avatar": "https://i.pravatar.cc/150?img=35",
+      "followers": "795k Followers",
+      "posts": [
+        {
+          "id": "p_ian_bremmer_init",
+          "text": "Official Dispatch: Ian Bremmer (President of Eurasia Group) analyzing Geopolitics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 24687,
+          "reposts": 8450,
+          "date": "2026-08-02",
+          "keywords": [
+            "Geopolitics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
         }
       ]
@@ -646,92 +1713,974 @@
     {
       "id": "balaji_srinivasan",
       "name": "Balaji Srinivasan",
-      "title": "Author of The Network State & Investor",
-      "domain": "Geopolitics",
-      "platform_source": "X (Twitter) & Substack",
-      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
-      "followers": "980K",
+      "title": "Author of The Network State",
+      "domain": "Finance",
+      "platform_source": "Substack, X, Bluesky",
+      "avatar": "https://i.pravatar.cc/150?img=47",
+      "followers": "165k Followers",
       "posts": [
         {
-          "id": "p_balaji_srinivasan_1785694999639_8634",
-          "text": "Fresh Scrape: Cryptographically verifiable autonomous AI agents are managing municipal resource allocation across decentralized parallel societies. [Scraped 2026-08-02]",
-          "likes": 48390,
-          "reposts": 7464,
+          "id": "p_balaji_srinivasan_init",
+          "text": "Official Dispatch: Balaji Srinivasan (Author of The Network State) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 24223,
+          "reposts": 3483,
           "date": "2026-08-02",
           "keywords": [
-            "Fresh",
-            "Scrape",
-            "Cryptographically"
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "niall_ferguson",
+      "name": "Niall Ferguson",
+      "title": "Senior Fellow at Hoover Institution",
+      "domain": "Geopolitics",
+      "platform_source": "Substack, Speeches",
+      "avatar": "https://i.pravatar.cc/150?img=6",
+      "followers": "306k Followers",
+      "posts": [
         {
-          "id": "p_bs_sub_1785694900596",
-          "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
-          "likes": 18900,
-          "reposts": 5100,
+          "id": "p_niall_ferguson_init",
+          "text": "Official Dispatch: Niall Ferguson (Senior Fellow at Hoover Institution) analyzing Geopolitics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 25747,
+          "reposts": 5739,
           "date": "2026-08-02",
           "keywords": [
-            "Network State",
-            "Substack",
-            "LinkedIn",
-            "ZK-proofs",
-            "sovereign nodes"
+            "Geopolitics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "hugging_face_hub",
+      "name": "Hugging Face Model Hub",
+      "title": "Open Weights Model Repository Index",
+      "domain": "Tech",
+      "platform_source": "Hugging Face",
+      "avatar": "https://i.pravatar.cc/150?img=40",
+      "followers": "731k Followers",
+      "posts": [
         {
-          "id": "p_bs_sub_1785694846116",
-          "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
-          "likes": 18900,
-          "reposts": 5100,
+          "id": "p_hugging_face_hub_init",
+          "text": "Official Dispatch: Hugging Face Model Hub (Open Weights Model Repository Index) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 19164,
+          "reposts": 7584,
           "date": "2026-08-02",
           "keywords": [
-            "Network State",
-            "Substack",
-            "LinkedIn",
-            "ZK-proofs",
-            "sovereign nodes"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "adam_selipsky",
+      "name": "Adam Selipsky",
+      "title": "Former CEO of AWS",
+      "domain": "Tech",
+      "platform_source": "LinkedIn",
+      "avatar": "https://i.pravatar.cc/150?img=63",
+      "followers": "311k Followers",
+      "posts": [
         {
-          "id": "p_bs_sub_1785693202695",
-          "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
-          "likes": 18900,
-          "reposts": 5100,
+          "id": "p_adam_selipsky_init",
+          "text": "Official Dispatch: Adam Selipsky (Former CEO of AWS) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 31283,
+          "reposts": 2061,
           "date": "2026-08-02",
           "keywords": [
-            "Network State",
-            "Substack",
-            "LinkedIn",
-            "ZK-proofs",
-            "sovereign nodes"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "openfda_database",
+      "name": "openFDA Regulatory Intelligence",
+      "title": "FDA Medical & Chemical Approval Index",
+      "domain": "Tech",
+      "platform_source": "openFDA",
+      "avatar": "https://i.pravatar.cc/150?img=32",
+      "followers": "183k Followers",
+      "posts": [
         {
-          "id": "p_bs_sub_1785632751494",
-          "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
-          "likes": 18900,
-          "reposts": 5100,
+          "id": "p_openfda_database_init",
+          "text": "Official Dispatch: openFDA Regulatory Intelligence (FDA Medical & Chemical Approval Index) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 19168,
+          "reposts": 8895,
           "date": "2026-08-02",
           "keywords": [
-            "Network State",
-            "Substack",
-            "LinkedIn",
-            "ZK-proofs",
-            "sovereign nodes"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "gnomad_database",
+      "name": "gnomAD Genomic Aggregation",
+      "title": "Human Genomic Variation Database",
+      "domain": "Tech",
+      "platform_source": "gnomAD",
+      "avatar": "https://i.pravatar.cc/150?img=52",
+      "followers": "356k Followers",
+      "posts": [
         {
-          "id": "p_bs_1",
-          "text": "Network States powered by sovereign AI compute microgrids, zero-knowledge verification, and MIT-licensed open inference runtimes will replace traditional legacy nation-state governance and centralized cloud monopolies.",
-          "likes": 18900,
-          "reposts": 4300,
-          "date": "2026-08-01",
+          "id": "p_gnomad_database_init",
+          "text": "Official Dispatch: gnomAD Genomic Aggregation (Human Genomic Variation Database) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 9446,
+          "reposts": 3114,
+          "date": "2026-08-02",
           "keywords": [
-            "Network State",
-            "sovereign compute",
-            "zero-knowledge",
-            "MIT-licensed",
-            "cloud monopolies"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "david_sacks",
+      "name": "David Sacks",
+      "title": "General Partner at Craft Ventures",
+      "domain": "Finance",
+      "platform_source": "X, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=66",
+      "followers": "499k Followers",
+      "posts": [
+        {
+          "id": "p_david_sacks_init",
+          "text": "Official Dispatch: David Sacks (General Partner at Craft Ventures) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 34379,
+          "reposts": 2525,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shantanu_narayen",
+      "name": "Shantanu Narayen",
+      "title": "CEO of Adobe",
+      "domain": "Tech",
+      "platform_source": "LinkedIn",
+      "avatar": "https://i.pravatar.cc/150?img=40",
+      "followers": "765k Followers",
+      "posts": [
+        {
+          "id": "p_shantanu_narayen_init",
+          "text": "Official Dispatch: Shantanu Narayen (CEO of Adobe) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 14909,
+          "reposts": 5910,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "david_baker",
+      "name": "David Baker",
+      "title": "Nobel Laureate & Protein Design Pioneer",
+      "domain": "Tech",
+      "platform_source": "ArXiv, Nature",
+      "avatar": "https://i.pravatar.cc/150?img=21",
+      "followers": "227k Followers",
+      "posts": [
+        {
+          "id": "p_david_baker_init",
+          "text": "Official Dispatch: David Baker (Nobel Laureate & Protein Design Pioneer) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 30022,
+          "reposts": 3281,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thierry_breton",
+      "name": "Thierry Breton",
+      "title": "Former EU Commissioner for Internal Market",
+      "domain": "Politics",
+      "platform_source": "X, LinkedIn",
+      "avatar": "https://i.pravatar.cc/150?img=58",
+      "followers": "848k Followers",
+      "posts": [
+        {
+          "id": "p_thierry_breton_init",
+          "text": "Official Dispatch: Thierry Breton (Former EU Commissioner for Internal Market) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 11930,
+          "reposts": 3040,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lisa_su",
+      "name": "Lisa Su",
+      "title": "CEO of AMD",
+      "domain": "Tech",
+      "platform_source": "LinkedIn, X",
+      "avatar": "https://i.pravatar.cc/150?img=65",
+      "followers": "162k Followers",
+      "posts": [
+        {
+          "id": "p_lisa_su_init",
+          "text": "Official Dispatch: Lisa Su (CEO of AMD) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 13521,
+          "reposts": 3137,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sabine_hossenfelder",
+      "name": "Sabine Hossenfelder",
+      "title": "Physicist & Science Analyst",
+      "domain": "Tech",
+      "platform_source": "YouTube, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=48",
+      "followers": "393k Followers",
+      "posts": [
+        {
+          "id": "p_sabine_hossenfelder_init",
+          "text": "Official Dispatch: Sabine Hossenfelder (Physicist & Science Analyst) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 9687,
+          "reposts": 5855,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tyler_cowen",
+      "name": "Tyler Cowen",
+      "title": "Professor of Economics & Marginal Revolution",
+      "domain": "Politics",
+      "platform_source": "Marginal Revolution, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=17",
+      "followers": "100k Followers",
+      "posts": [
+        {
+          "id": "p_tyler_cowen_init",
+          "text": "Official Dispatch: Tyler Cowen (Professor of Economics & Marginal Revolution) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 9229,
+          "reposts": 7330,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naval_ravikant",
+      "name": "Naval Ravikant",
+      "title": "Co-founder of AngelList",
+      "domain": "Finance",
+      "platform_source": "X, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=12",
+      "followers": "440k Followers",
+      "posts": [
+        {
+          "id": "p_naval_ravikant_init",
+          "text": "Official Dispatch: Naval Ravikant (Co-founder of AngelList) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 12434,
+          "reposts": 8389,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chembl_database",
+      "name": "ChEMBL Bioactive Molecules",
+      "title": "Open Medicinal Chemistry Database",
+      "domain": "Tech",
+      "platform_source": "ChEMBL",
+      "avatar": "https://i.pravatar.cc/150?img=31",
+      "followers": "234k Followers",
+      "posts": [
+        {
+          "id": "p_chembl_database_init",
+          "text": "Official Dispatch: ChEMBL Bioactive Molecules (Open Medicinal Chemistry Database) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 8875,
+          "reposts": 8808,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brian_cox",
+      "name": "Brian Cox",
+      "title": "Particle Physicist & Science Communicator",
+      "domain": "Tech",
+      "platform_source": "X, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=4",
+      "followers": "134k Followers",
+      "posts": [
+        {
+          "id": "p_brian_cox_init",
+          "text": "Official Dispatch: Brian Cox (Particle Physicist & Science Communicator) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 26637,
+          "reposts": 4114,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "larry_fink",
+      "name": "Larry Fink",
+      "title": "CEO of BlackRock",
+      "domain": "Finance",
+      "platform_source": "LinkedIn, Finance Media",
+      "avatar": "https://i.pravatar.cc/150?img=59",
+      "followers": "148k Followers",
+      "posts": [
+        {
+          "id": "p_larry_fink_init",
+          "text": "Official Dispatch: Larry Fink (CEO of BlackRock) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 35880,
+          "reposts": 6805,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "larry_summers",
+      "name": "Larry Summers",
+      "title": "Former US Treasury Secretary",
+      "domain": "Politics",
+      "platform_source": "X, Speeches",
+      "avatar": "https://i.pravatar.cc/150?img=69",
+      "followers": "557k Followers",
+      "posts": [
+        {
+          "id": "p_larry_summers_init",
+          "text": "Official Dispatch: Larry Summers (Former US Treasury Secretary) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 17343,
+          "reposts": 7353,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daniel_stenberg",
+      "name": "Daniel Stenberg",
+      "title": "Creator of cURL",
+      "domain": "Tech",
+      "platform_source": "GitHub, Mastodon",
+      "avatar": "https://i.pravatar.cc/150?img=30",
+      "followers": "253k Followers",
+      "posts": [
+        {
+          "id": "p_daniel_stenberg_init",
+          "text": "Official Dispatch: Daniel Stenberg (Creator of cURL) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 29130,
+          "reposts": 4366,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uspto_patent_office",
+      "name": "USPTO Patent Registry",
+      "title": "United States Patent & Trademark Index",
+      "domain": "Tech",
+      "platform_source": "USPTO",
+      "avatar": "https://i.pravatar.cc/150?img=1",
+      "followers": "271k Followers",
+      "posts": [
+        {
+          "id": "p_uspto_patent_office_init",
+          "text": "Official Dispatch: USPTO Patent Registry (United States Patent & Trademark Index) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 29563,
+          "reposts": 7022,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "howard_marks",
+      "name": "Howard Marks",
+      "title": "Co-founder of Oaktree Capital",
+      "domain": "Finance",
+      "platform_source": "Memos, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=64",
+      "followers": "508k Followers",
+      "posts": [
+        {
+          "id": "p_howard_marks_init",
+          "text": "Official Dispatch: Howard Marks (Co-founder of Oaktree Capital) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 14333,
+          "reposts": 6864,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fareed_zakaria",
+      "name": "Fareed Zakaria",
+      "title": "Host of CNN GPS & Washington Post Columnist",
+      "domain": "Geopolitics",
+      "platform_source": "Medium, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=48",
+      "followers": "277k Followers",
+      "posts": [
+        {
+          "id": "p_fareed_zakaria_init",
+          "text": "Official Dispatch: Fareed Zakaria (Host of CNN GPS & Washington Post Columnist) analyzing Geopolitics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 31706,
+          "reposts": 9111,
+          "date": "2026-08-02",
+          "keywords": [
+            "Geopolitics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peter_zeihan",
+      "name": "Peter Zeihan",
+      "title": "Geopolitical Strategist & Author",
+      "domain": "Geopolitics",
+      "platform_source": "Substack, YouTube",
+      "avatar": "https://i.pravatar.cc/150?img=68",
+      "followers": "407k Followers",
+      "posts": [
+        {
+          "id": "p_peter_zeihan_init",
+          "text": "Official Dispatch: Peter Zeihan (Geopolitical Strategist & Author) analyzing Geopolitics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 20689,
+          "reposts": 3727,
+          "date": "2026-08-02",
+          "keywords": [
+            "Geopolitics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anne_applebaum",
+      "name": "Anne Applebaum",
+      "title": "Pulitzer Prize Author & Historian",
+      "domain": "Geopolitics",
+      "platform_source": "The Atlantic, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=62",
+      "followers": "266k Followers",
+      "posts": [
+        {
+          "id": "p_anne_applebaum_init",
+          "text": "Official Dispatch: Anne Applebaum (Pulitzer Prize Author & Historian) analyzing Geopolitics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 34305,
+          "reposts": 7736,
+          "date": "2026-08-02",
+          "keywords": [
+            "Geopolitics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "antonio_neri",
+      "name": "Antonio Neri",
+      "title": "CEO of Hewlett Packard Enterprise",
+      "domain": "Tech",
+      "platform_source": "LinkedIn",
+      "avatar": "https://i.pravatar.cc/150?img=58",
+      "followers": "874k Followers",
+      "posts": [
+        {
+          "id": "p_antonio_neri_init",
+          "text": "Official Dispatch: Antonio Neri (CEO of Hewlett Packard Enterprise) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 30921,
+          "reposts": 7327,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guido_van_rossum",
+      "name": "Guido van Rossum",
+      "title": "Creator of Python",
+      "domain": "Tech",
+      "platform_source": "GitHub, Bluesky",
+      "avatar": "https://i.pravatar.cc/150?img=50",
+      "followers": "471k Followers",
+      "posts": [
+        {
+          "id": "p_guido_van_rossum_init",
+          "text": "Official Dispatch: Guido van Rossum (Creator of Python) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 8277,
+          "reposts": 3082,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parag_khanna",
+      "name": "Parag Khanna",
+      "title": "Founder of Climate Alpha & Geopolitician",
+      "domain": "Geopolitics",
+      "platform_source": "LinkedIn, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=22",
+      "followers": "474k Followers",
+      "posts": [
+        {
+          "id": "p_parag_khanna_init",
+          "text": "Official Dispatch: Parag Khanna (Founder of Climate Alpha & Geopolitician) analyzing Geopolitics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 37898,
+          "reposts": 3714,
+          "date": "2026-08-02",
+          "keywords": [
+            "Geopolitics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marc_benioff",
+      "name": "Marc Benioff",
+      "title": "CEO of Salesforce",
+      "domain": "Tech",
+      "platform_source": "X, LinkedIn",
+      "avatar": "https://i.pravatar.cc/150?img=34",
+      "followers": "220k Followers",
+      "posts": [
+        {
+          "id": "p_marc_benioff_init",
+          "text": "Official Dispatch: Marc Benioff (CEO of Salesforce) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 28179,
+          "reposts": 8066,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "warren_buffett",
+      "name": "Warren Buffett",
+      "title": "CEO of Berkshire Hathaway",
+      "domain": "Finance",
+      "platform_source": "Annual Letters, Media",
+      "avatar": "https://i.pravatar.cc/150?img=36",
+      "followers": "373k Followers",
+      "posts": [
+        {
+          "id": "p_warren_buffett_init",
+          "text": "Official Dispatch: Warren Buffett (CEO of Berkshire Hathaway) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 20548,
+          "reposts": 9252,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cz_binance",
+      "name": "Changpeng Zhao",
+      "title": "Founder of Binance",
+      "domain": "Finance",
+      "platform_source": "X, Bluesky",
+      "avatar": "https://i.pravatar.cc/150?img=69",
+      "followers": "667k Followers",
+      "posts": [
+        {
+          "id": "p_cz_binance_init",
+          "text": "Official Dispatch: Changpeng Zhao (Founder of Binance) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 17485,
+          "reposts": 5926,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lex_fridman",
+      "name": "Lex Fridman",
+      "title": "MIT Research Scientist & Podcast Host",
+      "domain": "Tech",
+      "platform_source": "YouTube, X",
+      "avatar": "https://i.pravatar.cc/150?img=45",
+      "followers": "887k Followers",
+      "posts": [
+        {
+          "id": "p_lex_fridman_init",
+          "text": "Official Dispatch: Lex Fridman (MIT Research Scientist & Podcast Host) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 35105,
+          "reposts": 7903,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "github_trending",
+      "name": "GitHub Trending Repositories",
+      "title": "Open Source Code Repository Index",
+      "domain": "Tech",
+      "platform_source": "GitHub",
+      "avatar": "https://i.pravatar.cc/150?img=38",
+      "followers": "399k Followers",
+      "posts": [
+        {
+          "id": "p_github_trending_init",
+          "text": "Official Dispatch: GitHub Trending Repositories (Open Source Code Repository Index) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 15016,
+          "reposts": 3710,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mark_zuckerberg",
+      "name": "Mark Zuckerberg",
+      "title": "CEO of Meta",
+      "domain": "Tech",
+      "platform_source": "Threads, Facebook, LinkedIn",
+      "avatar": "https://i.pravatar.cc/150?img=36",
+      "followers": "502k Followers",
+      "posts": [
+        {
+          "id": "p_mark_zuckerberg_init",
+          "text": "Official Dispatch: Mark Zuckerberg (CEO of Meta) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 14905,
+          "reposts": 5652,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scott_aaronson",
+      "name": "Scott Aaronson",
+      "title": "UT Austin Quantum Computing Director",
+      "domain": "Tech",
+      "platform_source": "Shtetl-Optimized, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=50",
+      "followers": "801k Followers",
+      "posts": [
+        {
+          "id": "p_scott_aaronson_init",
+          "text": "Official Dispatch: Scott Aaronson (UT Austin Quantum Computing Director) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 20258,
+          "reposts": 3301,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matthew_yglesias",
+      "name": "Matthew Yglesias",
+      "title": "Author of Slow Boring",
+      "domain": "Politics",
+      "platform_source": "Substack, X",
+      "avatar": "https://i.pravatar.cc/150?img=5",
+      "followers": "184k Followers",
+      "posts": [
+        {
+          "id": "p_matthew_yglesias_init",
+          "text": "Official Dispatch: Matthew Yglesias (Author of Slow Boring) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 32600,
+          "reposts": 5301,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gideon_rachman",
+      "name": "Gideon Rachman",
+      "title": "Chief Foreign Affairs Analyst at FT",
+      "domain": "Geopolitics",
+      "platform_source": "FT, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=30",
+      "followers": "141k Followers",
+      "posts": [
+        {
+          "id": "p_gideon_rachman_init",
+          "text": "Official Dispatch: Gideon Rachman (Chief Foreign Affairs Analyst at FT) analyzing Geopolitics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 17573,
+          "reposts": 5166,
+          "date": "2026-08-02",
+          "keywords": [
+            "Geopolitics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ray_dalio",
+      "name": "Ray Dalio",
+      "title": "Founder of Bridgewater Associates",
+      "domain": "Finance",
+      "platform_source": "LinkedIn, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=40",
+      "followers": "419k Followers",
+      "posts": [
+        {
+          "id": "p_ray_dalio_init",
+          "text": "Official Dispatch: Ray Dalio (Founder of Bridgewater Associates) analyzing Finance developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 24051,
+          "reposts": 3838,
+          "date": "2026-08-02",
+          "keywords": [
+            "Finance",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "janet_yellen_circle",
+      "name": "Treasury Macro Group",
+      "title": "Macroeconomic Policy Forum",
+      "domain": "Politics",
+      "platform_source": "Official Gazettes",
+      "avatar": "https://i.pravatar.cc/150?img=48",
+      "followers": "75k Followers",
+      "posts": [
+        {
+          "id": "p_janet_yellen_circle_init",
+          "text": "Official Dispatch: Treasury Macro Group (Macroeconomic Policy Forum) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 23901,
+          "reposts": 7502,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dario_amodei",
+      "name": "Dario Amodei",
+      "title": "CEO & Co-founder of Anthropic",
+      "domain": "Tech",
+      "platform_source": "Medium, ArXiv",
+      "avatar": "https://i.pravatar.cc/150?img=47",
+      "followers": "583k Followers",
+      "posts": [
+        {
+          "id": "p_dario_amodei_init",
+          "text": "Official Dispatch: Dario Amodei (CEO & Co-founder of Anthropic) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 30601,
+          "reposts": 7762,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
         }
       ]
@@ -740,179 +2689,223 @@
       "id": "ben_thompson",
       "name": "Ben Thompson",
       "title": "Author of Stratechery",
-      "domain": "Finance",
-      "platform_source": "Substack & Stratechery",
-      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
-      "followers": "520K",
-      "posts": [
-        {
-          "id": "p_ben_thompson_1785694998148_5837",
-          "text": "Fresh Scrape: Aggregation Theory in the AI Era: Hyperscaler cloud providers are pivoting to infrastructure utility layers as open-weights models commoditize cognitive APIs. [Scraped 2026-08-02]",
-          "likes": 51151,
-          "reposts": 15831,
-          "date": "2026-08-02",
-          "keywords": [
-            "Fresh",
-            "Scrape",
-            "Aggregation",
-            "Theory",
-            "Era"
-          ]
-        },
-        {
-          "id": "p_bt_1",
-          "text": "Aggregation Theory is undergoing a fundamental inversion: when inference becomes commodity infrastructure via open-weights micro-VMs, value shifts entirely from centralized cloud gatekeepers to sovereign edge aggregators.",
-          "likes": 14500,
-          "reposts": 2900,
-          "date": "2026-08-01",
-          "keywords": [
-            "Aggregation Theory",
-            "commodity inference",
-            "micro-VMs",
-            "sovereign edge"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "lina_khan",
-      "name": "Lina Khan",
-      "title": "Chair of the Federal Trade Commission",
       "domain": "Politics",
-      "platform_source": "FTC Antitrust Gazette",
-      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
-      "followers": "420K",
+      "platform_source": "Substack, Medium",
+      "avatar": "https://i.pravatar.cc/150?img=11",
+      "followers": "512k Followers",
       "posts": [
         {
-          "id": "p_lk_1",
-          "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
-          "likes": 6100,
-          "reposts": 1280,
-          "date": "2026-08-01",
+          "id": "p_ben_thompson_init",
+          "text": "Official Dispatch: Ben Thompson (Author of Stratechery) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 10658,
+          "reposts": 3809,
+          "date": "2026-08-02",
           "keywords": [
-            "open-source AI",
-            "MIT licensing",
-            "monopolistic lock-in",
-            "open model weights"
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
         }
       ]
     },
     {
-      "id": "naval_ravikant",
-      "name": "Naval Ravikant",
-      "title": "Co-founder of AngelList & Philosopher",
-      "domain": "Finance",
-      "platform_source": "X (Twitter)",
-      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
-      "followers": "2.2M",
-      "posts": [
-        {
-          "id": "p_nr_1",
-          "text": "Code and media are the permissionless leverage of our era. Open-source MIT-licensed AI inference gives every single human individual the leverage of a 10,000-person corporation running on local silicon.",
-          "likes": 41200,
-          "reposts": 9800,
-          "date": "2026-08-01",
-          "keywords": [
-            "permissionless leverage",
-            "open-source AI",
-            "MIT license",
-            "local silicon"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "clement_delangue",
-      "name": "Clement Delangue",
-      "title": "Co-founder & CEO, Hugging Face",
+      "id": "george_church",
+      "name": "George Church",
+      "title": "Harvard Genetics & Synthetic Bio Pioneer",
       "domain": "Tech",
-      "platform_source": "Hugging Face Hub & X",
-      "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=80",
-      "followers": "680K",
+      "platform_source": "Medium, ArXiv",
+      "avatar": "https://i.pravatar.cc/150?img=28",
+      "followers": "224k Followers",
       "posts": [
         {
-          "id": "p_clement_delangue_1785694998159_4927",
-          "text": "Fresh Scrape: Open-source model downloads exceed 500 million this month. The global developer consensus has decisively pivoted toward self-hosted sovereign AI stacks. [Scraped 2026-08-02]",
-          "likes": 38805,
-          "reposts": 14885,
+          "id": "p_george_church_init",
+          "text": "Official Dispatch: George Church (Harvard Genetics & Synthetic Bio Pioneer) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 32455,
+          "reposts": 2688,
           "date": "2026-08-02",
           "keywords": [
-            "Fresh",
-            "Scrape",
-            "Open-source",
-            "The"
-          ]
-        },
-        {
-          "id": "p_cd_1",
-          "text": "Data telemetry across 2,100,000 open-weights repositories indicates that 84% of all production model downloads are now governed by permissive MIT or Apache 2.0 licenses.",
-          "likes": 16400,
-          "reposts": 3200,
-          "date": "2026-08-01",
-          "keywords": [
-            "MIT license",
-            "open-weights",
-            "developer adoption"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
         }
       ]
     },
     {
-      "id": "peter_zeihan",
-      "name": "Peter Zeihan",
-      "title": "Geopolitical Analyst & Author",
-      "domain": "Geopolitics",
-      "platform_source": "Geopolitical Intelligence Dispatch",
-      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
-      "followers": "890K",
+      "id": "rich_hickey",
+      "name": "Rich Hickey",
+      "title": "Creator of Clojure",
+      "domain": "Tech",
+      "platform_source": "GitHub, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=5",
+      "followers": "728k Followers",
       "posts": [
         {
-          "id": "p_sim_1785694866928_3",
-          "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
-          "likes": 4900,
-          "reposts": 910,
+          "id": "p_rich_hickey_init",
+          "text": "Official Dispatch: Rich Hickey (Creator of Clojure) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 14433,
+          "reposts": 7709,
           "date": "2026-08-02",
           "keywords": [
-            "national security",
-            "localized power",
-            "defense supercomputers"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "demis_hassabis",
+      "name": "Demis Hassabis",
+      "title": "CEO of Google DeepMind / Nobel Laureate",
+      "domain": "Tech",
+      "platform_source": "Medium, X, ArXiv",
+      "avatar": "https://i.pravatar.cc/150?img=70",
+      "followers": "369k Followers",
+      "posts": [
         {
-          "id": "p_sim_1785623393017_3",
-          "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
-          "likes": 4900,
-          "reposts": 910,
-          "date": "2026-08-01",
+          "id": "p_demis_hassabis_init",
+          "text": "Official Dispatch: Demis Hassabis (CEO of Google DeepMind / Nobel Laureate) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 14331,
+          "reposts": 4697,
+          "date": "2026-08-02",
           "keywords": [
-            "national security",
-            "localized power",
-            "defense supercomputers"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "elon_musk",
+      "name": "Elon Musk",
+      "title": "CEO of xAI, Tesla, SpaceX, & X",
+      "domain": "Tech",
+      "platform_source": "X, Bluesky",
+      "avatar": "https://i.pravatar.cc/150?img=49",
+      "followers": "264k Followers",
+      "posts": [
         {
-          "id": "p_sim_1785623210742_3",
-          "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
-          "likes": 4900,
-          "reposts": 910,
-          "date": "2026-08-01",
+          "id": "p_elon_musk_init",
+          "text": "Official Dispatch: Elon Musk (CEO of xAI, Tesla, SpaceX, & X) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 29486,
+          "reposts": 9119,
+          "date": "2026-08-02",
           "keywords": [
-            "national security",
-            "localized power",
-            "defense supercomputers"
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "paul_krugman",
+      "name": "Paul Krugman",
+      "title": "Nobel Laureate Economist",
+      "domain": "Politics",
+      "platform_source": "NYT, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=11",
+      "followers": "180k Followers",
+      "posts": [
         {
-          "id": "p_pz_1",
-          "text": "The geopolitical race for gigawatt energy to power open-source hyperscaler AI inference clusters is redrawing global industrial alliances.",
-          "likes": 7200,
-          "reposts": 1450,
-          "date": "2026-08-01",
+          "id": "p_paul_krugman_init",
+          "text": "Official Dispatch: Paul Krugman (Nobel Laureate Economist) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 10538,
+          "reposts": 4575,
+          "date": "2026-08-02",
           "keywords": [
-            "gigawatt energy",
-            "open-source",
-            "hyperscaler AI"
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eliezer_yudkowsky",
+      "name": "Eliezer Yudkowsky",
+      "title": "AI Alignment Researcher at MIRI",
+      "domain": "Tech",
+      "platform_source": "LessWrong, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=48",
+      "followers": "713k Followers",
+      "posts": [
+        {
+          "id": "p_eliezer_yudkowsky_init",
+          "text": "Official Dispatch: Eliezer Yudkowsky (AI Alignment Researcher at MIRI) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 32034,
+          "reposts": 6727,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ftc_gazette",
+      "name": "FTC Official Gazette",
+      "title": "Federal Trade Commission Regulatory Index",
+      "domain": "Politics",
+      "platform_source": "FTC",
+      "avatar": "https://i.pravatar.cc/150?img=36",
+      "followers": "101k Followers",
+      "posts": [
+        {
+          "id": "p_ftc_gazette_init",
+          "text": "Official Dispatch: FTC Official Gazette (Federal Trade Commission Regulatory Index) analyzing Politics developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 23516,
+          "reposts": 5848,
+          "date": "2026-08-02",
+          "keywords": [
+            "Politics",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nat_friedman",
+      "name": "Nat Friedman",
+      "title": "Former GitHub CEO & AI Investor",
+      "domain": "Tech",
+      "platform_source": "X, Substack",
+      "avatar": "https://i.pravatar.cc/150?img=53",
+      "followers": "397k Followers",
+      "posts": [
+        {
+          "id": "p_nat_friedman_init",
+          "text": "Official Dispatch: Nat Friedman (Former GitHub CEO & AI Investor) analyzing Tech developments. Micro-VM containerization and open-weights licensing are transforming enterprise deployment.",
+          "likes": 14131,
+          "reposts": 8508,
+          "date": "2026-08-02",
+          "keywords": [
+            "Tech",
+            "OpenSource",
+            "MicroVM",
+            "Inference",
+            "Strategy"
           ]
         }
       ]
