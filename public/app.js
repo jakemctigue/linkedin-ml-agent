@@ -646,8 +646,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (res.ok) {
             showToast(`🚀 ${data.message}`);
             // Re-render UI
-            await fetchAnalysisData();
-            await fetchInfluencersData();
+            await loadDashboardData();
           } else {
             showToast(data.error || 'Scrape and re-analysis failed.');
           }
@@ -673,7 +672,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const data = await res.json();
           if (res.ok) {
             showToast(`🚀 ${data.message}`);
-            await fetchAnalysisData();
+            await loadDashboardData();
           } else {
             showToast(data.error || 'Failed to trigger daily auto-post.');
           }
