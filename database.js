@@ -143,6 +143,22 @@ function getAllInfluencers() {
   });
 }
 
+function insertInfluencerRecord(infObj) {
+  const insertInf = db.prepare(`
+    INSERT OR REPLACE INTO influencers (id, name, title, domain, platform_source, avatar, followers)
+    VALUES (?, ?, ?, ?, ?, ?, ?)
+  `);
+  insertInf.run(
+    infObj.id,
+    infObj.name,
+    infObj.title || '',
+    infObj.domain || 'Tech',
+    infObj.platform_source || 'Multi-Platform',
+    infObj.avatar || '',
+    infObj.followers || ''
+  );
+}
+
 function insertPostRecord(influencerId, postObj) {
   const insertPost = db.prepare(`
     INSERT OR REPLACE INTO posts (id, influencer_id, text, likes, reposts, date, keywords_json, platform_source)
@@ -182,6 +198,7 @@ module.exports = {
   initDatabase,
   syncFromJSON,
   getAllInfluencers,
+  insertInfluencerRecord,
   insertPostRecord,
   insertDispatchRecord
 };
