@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "total_posts": 40,
+    "total_posts": 58,
     "total_influencers": 12,
-    "optimal_k": 4,
-    "silhouette_score": 0.3242,
+    "optimal_k": 5,
+    "silhouette_score": 0.2513,
     "domains": [
       "Finance",
       "Tech",
@@ -13,13 +13,25 @@
   },
   "pca_nodes": [
     {
+      "id": "p_elon_musk_1785694999651_9722",
+      "author": "Elon Musk",
+      "title": "CTO at xAI, CEO at Tesla & SpaceX",
+      "domain": "Tech",
+      "text": "Fresh Scrape: Memphis Colossus expansion to 300,000 liquid-cooled H200 GPUs is live. Grok 3.5 real-time inference FLOP throughput has reached 18 ExaFLOPs for humanoid robotics. [Scraped 2026-08-02]",
+      "pca_x": 0.5965,
+      "pca_y": 0.1334,
+      "cluster": 0,
+      "likes": 38603,
+      "reposts": 9579
+    },
+    {
       "id": "p_em_fresh_1785632716920",
       "author": "Elon Musk",
       "title": "CTO at xAI, CEO at Tesla & SpaceX",
       "domain": "Tech",
       "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-      "pca_x": 0.797,
-      "pca_y": 0.2309,
+      "pca_x": 0.8077,
+      "pca_y": 0.1851,
       "cluster": 0,
       "likes": 19374,
       "reposts": 6027
@@ -30,8 +42,8 @@
       "title": "CTO at xAI, CEO at Tesla & SpaceX",
       "domain": "Tech",
       "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-      "pca_x": 0.797,
-      "pca_y": 0.2309,
+      "pca_x": 0.8077,
+      "pca_y": 0.1851,
       "cluster": 0,
       "likes": 29714,
       "reposts": 5874
@@ -42,8 +54,8 @@
       "title": "CTO at xAI, CEO at Tesla & SpaceX",
       "domain": "Tech",
       "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-      "pca_x": 0.797,
-      "pca_y": 0.2309,
+      "pca_x": 0.8077,
+      "pca_y": 0.1851,
       "cluster": 0,
       "likes": 17080,
       "reposts": 3457
@@ -54,8 +66,8 @@
       "title": "CTO at xAI, CEO at Tesla & SpaceX",
       "domain": "Tech",
       "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-      "pca_x": 0.797,
-      "pca_y": 0.2309,
+      "pca_x": 0.8077,
+      "pca_y": 0.1851,
       "cluster": 0,
       "likes": 21409,
       "reposts": 4234
@@ -66,8 +78,8 @@
       "title": "CTO at xAI, CEO at Tesla & SpaceX",
       "domain": "Tech",
       "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-      "pca_x": 0.797,
-      "pca_y": 0.2309,
+      "pca_x": 0.8077,
+      "pca_y": 0.1851,
       "cluster": 0,
       "likes": 28474,
       "reposts": 3689
@@ -78,8 +90,8 @@
       "title": "CTO at xAI, CEO at Tesla & SpaceX",
       "domain": "Tech",
       "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
-      "pca_x": 0.797,
-      "pca_y": 0.2309,
+      "pca_x": 0.8077,
+      "pca_y": 0.1851,
       "cluster": 0,
       "likes": 29569,
       "reposts": 5095
@@ -90,11 +102,47 @@
       "title": "CTO at xAI, CEO at Tesla & SpaceX",
       "domain": "Tech",
       "text": "The primary constraint on AI progress is sub-millisecond inference latency, gigawatt-scale electrical transformers, and real-world robotics. Our Memphis Colossus cluster with 100k H100s/H200s proves that sovereign compute requires dedicated grid power and direct liquid cooling.",
-      "pca_x": 0.1725,
-      "pca_y": -0.0086,
+      "pca_x": 0.1839,
+      "pca_y": -0.0214,
       "cluster": 0,
       "likes": 24500,
       "reposts": 5800
+    },
+    {
+      "id": "p_demis_hassabis_1785694998154_8311",
+      "author": "Demis Hassabis",
+      "title": "CEO & Founder at Google DeepMind",
+      "domain": "Tech",
+      "text": "Fresh Scrape: Open biomolecular inference pipelines are predicting 3D multi-protein complex assemblies with 99.1% structural confidence. [Scraped 2026-08-02]",
+      "pca_x": 0.0282,
+      "pca_y": 0.0109,
+      "cluster": 0,
+      "likes": 48559,
+      "reposts": 17137
+    },
+    {
+      "id": "p_dh_med_1785694900596",
+      "author": "Demis Hassabis",
+      "title": "CEO & Founder at Google DeepMind",
+      "domain": "Tech",
+      "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
+      "pca_x": -0.2846,
+      "pca_y": 0.3582,
+      "cluster": 1,
+      "likes": 31200,
+      "reposts": 9400
+    },
+    {
+      "id": "p_dh_med_1785694846116",
+      "author": "Demis Hassabis",
+      "title": "CEO & Founder at Google DeepMind",
+      "domain": "Tech",
+      "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
+      "pca_x": -0.2846,
+      "pca_y": 0.3582,
+      "cluster": 1,
+      "likes": 31200,
+      "reposts": 9400
     },
     {
       "id": "p_dh_med_1785693202695",
@@ -102,8 +150,8 @@
       "title": "CEO & Founder at Google DeepMind",
       "domain": "Tech",
       "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
-      "pca_x": -0.1934,
-      "pca_y": 0.1989,
+      "pca_x": -0.2846,
+      "pca_y": 0.3582,
       "cluster": 1,
       "likes": 31200,
       "reposts": 9400
@@ -114,8 +162,8 @@
       "title": "CEO & Founder at Google DeepMind",
       "domain": "Tech",
       "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
-      "pca_x": -0.1934,
-      "pca_y": 0.1989,
+      "pca_x": -0.2846,
+      "pca_y": 0.3582,
       "cluster": 1,
       "likes": 31200,
       "reposts": 9400
@@ -126,8 +174,8 @@
       "title": "CEO & Founder at Google DeepMind",
       "domain": "Tech",
       "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-      "pca_x": -0.5284,
-      "pca_y": 0.5703,
+      "pca_x": -0.4391,
+      "pca_y": 0.6191,
       "cluster": 1,
       "likes": 29075,
       "reposts": 4394
@@ -138,8 +186,8 @@
       "title": "CEO & Founder at Google DeepMind",
       "domain": "Tech",
       "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-      "pca_x": -0.5284,
-      "pca_y": 0.5703,
+      "pca_x": -0.4391,
+      "pca_y": 0.6191,
       "cluster": 1,
       "likes": 12859,
       "reposts": 3915
@@ -150,8 +198,8 @@
       "title": "CEO & Founder at Google DeepMind",
       "domain": "Tech",
       "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-      "pca_x": -0.5284,
-      "pca_y": 0.5703,
+      "pca_x": -0.4391,
+      "pca_y": 0.6191,
       "cluster": 1,
       "likes": 27069,
       "reposts": 2801
@@ -162,8 +210,8 @@
       "title": "CEO & Founder at Google DeepMind",
       "domain": "Tech",
       "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-      "pca_x": -0.5284,
-      "pca_y": 0.5703,
+      "pca_x": -0.4391,
+      "pca_y": 0.6191,
       "cluster": 1,
       "likes": 17909,
       "reposts": 3080
@@ -174,8 +222,8 @@
       "title": "CEO & Founder at Google DeepMind",
       "domain": "Tech",
       "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-      "pca_x": -0.5284,
-      "pca_y": 0.5703,
+      "pca_x": -0.4391,
+      "pca_y": 0.6191,
       "cluster": 1,
       "likes": 19523,
       "reposts": 2497
@@ -186,8 +234,8 @@
       "title": "CEO & Founder at Google DeepMind",
       "domain": "Tech",
       "text": "Fresh Scrape: DeepMind AlphaFold 3.1 open inference weights released under permissive academic terms. Micro-VM hypervisor containerization allows instant local molecular docking simulation.",
-      "pca_x": -0.5284,
-      "pca_y": 0.5703,
+      "pca_x": -0.4391,
+      "pca_y": 0.6191,
       "cluster": 1,
       "likes": 21363,
       "reposts": 5069
@@ -198,11 +246,35 @@
       "title": "CEO & Founder at Google DeepMind",
       "domain": "Tech",
       "text": "AlphaFold 3 and generative biomolecular modeling are converting biology into a pure digital inference problem. When molecular simulation models run inside ultra-fast micro-VM hypervisors, drug candidate discovery accelerates from decades to milliseconds.",
-      "pca_x": -0.0585,
-      "pca_y": 0.0897,
+      "pca_x": -0.0629,
+      "pca_y": 0.1274,
       "cluster": 1,
       "likes": 32100,
       "reposts": 8400
+    },
+    {
+      "id": "p_vitalik_buterin_1785694999645_8519",
+      "author": "Vitalik Buterin",
+      "title": "Co-founder of Ethereum & ZK-Proof Researcher",
+      "domain": "Finance",
+      "text": "Fresh Scrape: Fully homomorphic encryption (FHE) combined with open-weights LLMs enables private data inference over public peer-to-peer compute grids. [Scraped 2026-08-02]",
+      "pca_x": 0.0305,
+      "pca_y": -0.0117,
+      "cluster": 0,
+      "likes": 39334,
+      "reposts": 5397
+    },
+    {
+      "id": "p_vitalik_buterin_1785694998164_8283",
+      "author": "Vitalik Buterin",
+      "title": "Co-founder of Ethereum & ZK-Proof Researcher",
+      "domain": "Finance",
+      "text": "Fresh Scrape: Sovereign AI agent meshes leveraging zk-proof cryptographic execution guarantees can operate autonomously without trusting centralized API gateways. [Scraped 2026-08-02]",
+      "pca_x": 0.0544,
+      "pca_y": -0.0489,
+      "cluster": 2,
+      "likes": 60722,
+      "reposts": 7734
     },
     {
       "id": "p_vb_1",
@@ -210,11 +282,23 @@
       "title": "Co-founder of Ethereum & ZK-Proof Researcher",
       "domain": "Finance",
       "text": "Combining zero-knowledge proofs (zk-SNARKs) with decentralized open-weights AI inference creates tamper-proof autonomous agent networks. Agents can execute financial contracts and verify model execution without relying on centralized hyperscaler clouds.",
-      "pca_x": 0.0341,
-      "pca_y": -0.0309,
-      "cluster": 3,
+      "pca_x": 0.0432,
+      "pca_y": -0.0618,
+      "cluster": 2,
       "likes": 27800,
       "reposts": 6100
+    },
+    {
+      "id": "p_marc_andreessen_1785694999656_8443",
+      "author": "Marc Andreessen",
+      "title": "General Partner at Andreessen Horowitz (a16z)",
+      "domain": "Finance",
+      "text": "Fresh Scrape: Decentralized compute microgrids are replacing monolithic data center monopolies across North America and Europe. [Scraped 2026-08-02]",
+      "pca_x": 0.0673,
+      "pca_y": -0.0072,
+      "cluster": 0,
+      "likes": 19058,
+      "reposts": 9984
     },
     {
       "id": "p_ma_1",
@@ -222,11 +306,47 @@
       "title": "General Partner at Andreessen Horowitz (a16z)",
       "domain": "Finance",
       "text": "Techno-Optimism demands that open-source AI software and permissive MIT licenses remain unrestricted by regulatory capture. The economic multiplier of local, hyper-efficient AI inference on open silicon will drive the greatest capital expansion in human history.",
-      "pca_x": -0.0112,
-      "pca_y": -0.0404,
-      "cluster": 2,
+      "pca_x": -0.0137,
+      "pca_y": -0.0498,
+      "cluster": 3,
       "likes": 22400,
       "reposts": 5200
+    },
+    {
+      "id": "p_yann_lecun_1785694998142_3605",
+      "author": "Yann LeCun",
+      "title": "VP & Chief AI Scientist at Meta",
+      "domain": "Tech",
+      "text": "Fresh Scrape: Self-hosted vLLM hypervisor runtimes are executing sub-0.18ms speculative decoding latency across enterprise clusters. Open source is winning the inference race. [Scraped 2026-08-02]",
+      "pca_x": -0.0387,
+      "pca_y": -0.0641,
+      "cluster": 3,
+      "likes": 19263,
+      "reposts": 10327
+    },
+    {
+      "id": "p_yl_med_1785694900596",
+      "author": "Yann LeCun",
+      "title": "VP & Chief AI Scientist at Meta",
+      "domain": "Tech",
+      "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
+      "pca_x": -0.3139,
+      "pca_y": -0.2791,
+      "cluster": 3,
+      "likes": 24500,
+      "reposts": 6800
+    },
+    {
+      "id": "p_yl_med_1785694846116",
+      "author": "Yann LeCun",
+      "title": "VP & Chief AI Scientist at Meta",
+      "domain": "Tech",
+      "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
+      "pca_x": -0.3139,
+      "pca_y": -0.2791,
+      "cluster": 3,
+      "likes": 24500,
+      "reposts": 6800
     },
     {
       "id": "p_yl_med_1785693202695",
@@ -234,9 +354,9 @@
       "title": "VP & Chief AI Scientist at Meta",
       "domain": "Tech",
       "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
-      "pca_x": -0.1925,
-      "pca_y": -0.2431,
-      "cluster": 2,
+      "pca_x": -0.3139,
+      "pca_y": -0.2791,
+      "cluster": 3,
       "likes": 24500,
       "reposts": 6800
     },
@@ -246,9 +366,9 @@
       "title": "VP & Chief AI Scientist at Meta",
       "domain": "Tech",
       "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
-      "pca_x": -0.1925,
-      "pca_y": -0.2431,
-      "cluster": 2,
+      "pca_x": -0.3139,
+      "pca_y": -0.2791,
+      "cluster": 3,
       "likes": 24500,
       "reposts": 6800
     },
@@ -258,9 +378,9 @@
       "title": "VP & Chief AI Scientist at Meta",
       "domain": "Tech",
       "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-      "pca_x": -0.2156,
-      "pca_y": -0.6926,
-      "cluster": 2,
+      "pca_x": -0.2601,
+      "pca_y": -0.6117,
+      "cluster": 3,
       "likes": 15953,
       "reposts": 6664
     },
@@ -270,9 +390,9 @@
       "title": "VP & Chief AI Scientist at Meta",
       "domain": "Tech",
       "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-      "pca_x": -0.2156,
-      "pca_y": -0.6926,
-      "cluster": 2,
+      "pca_x": -0.2601,
+      "pca_y": -0.6117,
+      "cluster": 3,
       "likes": 13887,
       "reposts": 4143
     },
@@ -282,9 +402,9 @@
       "title": "VP & Chief AI Scientist at Meta",
       "domain": "Tech",
       "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-      "pca_x": -0.2156,
-      "pca_y": -0.6926,
-      "cluster": 2,
+      "pca_x": -0.2601,
+      "pca_y": -0.6117,
+      "cluster": 3,
       "likes": 29632,
       "reposts": 4173
     },
@@ -294,9 +414,9 @@
       "title": "VP & Chief AI Scientist at Meta",
       "domain": "Tech",
       "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-      "pca_x": -0.2156,
-      "pca_y": -0.6926,
-      "cluster": 2,
+      "pca_x": -0.2601,
+      "pca_y": -0.6117,
+      "cluster": 3,
       "likes": 20756,
       "reposts": 5195
     },
@@ -306,9 +426,9 @@
       "title": "VP & Chief AI Scientist at Meta",
       "domain": "Tech",
       "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-      "pca_x": -0.2156,
-      "pca_y": -0.6926,
-      "cluster": 2,
+      "pca_x": -0.2601,
+      "pca_y": -0.6117,
+      "cluster": 3,
       "likes": 20236,
       "reposts": 3825
     },
@@ -318,9 +438,9 @@
       "title": "VP & Chief AI Scientist at Meta",
       "domain": "Tech",
       "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-      "pca_x": -0.2156,
-      "pca_y": -0.6926,
-      "cluster": 2,
+      "pca_x": -0.2601,
+      "pca_y": -0.6117,
+      "cluster": 3,
       "likes": 28127,
       "reposts": 6454
     },
@@ -330,11 +450,35 @@
       "title": "VP & Chief AI Scientist at Meta",
       "domain": "Tech",
       "text": "Open-source AI and permissive MIT/Apache licensing are essential for technological sovereignty. Proprietary closed-source AI monopolies create dangerous single points of failure.",
-      "pca_x": -0.0345,
-      "pca_y": -0.1379,
-      "cluster": 2,
+      "pca_x": -0.0441,
+      "pca_y": -0.1444,
+      "cluster": 3,
       "likes": 18400,
       "reposts": 4100
+    },
+    {
+      "id": "p_sam_altman_1785694999662_2873",
+      "author": "Sam Altman",
+      "title": "CEO, OpenAI",
+      "domain": "Tech",
+      "text": "Fresh Scrape: Scaling laws continue to hold as next-generation multimodal models achieve reasoning breakthroughs on 100k-token context windows. [Scraped 2026-08-02]",
+      "pca_x": 0.0523,
+      "pca_y": -0.014,
+      "cluster": 0,
+      "likes": 38374,
+      "reposts": 15989
+    },
+    {
+      "id": "p_sim_1785694866928_2",
+      "author": "Sam Altman",
+      "title": "CEO, OpenAI",
+      "domain": "Tech",
+      "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
+      "pca_x": 0.0954,
+      "pca_y": 0.0026,
+      "cluster": 4,
+      "likes": 7200,
+      "reposts": 1400
     },
     {
       "id": "p_sim_1785623393017_2",
@@ -342,9 +486,9 @@
       "title": "CEO, OpenAI",
       "domain": "Tech",
       "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
-      "pca_x": 0.0769,
-      "pca_y": 0.0253,
-      "cluster": 3,
+      "pca_x": 0.0954,
+      "pca_y": 0.0026,
+      "cluster": 4,
       "likes": 7200,
       "reposts": 1400
     },
@@ -354,9 +498,9 @@
       "title": "CEO, OpenAI",
       "domain": "Tech",
       "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
-      "pca_x": 0.0769,
-      "pca_y": 0.0253,
-      "cluster": 3,
+      "pca_x": 0.0954,
+      "pca_y": 0.0026,
+      "cluster": 4,
       "likes": 7200,
       "reposts": 1400
     },
@@ -366,11 +510,47 @@
       "title": "CEO, OpenAI",
       "domain": "Tech",
       "text": "The bottleneck for AGI is gigawatt-scale clean power and sovereign land rights. Whoever solves cheap nuclear fusion or geothermal energy will dictate the pace of intelligence scaling.",
-      "pca_x": 0.0571,
-      "pca_y": 0.0055,
-      "cluster": 3,
+      "pca_x": 0.0683,
+      "pca_y": -0.0161,
+      "cluster": 4,
       "likes": 19800,
       "reposts": 4100
+    },
+    {
+      "id": "p_balaji_srinivasan_1785694999639_8634",
+      "author": "Balaji Srinivasan",
+      "title": "Author of The Network State & Investor",
+      "domain": "Geopolitics",
+      "text": "Fresh Scrape: Cryptographically verifiable autonomous AI agents are managing municipal resource allocation across decentralized parallel societies. [Scraped 2026-08-02]",
+      "pca_x": 0.0896,
+      "pca_y": -0.0014,
+      "cluster": 2,
+      "likes": 48390,
+      "reposts": 7464
+    },
+    {
+      "id": "p_bs_sub_1785694900596",
+      "author": "Balaji Srinivasan",
+      "title": "Author of The Network State & Investor",
+      "domain": "Geopolitics",
+      "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
+      "pca_x": 0.0435,
+      "pca_y": -0.1655,
+      "cluster": 4,
+      "likes": 18900,
+      "reposts": 5100
+    },
+    {
+      "id": "p_bs_sub_1785694846116",
+      "author": "Balaji Srinivasan",
+      "title": "Author of The Network State & Investor",
+      "domain": "Geopolitics",
+      "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
+      "pca_x": 0.0435,
+      "pca_y": -0.1655,
+      "cluster": 4,
+      "likes": 18900,
+      "reposts": 5100
     },
     {
       "id": "p_bs_sub_1785693202695",
@@ -378,9 +558,9 @@
       "title": "Author of The Network State & Investor",
       "domain": "Geopolitics",
       "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
-      "pca_x": 0.0444,
-      "pca_y": -0.0611,
-      "cluster": 3,
+      "pca_x": 0.0435,
+      "pca_y": -0.1655,
+      "cluster": 4,
       "likes": 18900,
       "reposts": 5100
     },
@@ -390,9 +570,9 @@
       "title": "Author of The Network State & Investor",
       "domain": "Geopolitics",
       "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
-      "pca_x": 0.0444,
-      "pca_y": -0.0611,
-      "cluster": 3,
+      "pca_x": 0.0435,
+      "pca_y": -0.1655,
+      "cluster": 4,
       "likes": 18900,
       "reposts": 5100
     },
@@ -402,11 +582,23 @@
       "title": "Author of The Network State & Investor",
       "domain": "Geopolitics",
       "text": "Network States powered by sovereign AI compute microgrids, zero-knowledge verification, and MIT-licensed open inference runtimes will replace traditional legacy nation-state governance and centralized cloud monopolies.",
-      "pca_x": 0.0282,
-      "pca_y": -0.0298,
-      "cluster": 3,
+      "pca_x": 0.0307,
+      "pca_y": -0.0684,
+      "cluster": 4,
       "likes": 18900,
       "reposts": 4300
+    },
+    {
+      "id": "p_ben_thompson_1785694998148_5837",
+      "author": "Ben Thompson",
+      "title": "Author of Stratechery",
+      "domain": "Finance",
+      "text": "Fresh Scrape: Aggregation Theory in the AI Era: Hyperscaler cloud providers are pivoting to infrastructure utility layers as open-weights models commoditize cognitive APIs. [Scraped 2026-08-02]",
+      "pca_x": 0.0044,
+      "pca_y": -0.0611,
+      "cluster": 3,
+      "likes": 51151,
+      "reposts": 15831
     },
     {
       "id": "p_bt_1",
@@ -414,9 +606,9 @@
       "title": "Author of Stratechery",
       "domain": "Finance",
       "text": "Aggregation Theory is undergoing a fundamental inversion: when inference becomes commodity infrastructure via open-weights micro-VMs, value shifts entirely from centralized cloud gatekeepers to sovereign edge aggregators.",
-      "pca_x": 0.0045,
-      "pca_y": -0.0089,
-      "cluster": 2,
+      "pca_x": 0.0126,
+      "pca_y": -0.0256,
+      "cluster": 3,
       "likes": 14500,
       "reposts": 2900
     },
@@ -426,9 +618,9 @@
       "title": "Chair of the Federal Trade Commission",
       "domain": "Politics",
       "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
-      "pca_x": -0.0687,
-      "pca_y": -0.1472,
-      "cluster": 2,
+      "pca_x": -0.0798,
+      "pca_y": -0.1444,
+      "cluster": 3,
       "likes": 6100,
       "reposts": 1280
     },
@@ -438,11 +630,23 @@
       "title": "Co-founder of AngelList & Philosopher",
       "domain": "Finance",
       "text": "Code and media are the permissionless leverage of our era. Open-source MIT-licensed AI inference gives every single human individual the leverage of a 10,000-person corporation running on local silicon.",
-      "pca_x": -0.0007,
-      "pca_y": -0.0303,
-      "cluster": 2,
+      "pca_x": 0.0057,
+      "pca_y": -0.0432,
+      "cluster": 3,
       "likes": 41200,
       "reposts": 9800
+    },
+    {
+      "id": "p_clement_delangue_1785694998159_4927",
+      "author": "Clement Delangue",
+      "title": "Co-founder & CEO, Hugging Face",
+      "domain": "Tech",
+      "text": "Fresh Scrape: Open-source model downloads exceed 500 million this month. The global developer consensus has decisively pivoted toward self-hosted sovereign AI stacks. [Scraped 2026-08-02]",
+      "pca_x": 0.0353,
+      "pca_y": -0.0493,
+      "cluster": 0,
+      "likes": 38805,
+      "reposts": 14885
     },
     {
       "id": "p_cd_1",
@@ -450,11 +654,23 @@
       "title": "Co-founder & CEO, Hugging Face",
       "domain": "Tech",
       "text": "Data telemetry across 2,100,000 open-weights repositories indicates that 84% of all production model downloads are now governed by permissive MIT or Apache 2.0 licenses.",
-      "pca_x": -0.0397,
-      "pca_y": -0.086,
-      "cluster": 2,
+      "pca_x": -0.0367,
+      "pca_y": -0.101,
+      "cluster": 3,
       "likes": 16400,
       "reposts": 3200
+    },
+    {
+      "id": "p_sim_1785694866928_3",
+      "author": "Peter Zeihan",
+      "title": "Geopolitical Analyst & Author",
+      "domain": "Geopolitics",
+      "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
+      "pca_x": 0.0851,
+      "pca_y": -0.0196,
+      "cluster": 0,
+      "likes": 4900,
+      "reposts": 910
     },
     {
       "id": "p_sim_1785623393017_3",
@@ -462,8 +678,8 @@
       "title": "Geopolitical Analyst & Author",
       "domain": "Geopolitics",
       "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
-      "pca_x": 0.0607,
-      "pca_y": 0.0091,
+      "pca_x": 0.0851,
+      "pca_y": -0.0196,
       "cluster": 0,
       "likes": 4900,
       "reposts": 910
@@ -474,8 +690,8 @@
       "title": "Geopolitical Analyst & Author",
       "domain": "Geopolitics",
       "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
-      "pca_x": 0.0607,
-      "pca_y": 0.0091,
+      "pca_x": 0.0851,
+      "pca_y": -0.0196,
       "cluster": 0,
       "likes": 4900,
       "reposts": 910
@@ -486,9 +702,9 @@
       "title": "Geopolitical Analyst & Author",
       "domain": "Geopolitics",
       "text": "The geopolitical race for gigawatt energy to power open-source hyperscaler AI inference clusters is redrawing global industrial alliances.",
-      "pca_x": 0.0069,
-      "pca_y": -0.0849,
-      "cluster": 2,
+      "pca_x": 0.0006,
+      "pca_y": -0.096,
+      "cluster": 3,
       "likes": 7200,
       "reposts": 1450
     }
@@ -532,34 +748,181 @@
         ]
       },
       "domain_pair": "Tech \u26a1 Politics",
-      "semantic_similarity": 0.2493,
-      "surprise_score": 0.374,
+      "semantic_similarity": 0.2498,
+      "surprise_score": 0.3747,
       "shared_topics": [
         "open",
         "source",
+        "proprietary",
         "mit",
-        "licensing",
+        "licensing"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_marc_andreessen_1785694999656_8443",
+        "author_id": "marc_andreessen",
+        "author_name": "Marc Andreessen",
+        "author_title": "General Partner at Andreessen Horowitz (a16z)",
+        "author_avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Finance",
+        "text": "Fresh Scrape: Decentralized compute microgrids are replacing monolithic data center monopolies across North America and Europe. [Scraped 2026-08-02]",
+        "likes": 19058,
+        "reposts": 9984,
+        "date": "2026-08-02",
+        "keywords": [
+          "Fresh",
+          "Scrape",
+          "Decentralized",
+          "North",
+          "America"
+        ]
+      },
+      "post2": {
+        "post_id": "p_balaji_srinivasan_1785694999639_8634",
+        "author_id": "balaji_srinivasan",
+        "author_name": "Balaji Srinivasan",
+        "author_title": "Author of The Network State & Investor",
+        "author_avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+        "domain": "Geopolitics",
+        "text": "Fresh Scrape: Cryptographically verifiable autonomous AI agents are managing municipal resource allocation across decentralized parallel societies. [Scraped 2026-08-02]",
+        "likes": 48390,
+        "reposts": 7464,
+        "date": "2026-08-02",
+        "keywords": [
+          "Fresh",
+          "Scrape",
+          "Cryptographically"
+        ]
+      },
+      "domain_pair": "Finance \u26a1 Geopolitics",
+      "semantic_similarity": 0.206,
+      "surprise_score": 0.3708,
+      "shared_topics": [
+        "decentralized",
+        "across",
+        "scrape",
+        "2026",
+        "fresh"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_yann_lecun_1785694998142_3605",
+        "author_id": "yann_lecun",
+        "author_name": "Yann LeCun",
+        "author_title": "VP & Chief AI Scientist at Meta",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Fresh Scrape: Self-hosted vLLM hypervisor runtimes are executing sub-0.18ms speculative decoding latency across enterprise clusters. Open source is winning the inference race. [Scraped 2026-08-02]",
+        "likes": 19263,
+        "reposts": 10327,
+        "date": "2026-08-02",
+        "keywords": [
+          "Fresh",
+          "Scrape",
+          "Self-hosted",
+          "LLM",
+          "Open"
+        ]
+      },
+      "post2": {
+        "post_id": "p_pz_1",
+        "author_id": "peter_zeihan",
+        "author_name": "Peter Zeihan",
+        "author_title": "Geopolitical Analyst & Author",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Geopolitics",
+        "text": "The geopolitical race for gigawatt energy to power open-source hyperscaler AI inference clusters is redrawing global industrial alliances.",
+        "likes": 7200,
+        "reposts": 1450,
+        "date": "2026-08-01",
+        "keywords": [
+          "gigawatt energy",
+          "open-source",
+          "hyperscaler AI"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Geopolitics",
+      "semantic_similarity": 0.1654,
+      "surprise_score": 0.3144,
+      "shared_topics": [
+        "race",
+        "source",
+        "open",
+        "inference",
+        "clusters"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_yl_med_1785694900596",
+        "author_id": "yann_lecun",
+        "author_name": "Yann LeCun",
+        "author_title": "VP & Chief AI Scientist at Meta",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
+        "likes": 24500,
+        "reposts": 6800,
+        "date": "2026-08-02",
+        "keywords": [
+          "Llama-4",
+          "Medium",
+          "LinkedIn",
+          "open weights",
+          "micro-VM",
+          "MIT license"
+        ]
+      },
+      "post2": {
+        "post_id": "p_lk_1",
+        "author_id": "lina_khan",
+        "author_name": "Lina Khan",
+        "author_title": "Chair of the Federal Trade Commission",
+        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+        "domain": "Politics",
+        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
+        "likes": 6100,
+        "reposts": 1280,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source AI",
+          "MIT licensing",
+          "monopolistic lock-in",
+          "open model weights"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Politics",
+      "semantic_similarity": 0.2084,
+      "surprise_score": 0.3127,
+      "shared_topics": [
+        "source",
+        "open",
+        "proprietary",
+        "mit",
         "permissive"
       ]
     },
     {
       "post1": {
-        "post_id": "p_yl_fresh_1785632716920",
+        "post_id": "p_yl_med_1785694846116",
         "author_id": "yann_lecun",
         "author_name": "Yann LeCun",
         "author_title": "VP & Chief AI Scientist at Meta",
         "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
         "domain": "Tech",
-        "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-        "likes": 15953,
-        "reposts": 6664,
+        "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
+        "likes": 24500,
+        "reposts": 6800,
         "date": "2026-08-02",
         "keywords": [
           "Llama-4",
-          "MIT license",
+          "Medium",
+          "LinkedIn",
+          "open weights",
           "micro-VM",
-          "sub-0.3ms latency",
-          "open source speed"
+          "MIT license"
         ]
       },
       "post2": {
@@ -581,259 +944,14 @@
         ]
       },
       "domain_pair": "Tech \u26a1 Politics",
-      "semantic_similarity": 0.2032,
-      "surprise_score": 0.3049,
+      "semantic_similarity": 0.2084,
+      "surprise_score": 0.3127,
       "shared_topics": [
-        "weights",
-        "open",
         "source",
-        "mit",
-        "models"
-      ]
-    },
-    {
-      "post1": {
-        "post_id": "p_yl_fresh_1785632702532",
-        "author_id": "yann_lecun",
-        "author_name": "Yann LeCun",
-        "author_title": "VP & Chief AI Scientist at Meta",
-        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
-        "domain": "Tech",
-        "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-        "likes": 13887,
-        "reposts": 4143,
-        "date": "2026-08-02",
-        "keywords": [
-          "Llama-4",
-          "MIT license",
-          "micro-VM",
-          "sub-0.3ms latency",
-          "open source speed"
-        ]
-      },
-      "post2": {
-        "post_id": "p_lk_1",
-        "author_id": "lina_khan",
-        "author_name": "Lina Khan",
-        "author_title": "Chair of the Federal Trade Commission",
-        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
-        "domain": "Politics",
-        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
-        "likes": 6100,
-        "reposts": 1280,
-        "date": "2026-08-01",
-        "keywords": [
-          "open-source AI",
-          "MIT licensing",
-          "monopolistic lock-in",
-          "open model weights"
-        ]
-      },
-      "domain_pair": "Tech \u26a1 Politics",
-      "semantic_similarity": 0.2032,
-      "surprise_score": 0.3049,
-      "shared_topics": [
-        "weights",
         "open",
-        "source",
+        "proprietary",
         "mit",
-        "models"
-      ]
-    },
-    {
-      "post1": {
-        "post_id": "p_yl_fresh_1785632611440",
-        "author_id": "yann_lecun",
-        "author_name": "Yann LeCun",
-        "author_title": "VP & Chief AI Scientist at Meta",
-        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
-        "domain": "Tech",
-        "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-        "likes": 29632,
-        "reposts": 4173,
-        "date": "2026-08-02",
-        "keywords": [
-          "Llama-4",
-          "MIT license",
-          "micro-VM",
-          "sub-0.3ms latency",
-          "open source speed"
-        ]
-      },
-      "post2": {
-        "post_id": "p_lk_1",
-        "author_id": "lina_khan",
-        "author_name": "Lina Khan",
-        "author_title": "Chair of the Federal Trade Commission",
-        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
-        "domain": "Politics",
-        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
-        "likes": 6100,
-        "reposts": 1280,
-        "date": "2026-08-01",
-        "keywords": [
-          "open-source AI",
-          "MIT licensing",
-          "monopolistic lock-in",
-          "open model weights"
-        ]
-      },
-      "domain_pair": "Tech \u26a1 Politics",
-      "semantic_similarity": 0.2032,
-      "surprise_score": 0.3049,
-      "shared_topics": [
-        "weights",
-        "open",
-        "source",
-        "mit",
-        "models"
-      ]
-    },
-    {
-      "post1": {
-        "post_id": "p_yl_fresh_1785624088739",
-        "author_id": "yann_lecun",
-        "author_name": "Yann LeCun",
-        "author_title": "VP & Chief AI Scientist at Meta",
-        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
-        "domain": "Tech",
-        "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-        "likes": 20756,
-        "reposts": 5195,
-        "date": "2026-08-01",
-        "keywords": [
-          "Llama-4",
-          "MIT license",
-          "micro-VM",
-          "sub-0.3ms latency",
-          "open source speed"
-        ]
-      },
-      "post2": {
-        "post_id": "p_lk_1",
-        "author_id": "lina_khan",
-        "author_name": "Lina Khan",
-        "author_title": "Chair of the Federal Trade Commission",
-        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
-        "domain": "Politics",
-        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
-        "likes": 6100,
-        "reposts": 1280,
-        "date": "2026-08-01",
-        "keywords": [
-          "open-source AI",
-          "MIT licensing",
-          "monopolistic lock-in",
-          "open model weights"
-        ]
-      },
-      "domain_pair": "Tech \u26a1 Politics",
-      "semantic_similarity": 0.2032,
-      "surprise_score": 0.3049,
-      "shared_topics": [
-        "weights",
-        "open",
-        "source",
-        "mit",
-        "models"
-      ]
-    },
-    {
-      "post1": {
-        "post_id": "p_yl_fresh_1785623693892",
-        "author_id": "yann_lecun",
-        "author_name": "Yann LeCun",
-        "author_title": "VP & Chief AI Scientist at Meta",
-        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
-        "domain": "Tech",
-        "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-        "likes": 20236,
-        "reposts": 3825,
-        "date": "2026-08-01",
-        "keywords": [
-          "Llama-4",
-          "MIT license",
-          "micro-VM",
-          "sub-0.3ms latency",
-          "open source speed"
-        ]
-      },
-      "post2": {
-        "post_id": "p_lk_1",
-        "author_id": "lina_khan",
-        "author_name": "Lina Khan",
-        "author_title": "Chair of the Federal Trade Commission",
-        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
-        "domain": "Politics",
-        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
-        "likes": 6100,
-        "reposts": 1280,
-        "date": "2026-08-01",
-        "keywords": [
-          "open-source AI",
-          "MIT licensing",
-          "monopolistic lock-in",
-          "open model weights"
-        ]
-      },
-      "domain_pair": "Tech \u26a1 Politics",
-      "semantic_similarity": 0.2032,
-      "surprise_score": 0.3049,
-      "shared_topics": [
-        "weights",
-        "open",
-        "source",
-        "mit",
-        "models"
-      ]
-    },
-    {
-      "post1": {
-        "post_id": "p_yl_fresh",
-        "author_id": "yann_lecun",
-        "author_name": "Yann LeCun",
-        "author_title": "VP & Chief AI Scientist at Meta",
-        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
-        "domain": "Tech",
-        "text": "Fresh Scrape: Open-weights Llama-4 models with MIT/Apache licenses are performing inference on micro-VM hyperscaler nodes at sub-0.3ms latency, demonstrating that proprietary API walls cannot compete with open source speed.",
-        "likes": 28127,
-        "reposts": 6454,
-        "date": "2026-08-01",
-        "keywords": [
-          "Llama-4",
-          "MIT license",
-          "micro-VM",
-          "sub-0.3ms latency",
-          "open source speed"
-        ]
-      },
-      "post2": {
-        "post_id": "p_lk_1",
-        "author_id": "lina_khan",
-        "author_name": "Lina Khan",
-        "author_title": "Chair of the Federal Trade Commission",
-        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
-        "domain": "Politics",
-        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
-        "likes": 6100,
-        "reposts": 1280,
-        "date": "2026-08-01",
-        "keywords": [
-          "open-source AI",
-          "MIT licensing",
-          "monopolistic lock-in",
-          "open model weights"
-        ]
-      },
-      "domain_pair": "Tech \u26a1 Politics",
-      "semantic_similarity": 0.2032,
-      "surprise_score": 0.3049,
-      "shared_topics": [
-        "weights",
-        "open",
-        "source",
-        "mit",
-        "models"
+        "permissive"
       ]
     },
     {
@@ -876,14 +994,109 @@
         ]
       },
       "domain_pair": "Tech \u26a1 Politics",
-      "semantic_similarity": 0.1971,
-      "surprise_score": 0.2957,
+      "semantic_similarity": 0.2084,
+      "surprise_score": 0.3127,
       "shared_topics": [
-        "weights",
-        "open",
         "source",
+        "open",
+        "proprietary",
         "mit",
-        "models"
+        "permissive"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_yl_med_1785632751494",
+        "author_id": "yann_lecun",
+        "author_name": "Yann LeCun",
+        "author_title": "VP & Chief AI Scientist at Meta",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
+        "likes": 24500,
+        "reposts": 6800,
+        "date": "2026-08-02",
+        "keywords": [
+          "Llama-4",
+          "Medium",
+          "LinkedIn",
+          "open weights",
+          "micro-VM",
+          "MIT license"
+        ]
+      },
+      "post2": {
+        "post_id": "p_lk_1",
+        "author_id": "lina_khan",
+        "author_name": "Lina Khan",
+        "author_title": "Chair of the Federal Trade Commission",
+        "author_avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+        "domain": "Politics",
+        "text": "Open-source AI models under permissive MIT licensing are essential to preventing monopolistic platform lock-in by proprietary hyperscaler gatekeepers. Antitrust policy must protect open model weights.",
+        "likes": 6100,
+        "reposts": 1280,
+        "date": "2026-08-01",
+        "keywords": [
+          "open-source AI",
+          "MIT licensing",
+          "monopolistic lock-in",
+          "open model weights"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Politics",
+      "semantic_similarity": 0.2084,
+      "surprise_score": 0.3127,
+      "shared_topics": [
+        "source",
+        "open",
+        "proprietary",
+        "mit",
+        "permissive"
+      ]
+    },
+    {
+      "post1": {
+        "post_id": "p_sa_1",
+        "author_id": "sam_altman",
+        "author_name": "Sam Altman",
+        "author_title": "CEO, OpenAI",
+        "author_avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+        "domain": "Tech",
+        "text": "The bottleneck for AGI is gigawatt-scale clean power and sovereign land rights. Whoever solves cheap nuclear fusion or geothermal energy will dictate the pace of intelligence scaling.",
+        "likes": 19800,
+        "reposts": 4100,
+        "date": "2026-07-30",
+        "keywords": [
+          "AGI bottleneck",
+          "nuclear fusion",
+          "gigawatt power",
+          "sovereign land rights"
+        ]
+      },
+      "post2": {
+        "post_id": "p_pz_1",
+        "author_id": "peter_zeihan",
+        "author_name": "Peter Zeihan",
+        "author_title": "Geopolitical Analyst & Author",
+        "author_avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        "domain": "Geopolitics",
+        "text": "The geopolitical race for gigawatt energy to power open-source hyperscaler AI inference clusters is redrawing global industrial alliances.",
+        "likes": 7200,
+        "reposts": 1450,
+        "date": "2026-08-01",
+        "keywords": [
+          "gigawatt energy",
+          "open-source",
+          "hyperscaler AI"
+        ]
+      },
+      "domain_pair": "Tech \u26a1 Geopolitics",
+      "semantic_similarity": 0.163,
+      "surprise_score": 0.3097,
+      "shared_topics": [
+        "gigawatt",
+        "energy",
+        "power"
       ]
     }
   ],

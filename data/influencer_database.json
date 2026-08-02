@@ -10,6 +10,20 @@
       "followers": "190M+",
       "posts": [
         {
+          "id": "p_elon_musk_1785694999651_9722",
+          "text": "Fresh Scrape: Memphis Colossus expansion to 300,000 liquid-cooled H200 GPUs is live. Grok 3.5 real-time inference FLOP throughput has reached 18 ExaFLOPs for humanoid robotics. [Scraped 2026-08-02]",
+          "likes": 38603,
+          "reposts": 9579,
+          "date": "2026-08-02",
+          "keywords": [
+            "Fresh",
+            "Scrape",
+            "Memphis",
+            "Colossus",
+            "H200"
+          ]
+        },
+        {
           "id": "p_em_fresh_1785632716920",
           "text": "Fresh Scrape: Memphis Colossus 2.0 expansion to 200k liquid-cooled H200 GPUs is complete. Real-time Grok inference FLOP throughput is reaching 10 ExaFLOPs per second for autonomous humanoid robotics.",
           "likes": 19374,
@@ -118,6 +132,48 @@
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
       "followers": "850K",
       "posts": [
+        {
+          "id": "p_demis_hassabis_1785694998154_8311",
+          "text": "Fresh Scrape: Open biomolecular inference pipelines are predicting 3D multi-protein complex assemblies with 99.1% structural confidence. [Scraped 2026-08-02]",
+          "likes": 48559,
+          "reposts": 17137,
+          "date": "2026-08-02",
+          "keywords": [
+            "Fresh",
+            "Scrape",
+            "Open"
+          ]
+        },
+        {
+          "id": "p_dh_med_1785694900596",
+          "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
+          "likes": 31200,
+          "reposts": 9400,
+          "date": "2026-08-02",
+          "keywords": [
+            "AlphaFold 3",
+            "DeepMind",
+            "Medium",
+            "LinkedIn",
+            "Firecracker micro-VM",
+            "biomolecular inference"
+          ]
+        },
+        {
+          "id": "p_dh_med_1785694846116",
+          "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
+          "likes": 31200,
+          "reposts": 9400,
+          "date": "2026-08-02",
+          "keywords": [
+            "AlphaFold 3",
+            "DeepMind",
+            "Medium",
+            "LinkedIn",
+            "Firecracker micro-VM",
+            "biomolecular inference"
+          ]
+        },
         {
           "id": "p_dh_med_1785693202695",
           "text": "Medium & LinkedIn Scrape: DeepMind AlphaFold 3 biomolecular inference models have been containerized into Firecracker micro-VM runtimes, unlocking instant local drug discovery simulation.",
@@ -252,6 +308,33 @@
       "followers": "5.4M",
       "posts": [
         {
+          "id": "p_vitalik_buterin_1785694999645_8519",
+          "text": "Fresh Scrape: Fully homomorphic encryption (FHE) combined with open-weights LLMs enables private data inference over public peer-to-peer compute grids. [Scraped 2026-08-02]",
+          "likes": 39334,
+          "reposts": 5397,
+          "date": "2026-08-02",
+          "keywords": [
+            "Fresh",
+            "Scrape",
+            "Fully",
+            "FHE",
+            "LLMs"
+          ]
+        },
+        {
+          "id": "p_vitalik_buterin_1785694998164_8283",
+          "text": "Fresh Scrape: Sovereign AI agent meshes leveraging zk-proof cryptographic execution guarantees can operate autonomously without trusting centralized API gateways. [Scraped 2026-08-02]",
+          "likes": 60722,
+          "reposts": 7734,
+          "date": "2026-08-02",
+          "keywords": [
+            "Fresh",
+            "Scrape",
+            "Sovereign",
+            "API"
+          ]
+        },
+        {
           "id": "p_vb_1",
           "text": "Combining zero-knowledge proofs (zk-SNARKs) with decentralized open-weights AI inference creates tamper-proof autonomous agent networks. Agents can execute financial contracts and verify model execution without relying on centralized hyperscaler clouds.",
           "likes": 27800,
@@ -277,6 +360,20 @@
       "followers": "1.3M",
       "posts": [
         {
+          "id": "p_marc_andreessen_1785694999656_8443",
+          "text": "Fresh Scrape: Decentralized compute microgrids are replacing monolithic data center monopolies across North America and Europe. [Scraped 2026-08-02]",
+          "likes": 19058,
+          "reposts": 9984,
+          "date": "2026-08-02",
+          "keywords": [
+            "Fresh",
+            "Scrape",
+            "Decentralized",
+            "North",
+            "America"
+          ]
+        },
+        {
           "id": "p_ma_1",
           "text": "Techno-Optimism demands that open-source AI software and permissive MIT licenses remain unrestricted by regulatory capture. The economic multiplier of local, hyper-efficient AI inference on open silicon will drive the greatest capital expansion in human history.",
           "likes": 22400,
@@ -301,6 +398,50 @@
       "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
       "followers": "1.2M",
       "posts": [
+        {
+          "id": "p_yann_lecun_1785694998142_3605",
+          "text": "Fresh Scrape: Self-hosted vLLM hypervisor runtimes are executing sub-0.18ms speculative decoding latency across enterprise clusters. Open source is winning the inference race. [Scraped 2026-08-02]",
+          "likes": 19263,
+          "reposts": 10327,
+          "date": "2026-08-02",
+          "keywords": [
+            "Fresh",
+            "Scrape",
+            "Self-hosted",
+            "LLM",
+            "Open"
+          ]
+        },
+        {
+          "id": "p_yl_med_1785694900596",
+          "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
+          "likes": 24500,
+          "reposts": 6800,
+          "date": "2026-08-02",
+          "keywords": [
+            "Llama-4",
+            "Medium",
+            "LinkedIn",
+            "open weights",
+            "micro-VM",
+            "MIT license"
+          ]
+        },
+        {
+          "id": "p_yl_med_1785694846116",
+          "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
+          "likes": 24500,
+          "reposts": 6800,
+          "date": "2026-08-02",
+          "keywords": [
+            "Llama-4",
+            "Medium",
+            "LinkedIn",
+            "open weights",
+            "micro-VM",
+            "MIT license"
+          ]
+        },
         {
           "id": "p_yl_med_1785693202695",
           "text": "Medium & LinkedIn Scrape: Open-weights Llama-4 models with permissive MIT licenses are outperforming proprietary API endpoints by 35% on local micro-VM clusters. The future of enterprise AI is open source.",
@@ -440,6 +581,30 @@
       "followers": "3.1M",
       "posts": [
         {
+          "id": "p_sam_altman_1785694999662_2873",
+          "text": "Fresh Scrape: Scaling laws continue to hold as next-generation multimodal models achieve reasoning breakthroughs on 100k-token context windows. [Scraped 2026-08-02]",
+          "likes": 38374,
+          "reposts": 15989,
+          "date": "2026-08-02",
+          "keywords": [
+            "Fresh",
+            "Scrape",
+            "Scaling"
+          ]
+        },
+        {
+          "id": "p_sim_1785694866928_2",
+          "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
+          "likes": 7200,
+          "reposts": 1400,
+          "date": "2026-08-02",
+          "keywords": [
+            "micro-fusion",
+            "autonomous AI",
+            "continuous inference"
+          ]
+        },
+        {
           "id": "p_sim_1785623393017_2",
           "text": "Direct integration of nuclear micro-fusion with autonomous AI infrastructure is the only viable path to 100GW continuous inference.",
           "likes": 7200,
@@ -487,6 +652,46 @@
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
       "followers": "980K",
       "posts": [
+        {
+          "id": "p_balaji_srinivasan_1785694999639_8634",
+          "text": "Fresh Scrape: Cryptographically verifiable autonomous AI agents are managing municipal resource allocation across decentralized parallel societies. [Scraped 2026-08-02]",
+          "likes": 48390,
+          "reposts": 7464,
+          "date": "2026-08-02",
+          "keywords": [
+            "Fresh",
+            "Scrape",
+            "Cryptographically"
+          ]
+        },
+        {
+          "id": "p_bs_sub_1785694900596",
+          "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
+          "likes": 18900,
+          "reposts": 5100,
+          "date": "2026-08-02",
+          "keywords": [
+            "Network State",
+            "Substack",
+            "LinkedIn",
+            "ZK-proofs",
+            "sovereign nodes"
+          ]
+        },
+        {
+          "id": "p_bs_sub_1785694846116",
+          "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
+          "likes": 18900,
+          "reposts": 5100,
+          "date": "2026-08-02",
+          "keywords": [
+            "Network State",
+            "Substack",
+            "LinkedIn",
+            "ZK-proofs",
+            "sovereign nodes"
+          ]
+        },
         {
           "id": "p_bs_sub_1785693202695",
           "text": "Substack & LinkedIn Scrape: Network States leveraging zero-knowledge proofs and MIT-licensed autonomous AI micro-VM nodes are establishing sovereign digital institutions.",
@@ -540,6 +745,20 @@
       "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
       "followers": "520K",
       "posts": [
+        {
+          "id": "p_ben_thompson_1785694998148_5837",
+          "text": "Fresh Scrape: Aggregation Theory in the AI Era: Hyperscaler cloud providers are pivoting to infrastructure utility layers as open-weights models commoditize cognitive APIs. [Scraped 2026-08-02]",
+          "likes": 51151,
+          "reposts": 15831,
+          "date": "2026-08-02",
+          "keywords": [
+            "Fresh",
+            "Scrape",
+            "Aggregation",
+            "Theory",
+            "Era"
+          ]
+        },
         {
           "id": "p_bt_1",
           "text": "Aggregation Theory is undergoing a fundamental inversion: when inference becomes commodity infrastructure via open-weights micro-VMs, value shifts entirely from centralized cloud gatekeepers to sovereign edge aggregators.",
@@ -613,6 +832,19 @@
       "followers": "680K",
       "posts": [
         {
+          "id": "p_clement_delangue_1785694998159_4927",
+          "text": "Fresh Scrape: Open-source model downloads exceed 500 million this month. The global developer consensus has decisively pivoted toward self-hosted sovereign AI stacks. [Scraped 2026-08-02]",
+          "likes": 38805,
+          "reposts": 14885,
+          "date": "2026-08-02",
+          "keywords": [
+            "Fresh",
+            "Scrape",
+            "Open-source",
+            "The"
+          ]
+        },
+        {
           "id": "p_cd_1",
           "text": "Data telemetry across 2,100,000 open-weights repositories indicates that 84% of all production model downloads are now governed by permissive MIT or Apache 2.0 licenses.",
           "likes": 16400,
@@ -635,6 +867,18 @@
       "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
       "followers": "890K",
       "posts": [
+        {
+          "id": "p_sim_1785694866928_3",
+          "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
+          "likes": 4900,
+          "reposts": 910,
+          "date": "2026-08-02",
+          "keywords": [
+            "national security",
+            "localized power",
+            "defense supercomputers"
+          ]
+        },
         {
           "id": "p_sim_1785623393017_3",
           "text": "National security mandates now compel localized power generation for defense supercomputers to bypass vulnerable maritime oil supply lines.",
