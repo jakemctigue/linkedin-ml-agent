@@ -708,14 +708,49 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalPublish = document.getElementById('modal-publish');
     const modalPublishClose = document.getElementById('modal-publish-close');
     const btnModalPublishCancel = document.getElementById('btn-modal-publish-cancel');
-    const formPublishMulti = document.getElementById('form-publish-multi');
+    const btnPubSelectAll = document.getElementById('btn-pub-select-all');
+    const btnPubDeselectAll = document.getElementById('btn-pub-deselect-all');
+    const btnSubmitPublish = document.getElementById('btn-submit-publish');
 
-    if (modalPublishClose) modalPublishClose.addEventListener('click', () => modalPublish.classList.add('hidden'));
-    if (btnModalPublishCancel) btnModalPublishCancel.addEventListener('click', () => modalPublish.classList.add('hidden'));
+    const closeModal = () => {
+      if (modalPublish) modalPublish.classList.add('hidden');
+    };
+
+    if (modalPublishClose) modalPublishClose.addEventListener('click', closeModal);
+    if (btnModalPublishCancel) btnModalPublishCancel.addEventListener('click', closeModal);
+    
+    // Close on backdrop click outside modal box
+    if (modalPublish) {
+      modalPublish.addEventListener('click', (e) => {
+        if (e.target === modalPublish) closeModal();
+      });
+    }
+
+    // Select All / Deselect All
+    if (btnPubSelectAll) {
+      btnPubSelectAll.addEventListener('click', () => {
+        document.querySelectorAll('input[name="platform"]').forEach(chk => {
+          chk.checked = true;
+          const parent = chk.closest('.platform-chip-toggle');
+          if (parent) parent.classList.add('active');
+        });
+      });
+    }
+
+    if (btnPubDeselectAll) {
+      btnPubDeselectAll.addEventListener('click', () => {
+        document.querySelectorAll('input[name="platform"]').forEach(chk => {
+          chk.checked = false;
+          const parent = chk.closest('.platform-chip-toggle');
+          if (parent) parent.classList.remove('active');
+        });
+      });
+    }
 
     // Platform editor tab switching
     document.querySelectorAll('.pub-tab-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
         document.querySelectorAll('.pub-tab-btn').forEach(b => b.classList.remove('active'));
         document.querySelectorAll('.pub-panel').forEach(p => p.classList.remove('active'));
 
@@ -735,39 +770,41 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Multi-Platform Publisher Direct Click Handler (Bypasses Browser Extension Form Interception)
-    const btnSubmitPublish = document.getElementById('btn-submit-publish');
+    // Independent Single-Platform Publish Buttons
+    document.querySelectorAll('.btn-publish-single').forEach(btn => {
+      btn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const targetPlatform = btn.getAttribute('data-singleplatform');
+        if (targetPlatform) {
+          await executeMultiPlatformPublish([targetPlatform], btn);
+        }
+      });
+    });
+
+    // Multi-Platform Publisher Global Click Handler
     if (btnSubmitPublish) {
       btnSubmitPublish.addEventListener('click', async (e) => {
         if (e) {
           e.preventDefault();
           e.stopPropagation();
         }
-        await executeMultiPlatformPublish();
-      });
-    }
-
-    if (formPublishMulti) {
-      formPublishMulti.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        await executeMultiPlatformPublish();
+        const selectedPlatforms = Array.from(document.querySelectorAll('input[name="platform"]:checked')).map(el => el.value);
+        await executeMultiPlatformPublish(selectedPlatforms, btnSubmitPublish);
       });
     }
   }
 
-  async function executeMultiPlatformPublish() {
-    const selectedPlatforms = Array.from(document.querySelectorAll('input[name="platform"]:checked')).map(el => el.value);
-
-    if (selectedPlatforms.length === 0) {
-      showToast('Please select at least one target app to post live.');
+  async function executeMultiPlatformPublish(targetPlatforms = [], actionBtn = null) {
+    if (!targetPlatforms || targetPlatforms.length === 0) {
+      showToast('Please select at least one target platform to publish.');
       return;
     }
 
-    const submitBtn = document.getElementById('btn-submit-publish');
-    if (submitBtn) {
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = `<span>Launching ${selectedPlatforms.length} Live Apps...</span>`;
+    const origBtnText = actionBtn ? actionBtn.innerHTML : '';
+    if (actionBtn) {
+      actionBtn.disabled = true;
+      actionBtn.innerHTML = `<span>Publishing to ${targetPlatforms.join(', ')}...</span>`;
     }
 
     const getVal = (id) => {
@@ -782,7 +819,7 @@ document.addEventListener('DOMContentLoaded', () => {
       goalTitle: goalTitleEl ? goalTitleEl.textContent : 'Strategic Realization',
       infographicUrl: getVal('pub-infographic-url'),
       authorName: appState.currentUser ? appState.currentUser.name : 'Google Authenticated User',
-      platforms: selectedPlatforms,
+      platforms: targetPlatforms,
       content: {
         mctigue: getVal('pub-content-mctigue'),
         linkedIn: getVal('pub-content-linkedin'),
@@ -807,14 +844,14 @@ document.addEventListener('DOMContentLoaded', () => {
       if (res.ok && data.dispatches) {
         if (modalPublish) modalPublish.classList.add('hidden');
         
-        // Launch official live post intent windows for each selected app!
+        // Launch official live post intent windows for each target platform!
         data.dispatches.forEach(dispatch => {
           if (dispatch.share_url && dispatch.share_url !== 'http://localhost:3000/') {
             window.open(dispatch.share_url, '_blank');
           }
         });
 
-        showToast(`🚀 Launched live post windows for ${selectedPlatforms.join(', ')}!`);
+        showToast(`🚀 Dispatched to ${targetPlatforms.join(', ')}!`);
       } else {
         showToast(data.error || 'Failed to generate live dispatches');
       }
@@ -822,12 +859,9 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error('Publish error:', err);
       showToast('Publishing network error');
     } finally {
-      if (submitBtn) {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = `
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          Launch 1-Click Live App Publishers
-        `;
+      if (actionBtn) {
+        actionBtn.disabled = false;
+        actionBtn.innerHTML = origBtnText;
       }
     }
   }

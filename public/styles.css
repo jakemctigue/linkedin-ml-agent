@@ -836,6 +836,49 @@ body {
   box-shadow: 0 0 12px rgba(245, 158, 11, 0.4);
 }
 
+.platform-bulk-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  border-color: var(--accent-cyan);
+}
+
+.pub-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  padding: 0.4rem 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--accent-blue);
+}
+
+.btn-publish-single {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  background: var(--gradient-blue);
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.25);
+}
+
 .daily-status-tag {
   font-size: 0.78rem;
   font-weight: 700;

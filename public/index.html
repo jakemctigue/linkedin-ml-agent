@@ -286,16 +286,24 @@
       <div class="modal-header">
         <div>
           <h3>Multi-Platform Publisher Hub</h3>
-          <p class="modal-subtitle">1-Click Dispatch to LinkedIn, Twitter/X, Medium & Substack</p>
+          <p class="modal-subtitle">Independently Review & Publish to LinkedIn, Medium, Bluesky, Threads, Substack & 10 Ecosystems</p>
         </div>
-        <button id="modal-publish-close" class="modal-close-btn">&times;</button>
+        <button type="button" id="modal-publish-close" class="modal-close-btn" aria-label="Close modal">&times;</button>
       </div>
-      <form id="form-publish-multi" class="modal-body">
+      
+      <div class="modal-body">
         
-        <!-- Platform Selection Toggles -->
+        <!-- Platform Selection Toggles & Bulk Actions -->
         <div class="platform-selection-group">
-          <span class="form-section-label">Select Target Apps & Blog Platforms to Post Live:</span>
-          <div class="platform-checkboxes">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
+            <span class="form-section-label">Target App & Blog Platforms:</span>
+            <div class="platform-bulk-actions">
+              <button type="button" id="btn-pub-select-all" class="btn btn-sm btn-outline">Select All</button>
+              <button type="button" id="btn-pub-deselect-all" class="btn btn-sm btn-outline">Deselect All</button>
+            </div>
+          </div>
+
+          <div class="platform-checkboxes" id="platform-checkboxes-container">
             <label class="platform-chip-toggle active">
               <input type="checkbox" name="platform" value="mctigue.co" checked>
               <span>🌐 mctigue.co</span>
@@ -347,7 +355,7 @@
         </div>
 
         <!-- Platform Preview & Content Editor Tabs -->
-        <div class="publish-editor-tabs">
+        <div class="publish-editor-tabs" id="publish-editor-tabs-bar">
           <button type="button" class="pub-tab-btn active" data-pubtab="pub-tab-mctigue">🌐 mctigue.co</button>
           <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-linkedin">💼 LinkedIn</button>
           <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-bluesky">🦋 Bluesky</button>
@@ -355,59 +363,121 @@
           <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-medium">✍️ Medium</button>
           <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-substack">📧 Substack</button>
           <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-tumblr">📝 Tumblr</button>
-          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-x">🐦 X</button>
-          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-facebook">📘 FB</button>
+          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-x">🐦 X (Twitter)</button>
+          <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-facebook">📘 Facebook</button>
           <button type="button" class="pub-tab-btn" data-pubtab="pub-tab-youtube">🔴 YouTube</button>
         </div>
 
-        <!-- Editor Panels -->
+        <!-- Editor Panels & Independent Platform Publishers -->
         <div class="pub-editor-panels">
+          
+          <!-- 1. mctigue.co -->
           <div id="pub-tab-mctigue" class="pub-panel active">
+            <div class="pub-panel-header">
+              <span>🌐 mctigue.co Executive Strategy Article Format</span>
+              <button type="button" class="btn btn-sm btn-primary btn-publish-single" data-singleplatform="mctigue.co">🚀 Publish Independently to mctigue.co</button>
+            </div>
             <textarea id="pub-content-mctigue" rows="6" class="pub-textarea" placeholder="mctigue.co executive strategy article format..."></textarea>
           </div>
+
+          <!-- 2. LinkedIn -->
           <div id="pub-tab-linkedin" class="pub-panel">
+            <div class="pub-panel-header">
+              <span>💼 LinkedIn Post Layout & Commentary</span>
+              <button type="button" class="btn btn-sm btn-primary btn-publish-single" data-singleplatform="LinkedIn">🚀 Publish Independently to LinkedIn</button>
+            </div>
             <textarea id="pub-content-linkedin" rows="6" class="pub-textarea" placeholder="LinkedIn post format..."></textarea>
           </div>
+
+          <!-- 3. Bluesky -->
           <div id="pub-tab-bluesky" class="pub-panel">
+            <div class="pub-panel-header">
+              <span>🦋 Bluesky Micro-Blog Post</span>
+              <button type="button" class="btn btn-sm btn-primary btn-publish-single" data-singleplatform="Bluesky">🚀 Publish Independently to Bluesky</button>
+            </div>
             <textarea id="pub-content-bluesky" rows="6" class="pub-textarea" placeholder="Bluesky post format..."></textarea>
           </div>
+
+          <!-- 4. Threads -->
           <div id="pub-tab-threads" class="pub-panel">
+            <div class="pub-panel-header">
+              <span>🧵 Threads Meta Post</span>
+              <button type="button" class="btn btn-sm btn-primary btn-publish-single" data-singleplatform="Threads">🚀 Publish Independently to Threads</button>
+            </div>
             <textarea id="pub-content-threads" rows="6" class="pub-textarea" placeholder="Threads post format..."></textarea>
           </div>
+
+          <!-- 5. Medium -->
           <div id="pub-tab-medium" class="pub-panel">
+            <div class="pub-panel-header">
+              <span>✍️ Medium Article Draft Layout</span>
+              <button type="button" class="btn btn-sm btn-primary btn-publish-single" data-singleplatform="Medium">🚀 Publish Independently to Medium</button>
+            </div>
             <textarea id="pub-content-medium" rows="6" class="pub-textarea" placeholder="Medium article draft format..."></textarea>
           </div>
+
+          <!-- 6. Substack -->
           <div id="pub-tab-substack" class="pub-panel">
+            <div class="pub-panel-header">
+              <span>📧 Substack Newsletter Issue</span>
+              <button type="button" class="btn btn-sm btn-primary btn-publish-single" data-singleplatform="Substack">🚀 Publish Independently to Substack</button>
+            </div>
             <textarea id="pub-content-substack" rows="6" class="pub-textarea" placeholder="Substack newsletter format..."></textarea>
           </div>
+
+          <!-- 7. Tumblr -->
           <div id="pub-tab-tumblr" class="pub-panel">
+            <div class="pub-panel-header">
+              <span>📝 Tumblr Blog Entry</span>
+              <button type="button" class="btn btn-sm btn-primary btn-publish-single" data-singleplatform="Tumblr">🚀 Publish Independently to Tumblr</button>
+            </div>
             <textarea id="pub-content-tumblr" rows="6" class="pub-textarea" placeholder="Tumblr blog post format..."></textarea>
           </div>
+
+          <!-- 8. X (Twitter) -->
           <div id="pub-tab-x" class="pub-panel">
+            <div class="pub-panel-header">
+              <span>🐦 X (Twitter) Thread Layout</span>
+              <button type="button" class="btn btn-sm btn-primary btn-publish-single" data-singleplatform="X">🚀 Publish Independently to X</button>
+            </div>
             <textarea id="pub-content-x" rows="6" class="pub-textarea" placeholder="X thread post format..."></textarea>
           </div>
+
+          <!-- 9. Facebook -->
           <div id="pub-tab-facebook" class="pub-panel">
+            <div class="pub-panel-header">
+              <span>📘 Facebook Business Post</span>
+              <button type="button" class="btn btn-sm btn-primary btn-publish-single" data-singleplatform="Facebook">🚀 Publish Independently to Facebook</button>
+            </div>
             <textarea id="pub-content-facebook" rows="6" class="pub-textarea" placeholder="Facebook post format..."></textarea>
           </div>
+
+          <!-- 10. YouTube -->
           <div id="pub-tab-youtube" class="pub-panel">
+            <div class="pub-panel-header">
+              <span>🔴 YouTube Shorts / Video Script & Community Post</span>
+              <button type="button" class="btn btn-sm btn-primary btn-publish-single" data-singleplatform="YouTube">🚀 Publish Independently to YouTube</button>
+            </div>
             <textarea id="pub-content-youtube" rows="6" class="pub-textarea" placeholder="YouTube Shorts / Video script & Community post..."></textarea>
           </div>
+
         </div>
 
         <div class="modal-footer">
-          <button type="button" id="btn-modal-publish-cancel" class="btn btn-secondary">Cancel</button>
+          <button type="button" id="btn-modal-publish-cancel" class="btn btn-secondary">Close / Cancel</button>
           <button type="button" id="btn-submit-publish" class="btn btn-primary">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            Launch 1-Click Live App Publishers
+            🚀 Launch All Selected Platform Publishers
           </button>
         </div>
-      </form>
+
+      </div>
     </div>
   </div>
 
   <!-- Toast Notification -->
   <div id="toast" class="toast hidden"></div>
 
-  <script src="app.js?v=1.0.1"></script>
+  <script src="app.js?v=1.0.2"></script>
 </body>
 </html>
