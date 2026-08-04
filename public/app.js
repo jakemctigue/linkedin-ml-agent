@@ -712,52 +712,60 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnPubDeselectAll = document.getElementById('btn-pub-deselect-all');
     const btnSubmitPublish = document.getElementById('btn-submit-publish');
 
-    const closeModal = () => {
-      if (modalPublish) modalPublish.classList.add('hidden');
+    // Fail-safe window methods
+    window.closePublishModal = function() {
+      const m = document.getElementById('modal-publish');
+      if (m) m.classList.add('hidden');
     };
 
-    if (modalPublishClose) modalPublishClose.addEventListener('click', closeModal);
-    if (btnModalPublishCancel) btnModalPublishCancel.addEventListener('click', closeModal);
+    window.switchPubTab = function(targetId, btnEl) {
+      document.querySelectorAll('.pub-tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.pub-panel').forEach(p => p.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) targetPanel.classList.add('active');
+    };
+
+    window.selectAllPlatforms = function(shouldSelect) {
+      document.querySelectorAll('input[name="platform"]').forEach(chk => {
+        chk.checked = shouldSelect;
+        const parent = chk.closest('.platform-chip-toggle');
+        if (parent) {
+          if (shouldSelect) parent.classList.add('active');
+          else parent.classList.remove('active');
+        }
+      });
+    };
+
+    window.publishSinglePlatform = async function(platformName, btnEl) {
+      await executeMultiPlatformPublish([platformName], btnEl);
+    };
+
+    window.executeGlobalPublish = async function(btnEl) {
+      const selectedPlatforms = Array.from(document.querySelectorAll('input[name="platform"]:checked')).map(el => el.value);
+      await executeMultiPlatformPublish(selectedPlatforms, btnEl);
+    };
+
+    if (modalPublishClose) modalPublishClose.addEventListener('click', window.closePublishModal);
+    if (btnModalPublishCancel) btnModalPublishCancel.addEventListener('click', window.closePublishModal);
     
     // Close on backdrop click outside modal box
     if (modalPublish) {
       modalPublish.addEventListener('click', (e) => {
-        if (e.target === modalPublish) closeModal();
+        if (e.target === modalPublish) window.closePublishModal();
       });
     }
 
     // Select All / Deselect All
-    if (btnPubSelectAll) {
-      btnPubSelectAll.addEventListener('click', () => {
-        document.querySelectorAll('input[name="platform"]').forEach(chk => {
-          chk.checked = true;
-          const parent = chk.closest('.platform-chip-toggle');
-          if (parent) parent.classList.add('active');
-        });
-      });
-    }
-
-    if (btnPubDeselectAll) {
-      btnPubDeselectAll.addEventListener('click', () => {
-        document.querySelectorAll('input[name="platform"]').forEach(chk => {
-          chk.checked = false;
-          const parent = chk.closest('.platform-chip-toggle');
-          if (parent) parent.classList.remove('active');
-        });
-      });
-    }
+    if (btnPubSelectAll) btnPubSelectAll.addEventListener('click', () => window.selectAllPlatforms(true));
+    if (btnPubDeselectAll) btnPubDeselectAll.addEventListener('click', () => window.selectAllPlatforms(false));
 
     // Platform editor tab switching
     document.querySelectorAll('.pub-tab-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
-        document.querySelectorAll('.pub-tab-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.pub-panel').forEach(p => p.classList.remove('active'));
-
-        btn.classList.add('active');
         const targetId = btn.getAttribute('data-pubtab');
-        const targetPanel = document.getElementById(targetId);
-        if (targetPanel) targetPanel.classList.add('active');
+        window.switchPubTab(targetId, btn);
       });
     });
 
@@ -777,7 +785,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.stopPropagation();
         const targetPlatform = btn.getAttribute('data-singleplatform');
         if (targetPlatform) {
-          await executeMultiPlatformPublish([targetPlatform], btn);
+          await window.publishSinglePlatform(targetPlatform, btn);
         }
       });
     });
@@ -789,8 +797,7 @@ document.addEventListener('DOMContentLoaded', () => {
           e.preventDefault();
           e.stopPropagation();
         }
-        const selectedPlatforms = Array.from(document.querySelectorAll('input[name="platform"]:checked')).map(el => el.value);
-        await executeMultiPlatformPublish(selectedPlatforms, btnSubmitPublish);
+        await window.executeGlobalPublish(btnSubmitPublish);
       });
     }
   }
