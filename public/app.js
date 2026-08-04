@@ -91,29 +91,59 @@ document.addEventListener('DOMContentLoaded', () => {
     renderInfluencersFeed(influencers);
   }
 
+  // Global Realization Filter Helpers
+  window.setRealizationDomainFilter = function(domainTag, btnEl) {
+    appState.activeDomainFilter = domainTag;
+    document.querySelectorAll('.filter-group .chip').forEach(c => c.classList.remove('active'));
+    if (btnEl) btnEl.classList.add('active');
+    renderGoals(appState.analysisData ? appState.analysisData.synthesized_realizations : []);
+  };
+
+  window.filterRealizationsList = function() {
+    renderGoals(appState.analysisData ? appState.analysisData.synthesized_realizations : []);
+  };
+
   // --- 1. REALIZATIONS & GOALS RENDERER ---
   function renderGoals(goals) {
     if (!goalsContainer) return;
     goalsContainer.innerHTML = '';
 
-    const filtered = goals.filter(g => {
-      if (appState.activeDomainFilter === 'all') return true;
-      return g.domains.includes(appState.activeDomainFilter);
-    });
-
-    if (filtered.length === 0) {
-      goalsContainer.innerHTML = `<div class="goal-card"><p class="goal-summary">No realization goals found for domain '${appState.activeDomainFilter}'.</p></div>`;
+    if (!goals || goals.length === 0) {
+      goalsContainer.innerHTML = '<div class="goal-card"><p class="goal-summary">No realization goals available. Click "Trigger Scrape & ML Analysis" to harvest fresh signals.</p></div>';
       return;
     }
 
-    filtered.forEach(goal => {
+    const searchInput = document.getElementById('search-realizations-input');
+    const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+    const filtered = goals.filter(g => {
+      const matchDomain = (appState.activeDomainFilter === 'all') || (g.domains && g.domains.includes(appState.activeDomainFilter));
+      if (!matchDomain) return false;
+
+      if (!query) return true;
+      const textToSearch = `${g.title} ${g.summary} ${g.realization} ${(g.domains||[]).join(' ')} ${(g.keywords_banner||[]).join(' ')}`.toLowerCase();
+      return textToSearch.includes(query);
+    });
+
+    const badgeEl = document.getElementById('realizations-count-badge');
+    const totalScraped = (appState.analysisData && appState.analysisData.metadata) ? appState.analysisData.metadata.total_posts : 112;
+    if (badgeEl) {
+      badgeEl.textContent = `Showing ${filtered.length} of ${goals.length} Dynamic Realizations (from ${totalScraped} Scraped Signals)`;
+    }
+
+    if (filtered.length === 0) {
+      goalsContainer.innerHTML = `<div class="goal-card"><p class="goal-summary">No realization goals found matching search filter '${query || appState.activeDomainFilter}'.</p></div>`;
+      return;
+    }
+
+    filtered.forEach((goal, idx) => {
       const card = document.createElement('div');
       card.className = 'goal-card';
 
-      const domainTagsHtml = goal.domains.map(d => `<span class="tag tag-${d}">${d}</span>`).join('');
+      const domainTagsHtml = (goal.domains || []).map(d => `<span class="tag tag-${d}">${d}</span>`).join('');
       const keywordsBannerHtml = (goal.keywords_banner || []).map(k => `<span class="keyword-pill">📌 ${k}</span>`).join('');
-      const actionsListHtml = goal.strategic_goals.map(a => `<li>${a}</li>`).join('');
-      const evidenceHtml = goal.evidence_posts.map(e => `
+      const actionsListHtml = (goal.strategic_goals || []).map(a => `<li>${a}</li>`).join('');
+      const evidenceHtml = (goal.evidence_posts || []).map(e => `
         <div class="evidence-card">
           <div class="evidence-author">
             <span>${e.author}</span>
@@ -126,9 +156,9 @@ document.addEventListener('DOMContentLoaded', () => {
       card.innerHTML = `
         ${goal.infographic_url ? `
           <div class="infographic-banner-wrapper">
-            <img src="${goal.infographic_url}" alt="${goal.title} Infographic" class="infographic-img">
+            <img src="${goal.infographic_url}" alt="${goal.title} Infographic" class="infographic-img" onerror="this.src='/assets/infographic_sovereign_ai.jpg'">
             <div class="infographic-overlay">
-              <span class="infographic-badge">Data Accuracy Infographic</span>
+              <span class="infographic-badge">Data Artwork Asset #${idx+1}</span>
             </div>
           </div>
         ` : ''}

@@ -888,14 +888,15 @@ body {
   box-shadow: 0 2px 8px rgba(56, 189, 248, 0.25);
 }
 
-.daily-status-tag {
+.realization-count-tag {
   font-size: 0.78rem;
   font-weight: 700;
-  color: var(--accent-emerald);
-  background: rgba(16, 185, 129, 0.12);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  padding: 0.35rem 0.7rem;
+  color: var(--accent-cyan);
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  padding: 0.35rem 0.75rem;
   border-radius: var(--radius-full);
+  margin-right: 0.5rem;
 }
 
 .chatboard-header {

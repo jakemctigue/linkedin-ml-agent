@@ -138,17 +138,19 @@
             <p>Emergent realizations and strategic goals automatically discovered when fusing signals from opposing domains.</p>
           </div>
           <div class="filter-group">
-            <span class="filter-label">Filter Pillar:</span>
-            <button class="chip active" data-filter="all">All Domains</button>
-            <button class="chip" data-filter="Finance">Finance</button>
-            <button class="chip" data-filter="Tech">Tech</button>
-            <button class="chip" data-filter="Politics">Politics</button>
-            <button class="chip" data-filter="Geopolitics">Geopolitics</button>
+            <span id="realizations-count-badge" class="realization-count-tag">Showing 12 Dynamic Realizations (from 112 Scraped Signals)</span>
+            <input type="text" id="search-realizations-input" class="search-input" placeholder="Search realizations or authors..." style="width:240px;" oninput="filterRealizationsList()">
+            <span class="filter-label">Domain Pair:</span>
+            <button class="chip active" data-filter="all" onclick="setRealizationDomainFilter('all', this)">All Domains</button>
+            <button class="chip" data-filter="Tech" onclick="setRealizationDomainFilter('Tech', this)">Tech</button>
+            <button class="chip" data-filter="Finance" onclick="setRealizationDomainFilter('Finance', this)">Finance</button>
+            <button class="chip" data-filter="Politics" onclick="setRealizationDomainFilter('Politics', this)">Politics</button>
+            <button class="chip" data-filter="Geopolitics" onclick="setRealizationDomainFilter('Geopolitics', this)">Geopolitics</button>
           </div>
         </div>
 
         <div class="goals-grid" id="goals-container">
-          <!-- Dynamically populated goal cards -->
+          <!-- Dynamically populated goal cards with custom generated artwork -->
         </div>
       </section>
 

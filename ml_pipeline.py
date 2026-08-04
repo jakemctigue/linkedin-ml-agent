@@ -275,19 +275,28 @@ def run_pipeline():
                 
                 shared_words = set(tokenize(p1["text"])).intersection(set(tokenize(p2["text"])))
                 
-                if sim > 0.05 or surprise_score > 0.15:
-                    surprise_pairs.append({
-                        "post1": p1,
-                        "post2": p2,
-                        "domain_pair": f"{p1['domain']} ⚡ {p2['domain']}",
-                        "semantic_similarity": round(sim, 4),
-                        "surprise_score": round(surprise_score, 4),
-                        "shared_topics": list(shared_words)[:5]
-                    })
+                surprise_pairs.append({
+                    "post1": p1,
+                    "post2": p2,
+                    "domain_pair": f"{p1['domain']} ⚡ {p2['domain']}",
+                    "semantic_similarity": round(sim, 4),
+                    "surprise_score": round(surprise_score, 4),
+                    "shared_topics": list(shared_words)[:5]
+                })
                     
     surprise_pairs.sort(key=lambda x: x["surprise_score"], reverse=True)
-    
-    # 5. DYNAMICALLY Synthesize Surprising Realizations from Latest Scraped Posts!
+
+    seen_authors = set()
+    filtered_pairs = []
+    for pair in surprise_pairs:
+        key1 = f"{pair['post1']['author_name']}_{pair['post2']['author_name']}"
+        key2 = f"{pair['post2']['author_name']}_{pair['post1']['author_name']}"
+        if key1 not in seen_authors and key2 not in seen_authors:
+            seen_authors.add(key1)
+            seen_authors.add(key2)
+            filtered_pairs.append(pair)
+
+    # INFOGRAPHIC ARTWORK ASSETS
     INFOGRAPHIC_ASSETS = [
         "/assets/infographic_multiplatform_landscape.jpg",
         "/assets/infographic_mit_open_inference.jpg",
@@ -298,7 +307,7 @@ def run_pipeline():
     ]
 
     synthesized_goals = []
-    top_pairs = surprise_pairs[:4] if surprise_pairs else []
+    top_pairs = filtered_pairs[:12] if filtered_pairs else surprise_pairs[:12]
 
     if not top_pairs:
         # Fallback if posts are uniform
