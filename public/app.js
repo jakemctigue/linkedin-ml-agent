@@ -954,109 +954,119 @@ document.addEventListener('DOMContentLoaded', () => {
     const titleEl = document.getElementById('pub-goal-title');
     if (titleEl) titleEl.textContent = goal.title || 'Strategic Realization';
     
-    setVal('pub-infographic-url', goal.infographic_url || '');
+    const infographicUrl = goal.infographic_url || '/assets/infographic_sovereign_ai.jpg';
+    setVal('pub-infographic-url', infographicUrl);
 
-    const domainsText = (goal.domains || []).join(', ');
+    const domainsText = (goal.domains || []).join(' ⚡ ');
     const hashtags = (goal.domains || []).map(d => `#${d}`).join(' ');
+    const keywordsStr = (goal.keywords_banner || []).map(k => `#${k.replace(/[^a-zA-Z0-9]/g, '')}`).join(' ');
     const shortRealization = (goal.realization || '').substring(0, 180);
+    const authorName = appState.currentUser ? appState.currentUser.name : 'McTigue Strategic Intelligence';
 
     // 1. mctigue.co Executive Strategy Article
     setVal('pub-content-mctigue', 
-      `🌐 MCTIGUE.CO EXECUTIVE STRATEGY ARTICLE\n\n` +
+      `🌐 MCTIGUE.CO EXECUTIVE STRATEGY ARTICLE\n` +
+      `--------------------------------------------------\n` +
       `Title: ${goal.title || ''}\n` +
-      `Author: ${appState.currentUser ? appState.currentUser.name : 'McTigue Strategic Intelligence'}\n` +
-      `Category: Cross-Domain Frontier Analysis (${domainsText})\n` +
-      `Visual Asset: ${goal.infographic_url || ''}\n\n` +
-      `EXECUTIVE SUMMARY:\n${goal.summary || ''}\n\n` +
-      `SURPRISING CROSS-DOMAIN REALIZATION:\n"${goal.realization || ''}"\n\n` +
-      `ACTIONABLE STRATEGIC ROADMAP:\n` + (goal.strategic_goals || []).map((g, i) => `[0${i+1}] ${g}`).join('\n')
+      `Author: ${authorName}\n` +
+      `Domain Pair: ${domainsText}\n` +
+      `Infographic Asset: ${infographicUrl}\n\n` +
+      `EXECUTIVE OVERVIEW:\n${goal.summary || ''}\n\n` +
+      `KEY SURPRISING REALIZATION:\n"${goal.realization || ''}"\n\n` +
+      `STRATEGIC ACTIONABLE ROADMAP:\n` + (goal.strategic_goals || []).map((g, i) => `[0${i+1}] ${g}`).join('\n') +
+      `\n\n[CONFIDENTIAL CORPORATE INTELLIGENCE BRIEFING - MCTIGUE & PARTNERS]`
     );
 
-    // 2. LinkedIn Post Content
+    // 2. LinkedIn Post Content (Professional Thought Leadership)
     setVal('pub-content-linkedin', 
       `💼 SURPRISING STRATEGIC REALIZATION: ${(goal.title || '').toUpperCase()}\n\n` +
-      `Key Realization:\n"${goal.realization || ''}"\n\n` +
-      `Actionable Strategic Goals:\n` + (goal.strategic_goals || []).map(g => `• ${g}`).join('\n') +
-      `\n\n#CrossDomain #LinkedInAgent #ArtificialIntelligence #MacroStrategy ${hashtags}`
+      `Fusing insights across ${domainsText} reveals an unexpected market shift:\n\n` +
+      `💡 Key Realization:\n"${goal.realization || ''}"\n\n` +
+      `🚀 Actionable Strategic Roadmap:\n` + (goal.strategic_goals || []).map(g => `• ${g}`).join('\n') +
+      `\n\n🖼️ Visual Infographic Asset: ${infographicUrl}\n\n` +
+      `What are your thoughts on this cross-domain convergence? Let's discuss in the comments below.\n\n` +
+      `#CrossDomain #ArtificialIntelligence #Strategy #Leadership #FutureOfWork #Innovation ${hashtags} ${keywordsStr}`
     );
 
-    // 3. Bluesky Post Content
+    // 3. Bluesky Post Content (Open-Protocol Tech Micro-Blog)
     setVal('pub-content-bluesky', 
       `🦋 Realization: ${goal.title || ''}\n\n` +
       `"${shortRealization}..."\n\n` +
-      `Key Goal: ${(goal.strategic_goals ? goal.strategic_goals[0] : '')}\n\n` +
-      `${hashtags} #AI`
+      `🎯 Key Goal: ${(goal.strategic_goals ? goal.strategic_goals[0] : '')}\n\n` +
+      `🖼️ Visual Asset: ${infographicUrl}\n\n` +
+      `${hashtags} #OpenSource #ATProto #Tech`
     );
 
-    // 4. Threads Post Content
+    // 4. Threads Post Content (Casual Tech & Strategy Thread)
     setVal('pub-content-threads', 
-      `🧵 ${goal.title || ''}\n\n` +
-      `Fusing ${domainsText}:\n"${shortRealization}..."\n\n` +
-      `Roadmap:\n` + (goal.strategic_goals || []).map(g => `• ${g}`).join('\n')
+      `🧵 1/3 ${goal.title || ''}\n\n` +
+      `Fusing ${domainsText} surfaced something surprising:\n\n` +
+      `"${shortRealization}..."\n\n` +
+      `🧵 2/3 Roadmap:\n` + (goal.strategic_goals || []).map((g, i) => `👉 ${i+1}. ${g}`).join('\n') +
+      `\n\n🧵 3/3 Visual Infographic attached below 🖼️\n${infographicUrl}\n\n` +
+      `Drop your thoughts below! 👇`
     );
 
-    // 5. Medium Article Draft Content
+    // 5. Medium Article Draft Content (In-Depth Technical Deep Dive)
     setVal('pub-content-medium', 
       `# ${goal.title || ''}\n\n` +
       `*A Cross-Domain Machine Learning Synthesis across ${domainsText}*\n\n` +
-      `![Header Infographic](${goal.infographic_url || ''})\n\n` +
+      `![Header Infographic Banner](${infographicUrl})\n\n` +
       `## Executive Summary\n${goal.summary || ''}\n\n` +
-      `## The Surprising Realization\n> ${goal.realization || ''}\n\n` +
-      `## Actionable Roadmap\n` + (goal.strategic_goals || []).map(g => `- **${g}**`).join('\n')
+      `## The Surprising Realization\n> "${goal.realization || ''}"\n\n` +
+      `## Actionable Strategic Roadmap\n` + (goal.strategic_goals || []).map((g, i) => `### ${i+1}. ${g}\nDetailed implementation plan for scaling localized inference hypervisors with zero-knowledge attestations.\n`).join('\n') +
+      `\n\n---\n*Published via LinkedIn Cross-Domain ML Agent*`
     );
 
-    // 6. Substack Newsletter Edition Content
+    // 6. Substack Newsletter Issue (Strategic Newsletter)
     setVal('pub-content-substack', 
-      `Executive Briefing: ${goal.title || ''}\n\n` +
-      `Good morning subscribers,\n\n` +
-      `Our local LinkedIn ML Agent has detected an unexpected convergence across ${domainsText}.\n\n` +
-      `Core Insight:\n"${goal.realization || ''}"\n\n` +
-      `Read the full strategic roadmap attached.`
+      `[STRATEGIC BRIEFING #${Math.floor(Math.random() * 90) + 10}] ${goal.title || ''}\n\n` +
+      `Dear Subscribers,\n\n` +
+      `Our daily ML cross-domain analysis has surfaced a major convergence between ${domainsText}.\n\n` +
+      `📸 ISSUE GRAPHIC ASSET:\n${infographicUrl}\n\n` +
+      `KEY REALIZATION:\n"${goal.realization || ''}"\n\n` +
+      `ACTIONABLE STRATEGIC TAKEAWAWAYS:\n` + (goal.strategic_goals || []).map(g => `📌 ${g}`).join('\n') +
+      `\n\nSubscribe for daily automated cross-domain intelligence briefings!`
     );
 
-    // 7. Tumblr Blog Post Content
+    // 7. Tumblr Blog Post Content (Visual & Micro-Blogging)
     setVal('pub-content-tumblr', 
       `📝 ${(goal.title || '').toUpperCase()}\n\n` +
-      `"${goal.realization || ''}"\n\n` +
-      `Strategic Goals:\n` + (goal.strategic_goals || []).map(g => `• ${g}`).join('\n') +
-      `\n\nTags: ${hashtags}`
+      `🖼️ VISUAL INFOGRAPHIC:\n${infographicUrl}\n\n` +
+      `> "${goal.realization || ''}"\n\n` +
+      `Strategic Highlights:\n` + (goal.strategic_goals || []).map(g => `✨ ${g}`).join('\n') +
+      `\n\nTags: ${hashtags} #technology #ai art #future #data science #macroeconomics`
     );
 
-    // 8. X (Twitter) Thread Content
+    // 8. X (Twitter) Thread Content (Punchy Tweet Thread)
     setVal('pub-content-x', 
-      `1/4 🧵 Surprising Cross-Domain Discovery: ${goal.title || ''}\n\n` +
-      `Fusing signals across ${domainsText} surfaces a major realization:\n\n` +
+      `1/4 🧵 Surprising Discovery: ${goal.title || ''}\n\n` +
+      `Cross-domain signals across ${domainsText} reveal:\n\n` +
       `"${shortRealization}..."\n\n` +
-      `2/4 Strategic Action Items:\n` + (goal.strategic_goals || []).map((g, i) => `${i+1}. ${g}`).join('\n')
+      `2/4 Strategic Action Items:\n` + (goal.strategic_goals || []).map((g, i) => `${i+1}. ${g}`).join('\n') +
+      `\n\n3/4 Visual Infographic Asset: ${infographicUrl}\n\n` +
+      `4/4 Retweet if you found this insight valuable! ${hashtags}`
     );
 
-    // 3. Facebook Post Content
+    // 9. Facebook Business Group Post (Community Discussion)
     setVal('pub-content-facebook', 
       `📘 STRATEGIC REALIZATION DISPATCH: ${goal.title || ''}\n\n` +
-      `Key Market Realization:\n"${goal.realization || ''}"\n\n` +
-      `Strategic Roadmap Deliverables:\n` + (goal.strategic_goals || []).map(g => `✔ ${g}`).join('\n') +
-      `\n\nVisual Infographic Asset Attached: ${goal.infographic_url || ''}`
+      `Hey everyone! 👋 Our daily ML cross-domain agent discovered an interesting trend fusing ${domainsText}:\n\n` +
+      `Key Realization:\n"${goal.realization || ''}"\n\n` +
+      `Strategic Action Deliverables:\n` + (goal.strategic_goals || []).map(g => `✔ ${g}`).join('\n') +
+      `\n\n🖼️ Visual Infographic Asset Attached: ${infographicUrl}\n\n` +
+      `What are your thoughts on this direction?`
     );
 
-    // 4. YouTube Script & Community Post Content
+    // 10. YouTube Script & Community Tab Announcement
     setVal('pub-content-youtube', 
       `🔴 YOUTUBE SHORTS & COMMUNITY POST SCRIPT\n\n` +
-      `[0:00 - 0:05 HOOK]: "Here is a surprising realization that nobody in ${goal.domains ? goal.domains[0] : 'Tech'} is talking about..."\n\n` +
-      `[0:05 - 0:20 CORE INSIGHT]: "${goal.realization || ''}"\n\n` +
-      `[0:20 - 0:30 STRATEGIC ROADMAP]:\n` + (goal.strategic_goals || []).map((g, i) => `[0${i+1}] ${g}`).join('\n') +
-      `\n\n[0:30 - 0:40 CTA]: "Subscribe for daily AI & macro cross-domain briefings!"`
-    );
-
-    // 5. mctigue.co Executive Strategy Article
-    setVal('pub-content-mctigue', 
-      `🌐 MCTIGUE.CO EXECUTIVE STRATEGY ARTICLE\n\n` +
-      `Title: ${goal.title || ''}\n` +
-      `Author: ${appState.currentUser ? appState.currentUser.name : 'McTigue Strategic Intelligence'}\n` +
-      `Category: Cross-Domain Frontier Analysis (${domainsText})\n` +
-      `Visual Asset: ${goal.infographic_url || ''}\n\n` +
-      `EXECUTIVE SUMMARY:\n${goal.summary || ''}\n\n` +
-      `SURPRISING CROSS-DOMAIN REALIZATION:\n"${goal.realization || ''}"\n\n` +
-      `ACTIONABLE STRATEGIC ROADMAP:\n` + (goal.strategic_goals || []).map((g, i) => `[0${i+1}] ${g}`).join('\n')
+      `🎬 Video Title: ${goal.title || ''}\n` +
+      `🖼️ Thumbnail Asset: ${infographicUrl}\n\n` +
+      `[0:00 - HOOK]: "Here is a surprising realization that nobody in ${domainsText} is talking about..."\n\n` +
+      `[0:05 - REALIZATION]: "${goal.realization || ''}"\n\n` +
+      `[0:20 - ROADMAP]:\n` + (goal.strategic_goals || []).map((g, i) => `[0${i+1}] ${g}`).join('\n') +
+      `\n\n[0:35 - CTA]: "Like, subscribe, and drop a comment below!"`
     );
 
     modalPublish.classList.remove('hidden');
