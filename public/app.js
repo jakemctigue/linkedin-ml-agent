@@ -918,6 +918,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (res.ok && data.dispatches) {
         if (modalPublish) modalPublish.classList.add('hidden');
         
+        // Auto-copy formatted content to clipboard for 1-click paste fallback
+        const primaryText = payload.content && payload.content.linkedIn ? payload.content.linkedIn : payload.goalTitle;
+        const fullShareCopy = `${primaryText}\n\n🖼️ Visual Infographic Asset: ${payload.infographicUrl || ''}`;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(fullShareCopy).catch(() => {});
+        }
+
         // Launch official live post intent windows for each target platform!
         data.dispatches.forEach(dispatch => {
           if (dispatch.share_url && dispatch.share_url !== 'http://localhost:3000/') {
@@ -925,7 +932,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
 
-        showToast(`🚀 Dispatched to ${targetPlatforms.join(', ')}!`);
+        showToast(`🚀 Dispatched to ${targetPlatforms.join(', ')}! Formatted post & image link pre-filled & copied to clipboard (Ctrl+V).`);
       } else {
         showToast(data.error || 'Failed to generate live dispatches');
       }

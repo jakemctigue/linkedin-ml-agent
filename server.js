@@ -453,7 +453,8 @@ app.post('/api/publish', async (req, res) => {
           },
           visibility: { 'com.linkedin.ugc.MemberNetworkVisibility': 'PUBLIC' }
         };
-        targetShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(hostBase)}&summary=${encodeURIComponent(content.linkedIn || '')}`;
+        const linkedInText = (content.linkedIn || content.default || '') + `\n\n🖼️ Visual Infographic Asset:\n${fullImageUrl}`;
+        targetShareUrl = `https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(linkedInText)}`;
       
       } else if (pName.includes('bluesky') || pName.includes('bsky')) {
         // Bluesky AT Protocol XRPC API Payload
