@@ -427,172 +427,56 @@ app.post('/api/publish', async (req, res) => {
 
     for (const platform of platforms) {
       const pName = platform.toLowerCase();
-      let apiStatus = 'API_SUCCESS';
-      let endpointUsed = '';
-      let payloadSent = {};
       let targetShareUrl = '';
 
       if (pName.includes('linkedin')) {
-        // LinkedIn ugcPosts / V2 API Payload
-        endpointUsed = 'https://api.linkedin.com/v2/ugcPosts';
-        payloadSent = {
-          author: `urn:li:person:${authorName ? authorName.replace(/[^a-zA-Z0-9]/g, '_') : 'mctigue_user'}`,
-          lifecycleState: 'PUBLISHED',
-          specificContent: {
-            'com.linkedin.ugc.ShareContent': {
-              shareCommentary: { text: content.linkedIn || content.default || '' },
-              shareMediaCategory: 'ARTICLE',
-              media: [
-                {
-                  status: 'READY',
-                  description: { text: goalTitle },
-                  originalUrl: fullImageUrl,
-                  title: { text: `[Strategic Realization] ${goalTitle}` }
-                }
-              ]
-            }
-          },
-          visibility: { 'com.linkedin.ugc.MemberNetworkVisibility': 'PUBLIC' }
-        };
         const linkedInText = (content.linkedIn || content.default || '') + `\n\n🖼️ Visual Infographic Asset:\n${fullImageUrl}`;
         targetShareUrl = `https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(linkedInText)}`;
-      
+
       } else if (pName.includes('bluesky') || pName.includes('bsky')) {
-        // Bluesky AT Protocol XRPC API Payload
-        endpointUsed = 'https://bsky.social/xrpc/com.atproto.repo.createRecord';
-        payloadSent = {
-          repo: process.env.BLUESKY_HANDLE || 'mctigue.bsky.social',
-          collection: 'app.bsky.feed.post',
-          record: {
-            $type: 'app.bsky.feed.post',
-            text: (content.bluesky || content.default || '').substring(0, 300),
-            createdAt: timestamp,
-            embed: {
-              $type: 'app.bsky.embed.external',
-              external: {
-                uri: hostBase,
-                title: goalTitle,
-                description: (content.bluesky || '').substring(0, 100),
-                thumb: fullImageUrl
-              }
-            }
-          }
-        };
         targetShareUrl = `https://bsky.app/intent/compose?text=${encodeURIComponent((content.bluesky || content.default || '').substring(0, 275))}`;
-      
+
       } else if (pName.includes('threads')) {
-        // Meta Threads Graph API Payload
-        endpointUsed = 'https://graph.threads.net/v1.0/me/threads';
-        payloadSent = {
-          media_type: 'IMAGE',
-          image_url: fullImageUrl,
-          text: content.threads || content.default || '',
-          access_token: process.env.THREADS_ACCESS_TOKEN || 'simulated_threads_oauth_token'
-        };
         targetShareUrl = `https://www.threads.net/intent/post?text=${encodeURIComponent((content.threads || content.default || '').substring(0, 275))}`;
-      
+
       } else if (pName.includes('medium')) {
-        // Medium REST API Payload
-        endpointUsed = 'https://api.medium.com/v1/users/me/posts';
-        payloadSent = {
-          title: goalTitle,
-          contentFormat: 'markdown',
-          content: `# ${goalTitle}\n\n![Infographic](${fullImageUrl})\n\n${content.medium || content.default || ''}`,
-          tags: ['AI', 'OpenSource', 'Technology', 'Strategy'],
-          publishStatus: 'public'
-        };
         targetShareUrl = `https://medium.com/new-story`;
-      
+
       } else if (pName.includes('substack')) {
-        // Substack API / Newsletter Dispatch Payload
-        endpointUsed = 'https://substack.com/api/v1/posts';
-        payloadSent = {
-          title: `Executive Briefing: ${goalTitle}`,
-          subtitle: `Cross-Landscape Analysis by ${authorName || 'McTigue Strategic Intelligence'}`,
-          body_markdown: `![Infographic](${fullImageUrl})\n\n${content.substack || content.default || ''}`,
-          cover_image_url: fullImageUrl,
-          audience: 'everyone'
-        };
         targetShareUrl = `https://substack.com/publish`;
-      
+
       } else if (pName.includes('tumblr')) {
-        // Tumblr v2 API Payload
-        endpointUsed = 'https://api.tumblr.com/v2/blog/mctigue-intelligence/post';
-        payloadSent = {
-          type: 'photo',
-          source: fullImageUrl,
-          caption: `<h2>${goalTitle}</h2><p>${(content.tumblr || content.default || '').replace(/\n/g, '<br>')}</p>`,
-          tags: 'AI,OpenSource,MITLicense,Tech'
-        };
         targetShareUrl = `https://www.tumblr.com/widgets/share/tool?canonicalUrl=${encodeURIComponent(hostBase)}&title=${encodeURIComponent(goalTitle)}&caption=${encodeURIComponent(content.tumblr || '')}`;
-      
+
       } else if (pName === 'x' || pName.includes('twitter')) {
-        // X (Twitter) v2 API Payload
-        endpointUsed = 'https://api.twitter.com/2/tweets';
-        payloadSent = {
-          text: (content.x || content.twitter || content.default || '').substring(0, 280),
-          card_uri: fullImageUrl
-        };
         targetShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent((content.x || content.twitter || '').substring(0, 275))}`;
-      
+
       } else if (pName.includes('facebook')) {
-        // Facebook Graph API Payload
-        endpointUsed = 'https://graph.facebook.com/v18.0/me/photos';
-        payloadSent = {
-          url: fullImageUrl,
-          caption: `📘 ${goalTitle}\n\n${content.facebook || content.default || ''}`,
-          access_token: process.env.FACEBOOK_PAGE_ACCESS_TOKEN || 'simulated_fb_page_token'
-        };
         targetShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(hostBase)}`;
-      
+
       } else if (pName.includes('youtube')) {
-        // YouTube Studio / API v3 Payload
-        endpointUsed = 'https://www.googleapis.com/youtube/v3/videos';
-        payloadSent = {
-          snippet: {
-            title: `[AI Briefing] ${goalTitle}`,
-            description: content.youtube || content.default || '',
-            tags: ['AI', 'Tech', 'Inference'],
-            thumbnails: { default: { url: fullImageUrl } }
-          },
-          status: { privacyStatus: 'public' }
-        };
         targetShareUrl = `https://studio.youtube.com/`;
-      
+
       } else if (pName.includes('mctigue')) {
-        // mctigue.co Corporate Partner REST API Payload
-        endpointUsed = 'http://localhost:3000/api/publish/mctigue';
-        payloadSent = {
-          article_title: goalTitle,
-          author: authorName || 'McTigue Executive Partner',
-          headline: `Cross-Landscape Analysis: ${goalTitle}`,
-          full_content: content.mctigue || content.default || '',
-          infographic_url: fullImageUrl,
-          published_at: timestamp
-        };
         targetShareUrl = `http://localhost:3000/`;
       } else {
-        endpointUsed = 'https://api.generic-social.com/v1/post';
-        payloadSent = { title: goalTitle, text: content.default || '', image: fullImageUrl };
         targetShareUrl = `http://localhost:3000/`;
       }
 
       dispatchLog.push({
         platform: platform,
-        api_status: apiStatus,
-        api_endpoint_used: endpointUsed,
+        status: 'DRAFT_READY',
         headline_text: goalTitle,
         full_text_carried: content[platform.toLowerCase()] || content.default || '',
         image_asset_carried: fullImageUrl,
-        api_payload: payloadSent,
         share_url: targetShareUrl,
-        published_at: timestamp,
-        post_id: `api_${platform.toLowerCase().replace(/[^a-z]/g, '')}_${Date.now()}`
+        generated_at: timestamp,
+        post_id: `draft_${platform.toLowerCase().replace(/[^a-z]/g, '')}_${Date.now()}`
       });
     }
 
     res.json({
-      message: `REST API Payloads Successfully Carried Across All Selected Platforms!`,
+      message: `Drafts ready — click through each opened tab to actually post.`,
       publisher: authorName || 'Google Authenticated User',
       goalTitle: goalTitle,
       infographicAsset: fullImageUrl,
@@ -608,66 +492,53 @@ app.post('/api/publish', async (req, res) => {
 // Autonomous Daily Auto-Posting Engine Helper
 async function triggerDailyAutoPost() {
   const timestamp = new Date().toISOString();
-  console.log(`[Daily Auto-Poster] Starting automated 24h dispatch run at ${timestamp}...`);
+  console.log(`[Daily Draft Generator] Starting daily real scrape + re-analysis at ${timestamp}...`);
 
-  try {
-    const rawAnalysis = fs.readFileSync(path.join(__dirname, 'data', 'analysis_results.json'), 'utf8');
-    const analysis = JSON.parse(rawAnalysis);
-    const topGoal = (analysis.realizations && analysis.realizations[0]) ? analysis.realizations[0] : {
-      id: 'goal_daily_1',
-      title: 'Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid',
-      realization: 'Autonomous AI agent meshes running inside Firecracker micro-VM containers are creating a self-governing global intelligence economy.',
-      strategic_goals: ['Deploy MIT-licensed open weights', 'Establish ZK-proof compute grids'],
-      infographic_url: '/assets/infographic_multiplatform_landscape.jpg',
-      domains: ['Tech', 'Finance', 'Politics', 'Geopolitics']
-    };
+  const newPostsCount = await runComprehensiveScrape();
 
-    const hostBase = 'http://localhost:3000';
-    const fullImageUrl = `${hostBase}${topGoal.infographic_url || '/assets/infographic_multiplatform_landscape.jpg'}`;
-
-    const platforms = ['LinkedIn', 'Bluesky', 'Threads', 'Medium', 'Substack', 'Tumblr', 'X', 'Facebook', 'YouTube', 'mctigue.co'];
-    const dispatchLog = [];
-
-    platforms.forEach(platform => {
-      dispatchLog.push({
-        platform: platform,
-        api_status: 'AUTO_DISPATCH_SUCCESS',
-        headline_text: topGoal.title,
-        image_asset_carried: fullImageUrl,
-        published_at: timestamp,
-        post_id: `auto_${platform.toLowerCase().replace(/[^a-z]/g, '')}_${Date.now()}`
-      });
+  await new Promise((resolve, reject) => {
+    exec('python ml_pipeline.py', (execErr, stdout, stderr) => {
+      if (execErr) {
+        console.error('[Daily Draft Generator] Python ML execution error:', stderr);
+        reject(execErr);
+        return;
+      }
+      resolve();
     });
+  });
 
-    // Record in history
-    let historyDb = { history: [] };
-    const historyPath = path.join(__dirname, 'data', 'daily_dispatch_history.json');
-    if (fs.existsSync(historyPath)) {
-      historyDb = JSON.parse(fs.readFileSync(historyPath, 'utf8'));
-    }
+  const analysisPath = path.join(__dirname, 'data', 'analysis_results.json');
+  const analysis = JSON.parse(fs.readFileSync(analysisPath, 'utf8'));
+  const topGoal = (analysis.synthesized_realizations && analysis.synthesized_realizations[0]) || null;
 
-    const runRecord = {
-      dispatch_id: `daily_auto_${Date.now()}`,
-      timestamp: timestamp,
-      goal_title: topGoal.title,
-      surprise_score: topGoal.surprise_score || 0.99,
-      platforms_published: platforms,
-      infographic_url: topGoal.infographic_url,
-      status: 'SUCCESS',
-      dispatches: dispatchLog
-    };
-
-    historyDb.last_run = timestamp;
-    historyDb.total_dispatches = (historyDb.total_dispatches || 0) + 1;
-    historyDb.history.unshift(runRecord);
-
-    fs.writeFileSync(historyPath, JSON.stringify(historyDb, null, 2));
-    console.log(`[Daily Auto-Poster] ✅ Successfully published daily dispatch to 10 platforms at ${timestamp}!`);
-    return runRecord;
-  } catch (err) {
-    console.error('[Daily Auto-Poster] Error in daily run:', err);
-    throw err;
+  if (!topGoal) {
+    throw new Error('Daily draft generation ran but produced no realizations to draft.');
   }
+
+  let historyDb = { history: [] };
+  const historyPath = path.join(__dirname, 'data', 'daily_dispatch_history.json');
+  if (fs.existsSync(historyPath)) {
+    historyDb = JSON.parse(fs.readFileSync(historyPath, 'utf8'));
+  }
+
+  const runRecord = {
+    dispatch_id: `daily_draft_${Date.now()}`,
+    timestamp: timestamp,
+    goal_id: topGoal.id,
+    goal_title: topGoal.title,
+    surprise_score: topGoal.surprise_index || 0,
+    new_posts_scraped: newPostsCount,
+    infographic_url: topGoal.infographic_url,
+    status: 'DRAFT_GENERATED'
+  };
+
+  historyDb.last_run = timestamp;
+  historyDb.total_dispatches = (historyDb.total_dispatches || 0) + 1;
+  historyDb.history.unshift(runRecord);
+
+  fs.writeFileSync(historyPath, JSON.stringify(historyDb, null, 2));
+  console.log(`[Daily Draft Generator] ✅ Today's draft ready: "${topGoal.title}" (${newPostsCount} new real posts scraped).`);
+  return runRecord;
 }
 
 // 24-Hour Autonomous Daemon Scheduler (86,400,000 ms)
@@ -731,7 +602,7 @@ app.post('/api/scheduler/trigger-daily-post', async (req, res) => {
   try {
     const runRecord = await triggerDailyAutoPost();
     res.json({
-      message: '🚀 Autonomous Daily Post Dispatch Successfully Executed across all 10 Platforms!',
+      message: `Today's draft is ready: "${runRecord.goal_title}". Open the dashboard to review and post it yourself.`,
       runRecord: runRecord
     });
   } catch (err) {
