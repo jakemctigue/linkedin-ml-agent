@@ -1134,17 +1134,27 @@ body {
   border: 1px solid var(--border-color);
   padding: 0.4rem 0.85rem;
   border-radius: 8px;
-  cursor: pointer;
+  cursor: pointer !important;
+  pointer-events: auto !important;
   font-size: 0.85rem;
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
+  position: relative !important;
+  z-index: 10000004 !important;
   transition: all 0.2s ease;
 }
 
-.platform-chip-toggle input {
-  display: none;
+.platform-chip-toggle input[type="checkbox"] {
+  display: inline-block !important;
+  width: 16px !important;
+  height: 16px !important;
+  accent-color: var(--accent-cyan) !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 10000005 !important;
 }
 
 .platform-chip-toggle.active {

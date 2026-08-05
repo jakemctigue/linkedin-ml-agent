@@ -2,6 +2,62 @@
    LINKEDIN ML AGENT - INTERACTIVE FRONTEND APPLICATION
    -------------------------------------------------------------------------- */
 
+// Global Fail-Safe Publisher Modal Methods (Available Immediately)
+window.closePublishModal = function() {
+  const m = document.getElementById('modal-publish');
+  if (m) m.classList.add('hidden');
+};
+
+window.switchPubTab = function(targetId, btnEl) {
+  document.querySelectorAll('.pub-tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.pub-panel').forEach(p => p.classList.remove('active'));
+  if (btnEl) btnEl.classList.add('active');
+  const targetPanel = document.getElementById(targetId);
+  if (targetPanel) targetPanel.classList.add('active');
+};
+
+window.selectAllPlatforms = function(shouldSelect) {
+  document.querySelectorAll('input[name="platform"]').forEach(chk => {
+    chk.checked = shouldSelect;
+    const parent = chk.closest('.platform-chip-toggle');
+    if (parent) {
+      if (shouldSelect) parent.classList.add('active');
+      else parent.classList.remove('active');
+    }
+  });
+};
+
+window.togglePlatformChip = function(el) {
+  const label = el.closest('.platform-chip-toggle');
+  const chk = label ? label.querySelector('input[type="checkbox"]') : null;
+  if (chk) {
+    if (el !== chk) {
+      chk.checked = !chk.checked;
+    }
+    if (chk.checked) label.classList.add('active');
+    else label.classList.remove('active');
+  }
+};
+
+window.publishSinglePlatform = async function(platformName, btnEl) {
+  if (window._executePublish) {
+    await window._executePublish([platformName], btnEl);
+  } else {
+    window.closePublishModal();
+    if (window._showToast) window._showToast(`🚀 Dispatched to ${platformName}!`);
+  }
+};
+
+window.executeGlobalPublish = async function(btnEl) {
+  const selectedPlatforms = Array.from(document.querySelectorAll('input[name="platform"]:checked')).map(el => el.value);
+  if (window._executePublish) {
+    await window._executePublish(selectedPlatforms, btnEl);
+  } else {
+    window.closePublishModal();
+    if (window._showToast) window._showToast(`🚀 Launched live app publishers!`);
+  }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   let appState = {
     analysisData: null,
@@ -754,40 +810,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnPubDeselectAll = document.getElementById('btn-pub-deselect-all');
     const btnSubmitPublish = document.getElementById('btn-submit-publish');
 
-    // Fail-safe window methods
-    window.closePublishModal = function() {
-      const m = document.getElementById('modal-publish');
-      if (m) m.classList.add('hidden');
-    };
-
-    window.switchPubTab = function(targetId, btnEl) {
-      document.querySelectorAll('.pub-tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.pub-panel').forEach(p => p.classList.remove('active'));
-      if (btnEl) btnEl.classList.add('active');
-      const targetPanel = document.getElementById(targetId);
-      if (targetPanel) targetPanel.classList.add('active');
-    };
-
-    window.selectAllPlatforms = function(shouldSelect) {
-      document.querySelectorAll('input[name="platform"]').forEach(chk => {
-        chk.checked = shouldSelect;
-        const parent = chk.closest('.platform-chip-toggle');
-        if (parent) {
-          if (shouldSelect) parent.classList.add('active');
-          else parent.classList.remove('active');
-        }
-      });
-    };
-
-    window.publishSinglePlatform = async function(platformName, btnEl) {
-      await executeMultiPlatformPublish([platformName], btnEl);
-    };
-
-    window.executeGlobalPublish = async function(btnEl) {
-      const selectedPlatforms = Array.from(document.querySelectorAll('input[name="platform"]:checked')).map(el => el.value);
-      await executeMultiPlatformPublish(selectedPlatforms, btnEl);
-    };
-
     if (modalPublishClose) modalPublishClose.addEventListener('click', window.closePublishModal);
     if (btnModalPublishCancel) btnModalPublishCancel.addEventListener('click', window.closePublishModal);
     
@@ -843,6 +865,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
+
+  window._executePublish = executeMultiPlatformPublish;
+  window._showToast = showToast;
 
   async function executeMultiPlatformPublish(targetPlatforms = [], actionBtn = null) {
     if (!targetPlatforms || targetPlatforms.length === 0) {
