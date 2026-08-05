@@ -176,15 +176,19 @@ app.post('/api/add-influencer', async (req, res) => {
       db.influencers.push(inf);
     }
 
+    insertInfluencerRecord(inf);
+
     const newPostId = `p_custom_${Date.now()}`;
-    inf.posts.unshift({
+    const newPostObj = {
       id: newPostId,
       text: postText,
       likes: Math.floor(Math.random() * 1000) + 100,
       reposts: Math.floor(Math.random() * 200) + 20,
       date: new Date().toISOString().split('T')[0],
       keywords: postText.split(' ').slice(0, 5)
-    });
+    };
+    inf.posts.unshift(newPostObj);
+    insertPostRecord(inf.id, newPostObj);
 
     fs.writeFileSync(INFLUENCER_DB_PATH, JSON.stringify(db, null, 2), 'utf-8');
 

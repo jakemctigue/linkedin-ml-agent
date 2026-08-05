@@ -7,6 +7,7 @@ const db = new DatabaseSync(dbPath);
 
 // Initialize Database Schemas
 function initDatabase() {
+  db.exec(`PRAGMA foreign_keys = ON;`);
   db.exec(`
     CREATE TABLE IF NOT EXISTS influencers (
       id TEXT PRIMARY KEY,
@@ -69,6 +70,12 @@ function initDatabase() {
       published_at DATETIME DEFAULT CURRENT_TIMESTAMP
     );
   `);
+
+  try {
+    db.exec(`ALTER TABLE realizations ADD COLUMN keywords_json TEXT;`);
+  } catch (e) {
+    // Column already exists
+  }
 
   console.log('[SQLite Database Engine] ✅ Database schemas initialized at data/agent_database.db');
   
