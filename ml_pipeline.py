@@ -268,7 +268,11 @@ def run_pipeline():
         for j in range(i + 1, len(posts_flat)):
             p1 = posts_flat[i]
             p2 = posts_flat[j]
-            if p1["domain"] != p2["domain"]:
+            # Every realization keeps a technology backbone: one side of the pair
+            # must always be Tech (Hacker News / arXiv), paired against Finance,
+            # Politics, or Geopolitics - never two non-Tech domains alone.
+            has_tech_backbone = p1["domain"] == "Tech" or p2["domain"] == "Tech"
+            if p1["domain"] != p2["domain"] and has_tech_backbone:
                 sim = cosine_similarity(vectors[i], vectors[j])
                 multiplier = domain_distance_weights.get((p1["domain"], p2["domain"]), 1.2)
                 surprise_score = sim * multiplier
@@ -328,36 +332,42 @@ def run_pipeline():
         p1_clean = re.sub(r'\[Scraped.*?\]', '', p1['text']).strip()
         p2_clean = re.sub(r'\[Scraped.*?\]', '', p2['text']).strip()
 
-        shared_kw = pair.get("shared_topics", ["OpenSource", "MicroVM", "Inference", "Strategy"])
-        if not shared_kw:
-            shared_kw = ["MicroVM", "Inference", "MIT-License", "Hyperscaler"]
+        shared_kw = pair.get("shared_topics", [])
 
-        keywords_banner = [k.capitalize() for k in shared_kw[:4]]
-        if len(keywords_banner) < 4:
-            keywords_banner.extend(["Open-Weights", "Sub-Millisecond", "Sovereign-Mesh"])
+        if shared_kw:
+            keywords_banner = [k.capitalize() for k in shared_kw[:4]]
+        else:
+            # No shared vocabulary at all — fall back to the two real domain names
+            # themselves rather than inventing unrelated keywords.
+            keywords_banner = [p1['domain'], p2['domain']]
 
         img_asset = INFOGRAPHIC_ASSETS[idx % len(INFOGRAPHIC_ASSETS)]
         surprise_val = min(0.99, max(0.85, float(pair.get("surprise_score", 0.90)) * 1.5))
 
         title = f"{p1['author_name']} & {p2['author_name']}: {p1['domain']} ⚡ {p2['domain']} Convergence"
-        
+
+        if shared_kw:
+            topic_phrase = ", ".join(shared_kw[:3])
+            connector = f"both independently touch on {topic_phrase}"
+        else:
+            connector = f"surfaced together despite no shared vocabulary — a genuinely cross-domain juxtaposition"
+
         realization = (
-            f"Fusing signals from {p1['author_name']} ({p1['domain']}) and {p2['author_name']} ({p2['domain']}) "
-            f"reveals a fresh daily realization: '{p1_clean[:140]}...' intersects with '{p2_clean[:140]}...'. "
-            f"Self-hosted micro-VM hypervisors and open-weights licensing are disintermediating traditional proprietary cloud APIs."
+            f"{p1['author_name']} ({p1['domain']}) and {p2['author_name']} ({p2['domain']}) {connector}. "
+            f"\"{p1_clean[:140]}...\" (via {p1['author_name']}) sits alongside "
+            f"\"{p2_clean[:140]}...\" (via {p2['author_name']})."
         )
 
         summary = (
-            f"Fresh Daily ML Synthesis across {p1['domain']} and {p2['domain']}. "
-            f"Cross-landscape analysis of 105+ influencers, Medium publications, and X community streams shows rapid adoption "
-            f"of MIT/Apache 2.0 open-weights inference nodes operating at sub-millisecond execution speeds."
+            f"Cross-domain ML synthesis across {p1['domain']} and {p2['domain']}, drawn from real signals scraped "
+            f"across {len(posts_flat)} posts today. This pairing scored {round(pair.get('surprise_score', 0.0), 3)} "
+            f"on cosine-similarity-weighted cross-domain surprise."
         )
 
         strategic_goals = [
-            f"Deploy self-hosted Firecracker micro-VM containers leveraging MIT/Apache 2.0 open-weights models.",
-            f"Optimize real-time inference FLOP efficiency and token throughput across localized GPU microgrids.",
-            f"Integrate zero-knowledge proof verification attestations to guarantee decentralized AI agent execution safety."
-        ]
+            f"Track further {p1['domain'].lower()} developments from {p1['author_name']}.",
+            f"Track further {p2['domain'].lower()} developments from {p2['author_name']}.",
+        ] + ([f"Watch for follow-on coverage of: {', '.join(shared_kw[:3])}."] if shared_kw else [])
 
         evidence_posts = [
             {"author": p1['author_name'], "domain": p1['domain'], "snippet": p1_clean[:180]},
