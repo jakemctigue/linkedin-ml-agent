@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const { exec } = require('child_process');
 const events = require('events');
-const { initDatabase, getAllInfluencers, insertPostRecord, insertDispatchRecord, db } = require('./database');
+const { initDatabase, getAllInfluencers, insertPostRecord, insertDispatchRecord, saveRealizationsToSQL, db } = require('./database');
 const { runComprehensiveScrape } = require('./scraper');
 
 // Increase EventEmitter max listeners to prevent browser extension stream warnings
@@ -40,6 +40,19 @@ function runMLPipeline() {
         return reject(error);
       }
       console.log(`ML Pipeline Output:\n${stdout}`);
+      
+      // Save output realizations into SQLite
+      try {
+        if (fs.existsSync(ANALYSIS_PATH)) {
+          const analysisData = JSON.parse(fs.readFileSync(ANALYSIS_PATH, 'utf8'));
+          if (analysisData.synthesized_realizations) {
+            saveRealizationsToSQL(analysisData.synthesized_realizations);
+          }
+        }
+      } catch (err) {
+        console.error('Error saving ML realizations to SQL:', err);
+      }
+
       resolve(stdout);
     });
   });
@@ -48,10 +61,11 @@ function runMLPipeline() {
 // API Endpoints
 app.get('/api/influencers', (req, res) => {
   try {
-    const rawData = fs.readFileSync(INFLUENCER_DB_PATH, 'utf-8');
-    res.json(JSON.parse(rawData));
+    const influencers = getAllInfluencers();
+    res.json({ influencers });
   } catch (err) {
-    res.status(500).json({ error: 'Failed to read influencer database' });
+    console.error('Error serving /api/influencers:', err);
+    res.status(500).json({ error: 'Failed to read influencer database from SQL' });
   }
 });
 
