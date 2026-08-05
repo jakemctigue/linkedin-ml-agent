@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const { exec } = require('child_process');
 const events = require('events');
-const { initDatabase, getAllInfluencers, insertPostRecord, insertDispatchRecord, saveRealizationsToSQL, db } = require('./database');
+const { initDatabase, getAllInfluencers, insertInfluencerRecord, insertPostRecord, insertDispatchRecord, saveRealizationsToSQL, db } = require('./database');
 const { runComprehensiveScrape } = require('./scraper');
 
 // Increase EventEmitter max listeners to prevent browser extension stream warnings
@@ -201,7 +201,8 @@ app.post('/api/add-influencer', async (req, res) => {
     });
 
   } catch (err) {
-    res.status(500).json({ error: 'Failed to add custom influencer post' });
+    console.error('Error in /api/add-influencer:', err);
+    res.status(500).json({ error: 'Failed to add custom influencer post', details: err.message });
   }
 });
 
