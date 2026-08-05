@@ -77,6 +77,12 @@ function initDatabase() {
     // Column already exists
   }
 
+  try {
+    db.exec(`ALTER TABLE posts ADD COLUMN url TEXT;`);
+  } catch (e) {
+    // Column already exists
+  }
+
   console.log('[SQLite Database Engine] ✅ Database schemas initialized at data/agent_database.db');
   
   // 1. Ingest any initial JSON records into SQLite tables
@@ -100,13 +106,13 @@ function syncFromJSON() {
       `);
 
       const insertPost = db.prepare(`
-        INSERT OR REPLACE INTO posts (id, influencer_id, text, likes, reposts, date, keywords_json, platform_source)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT OR REPLACE INTO posts (id, influencer_id, text, likes, reposts, date, keywords_json, platform_source, url)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
       `);
 
       (data.influencers || []).forEach(inf => {
         insertInf.run(inf.id, inf.name, inf.title || '', inf.domain || 'Tech', inf.platform_source || 'Multi-Platform', inf.avatar || '', inf.followers || '');
-        
+
         (inf.posts || []).forEach(post => {
           insertPost.run(
             post.id,
@@ -116,7 +122,8 @@ function syncFromJSON() {
             post.reposts || 0,
             post.date || new Date().toISOString().split('T')[0],
             JSON.stringify(post.keywords || []),
-            inf.platform_source || 'Multi-Platform'
+            inf.platform_source || 'Multi-Platform',
+            post.url || ''
           );
         });
       });
@@ -269,8 +276,8 @@ function insertInfluencerRecord(infObj) {
 
 function insertPostRecord(influencerId, postObj) {
   const insertPost = db.prepare(`
-    INSERT OR REPLACE INTO posts (id, influencer_id, text, likes, reposts, date, keywords_json, platform_source)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    INSERT OR REPLACE INTO posts (id, influencer_id, text, likes, reposts, date, keywords_json, platform_source, url)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   insertPost.run(
     postObj.id,
@@ -280,7 +287,8 @@ function insertPostRecord(influencerId, postObj) {
     postObj.reposts || 0,
     postObj.date || new Date().toISOString().split('T')[0],
     JSON.stringify(postObj.keywords || []),
-    postObj.platform_source || 'Multi-Platform'
+    postObj.platform_source || 'Multi-Platform',
+    postObj.url || ''
   );
   syncToJSON();
 }
