@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     activeDomainFilter: 'all',
     searchQuery: ''
   };
+  window._appState = appState;
 
   // DOM Elements
   const tabBtns = document.querySelectorAll('.tab-btn');
@@ -91,33 +92,41 @@ document.addEventListener('DOMContentLoaded', () => {
     renderInfluencersFeed(influencers);
   }
 
-  // Global Realization Filter Helpers
+  // Top-Level Window Helper Methods for Instant Fail-Safe Execution
   window.setRealizationDomainFilter = function(domainTag, btnEl) {
-    appState.activeDomainFilter = domainTag;
+    if (window._appState) {
+      window._appState.activeDomainFilter = domainTag;
+    }
     document.querySelectorAll('.filter-group .chip').forEach(c => c.classList.remove('active'));
     if (btnEl) btnEl.classList.add('active');
-    renderGoals(appState.analysisData ? appState.analysisData.synthesized_realizations : []);
+    if (window._renderGoals && window._appState && window._appState.analysisData) {
+      window._renderGoals(window._appState.analysisData.synthesized_realizations);
+    }
   };
 
   window.filterRealizationsList = function() {
-    renderGoals(appState.analysisData ? appState.analysisData.synthesized_realizations : []);
+    if (window._renderGoals && window._appState && window._appState.analysisData) {
+      window._renderGoals(window._appState.analysisData.synthesized_realizations);
+    }
   };
 
   // --- 1. REALIZATIONS & GOALS RENDERER ---
   function renderGoals(goals) {
+    const goalsContainer = document.getElementById('goals-container');
     if (!goalsContainer) return;
-    goalsContainer.innerHTML = '';
 
     if (!goals || goals.length === 0) {
-      goalsContainer.innerHTML = '<div class="goal-card"><p class="goal-summary">No realization goals available. Click "Trigger Scrape & ML Analysis" to harvest fresh signals.</p></div>';
+      // Keep existing pre-rendered HTML if goals array is temporarily empty
       return;
     }
 
     const searchInput = document.getElementById('search-realizations-input');
     const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
 
+    const activeFilter = (window._appState && window._appState.activeDomainFilter) ? window._appState.activeDomainFilter : 'all';
+
     const filtered = goals.filter(g => {
-      const matchDomain = (appState.activeDomainFilter === 'all') || (g.domains && g.domains.includes(appState.activeDomainFilter));
+      const matchDomain = (activeFilter === 'all') || (g.domains && g.domains.includes(activeFilter));
       if (!matchDomain) return false;
 
       if (!query) return true;
@@ -126,16 +135,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const badgeEl = document.getElementById('realizations-count-badge');
-    const totalScraped = (appState.analysisData && appState.analysisData.metadata) ? appState.analysisData.metadata.total_posts : 112;
+    const totalScraped = (window._appState && window._appState.analysisData && window._appState.analysisData.metadata) ? window._appState.analysisData.metadata.total_posts : 371;
     if (badgeEl) {
       badgeEl.textContent = `Showing ${filtered.length} of ${goals.length} Dynamic Realizations (from ${totalScraped} Scraped Signals)`;
     }
 
     if (filtered.length === 0) {
-      goalsContainer.innerHTML = `<div class="goal-card"><p class="goal-summary">No realization goals found matching search filter '${query || appState.activeDomainFilter}'.</p></div>`;
+      goalsContainer.innerHTML = `<div class="goal-card"><p class="goal-summary">No realization goals found matching search filter '${query || activeFilter}'.</p></div>`;
       return;
     }
 
+    goalsContainer.innerHTML = '';
     filtered.forEach((goal, idx) => {
       const card = document.createElement('div');
       card.className = 'goal-card';
@@ -174,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div style="display:flex; flex-direction:column; align-items:flex-end; gap:0.4rem;">
             <span class="surprise-badge">Surprise Index: ${(goal.surprise_index * 100).toFixed(0)}%</span>
-            <button class="btn btn-primary btn-publish-goal" data-goalid="${goal.id}" style="padding:0.35rem 0.75rem; font-size:0.78rem;">
+            <button type="button" class="btn btn-primary btn-publish-goal" data-goalid="${goal.id}" style="padding:0.35rem 0.75rem; font-size:0.78rem;">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
               Publish to Multi-Platform
             </button>
@@ -204,6 +214,8 @@ document.addEventListener('DOMContentLoaded', () => {
       goalsContainer.appendChild(card);
     });
   }
+
+  window._renderGoals = renderGoals;
 
   // --- 2. 2D PCA TOPOLOGY CANVAS MAP ---
   function renderPCACanvas(nodes) {

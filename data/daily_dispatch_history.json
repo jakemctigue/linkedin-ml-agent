@@ -1,7 +1,109 @@
 {
-  "last_run": "2026-08-03T18:46:32.080Z",
-  "total_dispatches": 5,
+  "last_run": "2026-08-05T05:53:29.236Z",
+  "total_dispatches": 6,
   "history": [
+    {
+      "dispatch_id": "daily_auto_1785909209240",
+      "timestamp": "2026-08-05T05:53:29.236Z",
+      "goal_title": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
+      "surprise_score": 0.99,
+      "platforms_published": [
+        "LinkedIn",
+        "Bluesky",
+        "Threads",
+        "Medium",
+        "Substack",
+        "Tumblr",
+        "X",
+        "Facebook",
+        "YouTube",
+        "mctigue.co"
+      ],
+      "infographic_url": "/assets/infographic_multiplatform_landscape.jpg",
+      "status": "SUCCESS",
+      "dispatches": [
+        {
+          "platform": "LinkedIn",
+          "api_status": "AUTO_DISPATCH_SUCCESS",
+          "headline_text": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
+          "image_asset_carried": "http://localhost:3000/assets/infographic_multiplatform_landscape.jpg",
+          "published_at": "2026-08-05T05:53:29.236Z",
+          "post_id": "auto_linkedin_1785909209240"
+        },
+        {
+          "platform": "Bluesky",
+          "api_status": "AUTO_DISPATCH_SUCCESS",
+          "headline_text": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
+          "image_asset_carried": "http://localhost:3000/assets/infographic_multiplatform_landscape.jpg",
+          "published_at": "2026-08-05T05:53:29.236Z",
+          "post_id": "auto_bluesky_1785909209240"
+        },
+        {
+          "platform": "Threads",
+          "api_status": "AUTO_DISPATCH_SUCCESS",
+          "headline_text": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
+          "image_asset_carried": "http://localhost:3000/assets/infographic_multiplatform_landscape.jpg",
+          "published_at": "2026-08-05T05:53:29.236Z",
+          "post_id": "auto_threads_1785909209240"
+        },
+        {
+          "platform": "Medium",
+          "api_status": "AUTO_DISPATCH_SUCCESS",
+          "headline_text": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
+          "image_asset_carried": "http://localhost:3000/assets/infographic_multiplatform_landscape.jpg",
+          "published_at": "2026-08-05T05:53:29.236Z",
+          "post_id": "auto_medium_1785909209240"
+        },
+        {
+          "platform": "Substack",
+          "api_status": "AUTO_DISPATCH_SUCCESS",
+          "headline_text": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
+          "image_asset_carried": "http://localhost:3000/assets/infographic_multiplatform_landscape.jpg",
+          "published_at": "2026-08-05T05:53:29.236Z",
+          "post_id": "auto_substack_1785909209240"
+        },
+        {
+          "platform": "Tumblr",
+          "api_status": "AUTO_DISPATCH_SUCCESS",
+          "headline_text": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
+          "image_asset_carried": "http://localhost:3000/assets/infographic_multiplatform_landscape.jpg",
+          "published_at": "2026-08-05T05:53:29.236Z",
+          "post_id": "auto_tumblr_1785909209240"
+        },
+        {
+          "platform": "X",
+          "api_status": "AUTO_DISPATCH_SUCCESS",
+          "headline_text": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
+          "image_asset_carried": "http://localhost:3000/assets/infographic_multiplatform_landscape.jpg",
+          "published_at": "2026-08-05T05:53:29.236Z",
+          "post_id": "auto_x_1785909209240"
+        },
+        {
+          "platform": "Facebook",
+          "api_status": "AUTO_DISPATCH_SUCCESS",
+          "headline_text": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
+          "image_asset_carried": "http://localhost:3000/assets/infographic_multiplatform_landscape.jpg",
+          "published_at": "2026-08-05T05:53:29.236Z",
+          "post_id": "auto_facebook_1785909209240"
+        },
+        {
+          "platform": "YouTube",
+          "api_status": "AUTO_DISPATCH_SUCCESS",
+          "headline_text": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
+          "image_asset_carried": "http://localhost:3000/assets/infographic_multiplatform_landscape.jpg",
+          "published_at": "2026-08-05T05:53:29.236Z",
+          "post_id": "auto_youtube_1785909209240"
+        },
+        {
+          "platform": "mctigue.co",
+          "api_status": "AUTO_DISPATCH_SUCCESS",
+          "headline_text": "Sovereign ZK-Proof AI Mesh & MIT-Licensed Micro-VM Grid",
+          "image_asset_carried": "http://localhost:3000/assets/infographic_multiplatform_landscape.jpg",
+          "published_at": "2026-08-05T05:53:29.236Z",
+          "post_id": "auto_mctigueco_1785909209240"
+        }
+      ]
+    },
     {
       "dispatch_id": "daily_auto_1785782792082",
       "timestamp": "2026-08-03T18:46:32.080Z",
