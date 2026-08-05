@@ -202,9 +202,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     goalsContainer.innerHTML = '';
+    const isUnfiltered = (activeFilter === 'all') && !query;
     filtered.forEach((goal, idx) => {
       const card = document.createElement('div');
       card.className = 'goal-card';
+      const isTodaysDraft = isUnfiltered && idx === 0;
+      if (isTodaysDraft) card.classList.add('goal-card-todays-draft');
 
       const domainTagsHtml = (goal.domains || []).map(d => `<span class="tag tag-${d}">${d}</span>`).join('');
       const keywordsBannerHtml = (goal.keywords_banner || []).map(k => `<span class="keyword-pill">📌 ${k}</span>`).join('');
@@ -220,6 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
       `).join('');
 
       card.innerHTML = `
+        ${isTodaysDraft ? `<div class="todays-draft-badge">📅 Today's Draft — ready to post</div>` : ''}
         ${goal.infographic_url ? `
           <div class="infographic-banner-wrapper">
             <img src="${goal.infographic_url}" alt="${goal.title} Infographic" class="infographic-img" onerror="this.src='/assets/infographic_sovereign_ai.jpg'">

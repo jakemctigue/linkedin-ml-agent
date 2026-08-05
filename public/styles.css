@@ -1248,3 +1248,17 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+
+.todays-draft-badge {
+  background: #0a66c2;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px 4px 0 0;
+  display: inline-block;
+}
+
+.goal-card-todays-draft {
+  border: 2px solid #0a66c2;
+}
